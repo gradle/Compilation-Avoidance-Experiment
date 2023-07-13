@@ -1,0 +1,110 @@
+package org.gradle.test.performance.largejavamultiproject.project464.p2323;
+
+import org.gradle.test.performance.largejavamultiproject.project464.p2322.Production46452;
+import org.gradle.test.performance.largejavamultiproject.project461.p2307.Production46152;
+import org.gradle.test.performance.largejavamultiproject.project461.p2308.Production46165;
+import org.gradle.test.performance.largejavamultiproject.project461.p2308.Production46178;
+
+public class Production46479 {
+
+    private Production46452 property0;
+
+    public Production46452 getProperty0() {
+        return property0;
+    }
+
+    public void setProperty0(Production46452 value) {
+        property0 = value;
+    }
+
+    private Production46465 property1;
+
+    public Production46465 getProperty1() {
+        return property1;
+    }
+
+    public void setProperty1(Production46465 value) {
+        property1 = value;
+    }
+
+    private Production46478 property2;
+
+    public Production46478 getProperty2() {
+        return property2;
+    }
+
+    public void setProperty2(Production46478 value) {
+        property2 = value;
+    }
+
+    private Production46152 property3;
+
+    public Production46152 getProperty3() {
+        return property3;
+    }
+
+    public void setProperty3(Production46152 value) {
+        property3 = value;
+    }
+
+    private Production46165 property4;
+
+    public Production46165 getProperty4() {
+        return property4;
+    }
+
+    public void setProperty4(Production46165 value) {
+        property4 = value;
+    }
+
+    private Production46178 property5;
+
+    public Production46178 getProperty5() {
+        return property5;
+    }
+
+    public void setProperty5(Production46178 value) {
+        property5 = value;
+    }
+
+    private String property6;
+
+    public String getProperty6() {
+        return property6;
+    }
+
+    public void setProperty6(String value) {
+        property6 = value;
+    }
+
+    private String property7;
+
+    public String getProperty7() {
+        return property7;
+    }
+
+    public void setProperty7(String value) {
+        property7 = value;
+    }
+
+    private String property8;
+
+    public String getProperty8() {
+        return property8;
+    }
+
+    public void setProperty8(String value) {
+        property8 = value;
+    }
+
+    private String property9;
+
+    public String getProperty9() {
+        return property9;
+    }
+
+    public void setProperty9(String value) {
+        property9 = value;
+    }
+
+}

@@ -1,0 +1,18 @@
+load("@rules_java//java:defs.bzl", "java_library")
+load("//:junit.bzl", "junit_tests")
+
+java_library(
+    name = "largeJavaMultiProject",
+    srcs = glob(["src/main/java/**/*.java"]),
+    javacopts = ["-XepDisableAllChecks"],
+    visibility = ["//visibility:public"],
+)
+
+junit_tests(
+    name = "tests_largeJavaMultiProject",
+    size = "small",
+    srcs = glob(["src/test/java/**/*.java"]),
+    deps = [
+        "//:largeJavaMultiProject"
+    ]
+)

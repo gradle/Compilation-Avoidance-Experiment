@@ -1,0 +1,44 @@
+load("@rules_java//java:defs.bzl", "java_library")
+load("//:junit.bzl", "junit_tests")
+
+java_library(
+    name = "project416",
+    srcs = glob(["src/main/java/**/*.java"]),
+    javacopts = ["-XepDisableAllChecks"],
+    visibility = ["//visibility:public"],
+    deps = [
+      "//project407:project407",
+      "//project411:project411",
+      "//project415:project415",
+      "//project404:project404",
+      "//project405:project405",
+      "//project406:project406",
+      "//project408:project408",
+      "//project409:project409",
+      "//project410:project410",
+      "//project412:project412",
+      "//project413:project413",
+      "//project414:project414"
+    ]
+)
+
+junit_tests(
+    name = "tests_for_project416",
+    size = "small",
+    srcs = glob(["src/test/java/**/*.java"]),
+    deps = [
+        "project416",
+              "//project407:project407",
+      "//project411:project411",
+      "//project415:project415",
+      "//project404:project404",
+      "//project405:project405",
+      "//project406:project406",
+      "//project408:project408",
+      "//project409:project409",
+      "//project410:project410",
+      "//project412:project412",
+      "//project413:project413",
+      "//project414:project414"
+    ],
+)
