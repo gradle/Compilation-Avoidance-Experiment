@@ -330,7 +330,7 @@ div.controls .btn {
 <script>
 const benchmarkResult =
 {
-  "date": "2023-07-13T18:18:32.016421Z",
+  "date": "2023-07-13T20:02:44.686711Z",
   "environment": {
     "profilerVersion": "0.20.0",
     "operatingSystem": "mac os x aarch64 13.4.1"
@@ -338,9 +338,9 @@ const benchmarkResult =
   "scenarios": [
     {
       "definition": {
-        "name": "nonAbiChange",
-        "title": "nonAbiChange",
-        "displayName": "nonAbiChange using Gradle 8.3-20230712030806+0000",
+        "name": "abiChange",
+        "title": "abiChange",
+        "displayName": "abiChange using Gradle 8.3-20230712030806+0000",
         "buildTool": "Gradle 8.3-20230712030806+0000",
         "tasks": "assemble",
         "version": "8.3-20230712030806+0000",
@@ -351,7 +351,7 @@ const benchmarkResult =
         "cleanup": "do nothing",
         "invoker": "Tooling API",
         "mutators": [
-          "ApplyNonAbiChangeToSourceFileMutator(/Users/ttresansky/Projects/largeJavaMultiProject/project0/src/main/java/org/gradle/test/performance/largejavamultiproject/project0/p0/Production0.java)"
+          "ApplyAbiChangeToSourceFileMutator(/Users/ttresansky/Projects/largeJavaMultiProject/project0/src/main/java/org/gradle/test/performance/largejavamultiproject/project0/p0/Production0.java)"
         ],
         "args": [],
         "jvmArgs": [
@@ -371,7 +371,7 @@ const benchmarkResult =
           "-Dfile.encoding\u003dUTF-8"
         ],
         "systemProperties": {},
-        "id": "_9affcacb_94a1_4507_8c52_8f031d6dedd3_nonAbiChange_5cdd92da"
+        "id": "_2bc6bfae_2735_48c5_bc54_ba78b8765df7_abiChange_5387774c"
       },
       "samples": [
         {
@@ -381,138 +381,138 @@ const benchmarkResult =
       ],
       "iterations": [
         {
-          "id": "_9affcacb_94a1_4507_8c52_8f031d6dedd3_nonAbiChange_5cdd92da_WARM_UP_1",
+          "id": "_2bc6bfae_2735_48c5_bc54_ba78b8765df7_abiChange_5387774c_WARM_UP_1",
           "phase": "WARM_UP",
           "iteration": 1,
           "title": "warm-up build #1",
           "values": {
-            "total execution time": 81746.31225
+            "total execution time": 10942.064875
           }
         },
         {
-          "id": "_9affcacb_94a1_4507_8c52_8f031d6dedd3_nonAbiChange_5cdd92da_WARM_UP_2",
+          "id": "_2bc6bfae_2735_48c5_bc54_ba78b8765df7_abiChange_5387774c_WARM_UP_2",
           "phase": "WARM_UP",
           "iteration": 2,
           "title": "warm-up build #2",
           "values": {
-            "total execution time": 1456.36125
+            "total execution time": 648.126375
           }
         },
         {
-          "id": "_9affcacb_94a1_4507_8c52_8f031d6dedd3_nonAbiChange_5cdd92da_WARM_UP_3",
+          "id": "_2bc6bfae_2735_48c5_bc54_ba78b8765df7_abiChange_5387774c_WARM_UP_3",
           "phase": "WARM_UP",
           "iteration": 3,
           "title": "warm-up build #3",
           "values": {
-            "total execution time": 1164.863084
+            "total execution time": 545.75475
           }
         },
         {
-          "id": "_9affcacb_94a1_4507_8c52_8f031d6dedd3_nonAbiChange_5cdd92da_WARM_UP_4",
+          "id": "_2bc6bfae_2735_48c5_bc54_ba78b8765df7_abiChange_5387774c_WARM_UP_4",
           "phase": "WARM_UP",
           "iteration": 4,
           "title": "warm-up build #4",
           "values": {
-            "total execution time": 1133.21175
+            "total execution time": 518.666375
           }
         },
         {
-          "id": "_9affcacb_94a1_4507_8c52_8f031d6dedd3_nonAbiChange_5cdd92da_WARM_UP_5",
+          "id": "_2bc6bfae_2735_48c5_bc54_ba78b8765df7_abiChange_5387774c_WARM_UP_5",
           "phase": "WARM_UP",
           "iteration": 5,
           "title": "warm-up build #5",
           "values": {
-            "total execution time": 1084.885542
+            "total execution time": 482.53375
           }
         },
         {
-          "id": "_9affcacb_94a1_4507_8c52_8f031d6dedd3_nonAbiChange_5cdd92da_MEASURE_1",
+          "id": "_2bc6bfae_2735_48c5_bc54_ba78b8765df7_abiChange_5387774c_MEASURE_1",
           "phase": "MEASURE",
           "iteration": 1,
           "title": "measured build #1",
           "values": {
-            "total execution time": 1019.673291
+            "total execution time": 492.486959
           }
         },
         {
-          "id": "_9affcacb_94a1_4507_8c52_8f031d6dedd3_nonAbiChange_5cdd92da_MEASURE_2",
+          "id": "_2bc6bfae_2735_48c5_bc54_ba78b8765df7_abiChange_5387774c_MEASURE_2",
           "phase": "MEASURE",
           "iteration": 2,
           "title": "measured build #2",
           "values": {
-            "total execution time": 987.999417
+            "total execution time": 502.967791
           }
         },
         {
-          "id": "_9affcacb_94a1_4507_8c52_8f031d6dedd3_nonAbiChange_5cdd92da_MEASURE_3",
+          "id": "_2bc6bfae_2735_48c5_bc54_ba78b8765df7_abiChange_5387774c_MEASURE_3",
           "phase": "MEASURE",
           "iteration": 3,
           "title": "measured build #3",
           "values": {
-            "total execution time": 1076.369417
+            "total execution time": 430.805667
           }
         },
         {
-          "id": "_9affcacb_94a1_4507_8c52_8f031d6dedd3_nonAbiChange_5cdd92da_MEASURE_4",
+          "id": "_2bc6bfae_2735_48c5_bc54_ba78b8765df7_abiChange_5387774c_MEASURE_4",
           "phase": "MEASURE",
           "iteration": 4,
           "title": "measured build #4",
           "values": {
-            "total execution time": 939.5915
+            "total execution time": 449.905917
           }
         },
         {
-          "id": "_9affcacb_94a1_4507_8c52_8f031d6dedd3_nonAbiChange_5cdd92da_MEASURE_5",
+          "id": "_2bc6bfae_2735_48c5_bc54_ba78b8765df7_abiChange_5387774c_MEASURE_5",
           "phase": "MEASURE",
           "iteration": 5,
           "title": "measured build #5",
           "values": {
-            "total execution time": 974.618292
+            "total execution time": 586.307541
           }
         },
         {
-          "id": "_9affcacb_94a1_4507_8c52_8f031d6dedd3_nonAbiChange_5cdd92da_MEASURE_6",
+          "id": "_2bc6bfae_2735_48c5_bc54_ba78b8765df7_abiChange_5387774c_MEASURE_6",
           "phase": "MEASURE",
           "iteration": 6,
           "title": "measured build #6",
           "values": {
-            "total execution time": 915.093667
+            "total execution time": 448.474125
           }
         },
         {
-          "id": "_9affcacb_94a1_4507_8c52_8f031d6dedd3_nonAbiChange_5cdd92da_MEASURE_7",
+          "id": "_2bc6bfae_2735_48c5_bc54_ba78b8765df7_abiChange_5387774c_MEASURE_7",
           "phase": "MEASURE",
           "iteration": 7,
           "title": "measured build #7",
           "values": {
-            "total execution time": 993.337834
+            "total execution time": 408.8335
           }
         },
         {
-          "id": "_9affcacb_94a1_4507_8c52_8f031d6dedd3_nonAbiChange_5cdd92da_MEASURE_8",
+          "id": "_2bc6bfae_2735_48c5_bc54_ba78b8765df7_abiChange_5387774c_MEASURE_8",
           "phase": "MEASURE",
           "iteration": 8,
           "title": "measured build #8",
           "values": {
-            "total execution time": 873.266459
+            "total execution time": 404.903792
           }
         },
         {
-          "id": "_9affcacb_94a1_4507_8c52_8f031d6dedd3_nonAbiChange_5cdd92da_MEASURE_9",
+          "id": "_2bc6bfae_2735_48c5_bc54_ba78b8765df7_abiChange_5387774c_MEASURE_9",
           "phase": "MEASURE",
           "iteration": 9,
           "title": "measured build #9",
           "values": {
-            "total execution time": 1015.557958
+            "total execution time": 408.6965
           }
         },
         {
-          "id": "_9affcacb_94a1_4507_8c52_8f031d6dedd3_nonAbiChange_5cdd92da_MEASURE_10",
+          "id": "_2bc6bfae_2735_48c5_bc54_ba78b8765df7_abiChange_5387774c_MEASURE_10",
           "phase": "MEASURE",
           "iteration": 10,
           "title": "measured build #10",
           "values": {
-            "total execution time": 861.286042
+            "total execution time": 407.238666
           }
         }
       ]
