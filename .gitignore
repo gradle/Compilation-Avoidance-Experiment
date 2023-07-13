@@ -1,8 +1,11 @@
+.idea/
 .DS_Store
 .gradle/
 gradle-user-home/
-
-/profile-out*
-/bazel-*
-
 build/
+
+/bazel-*
+bazel-profile/bazel.profile.gz
+
+# This directory must exist
+!/bazel-profile
