@@ -1,0 +1,282 @@
+
+* Started at 2023-07-13T18:13:54.649858Z
+
+* Settings
+Project dir: /Users/ttresansky/Projects/largeJavaMultiProject
+Output dir: /Users/ttresansky/Projects/largeJavaMultiProject/results/nonAbiChange/bazel
+Profiler: none
+Benchmark: true
+Versions: []
+Gradle User Home: /Users/ttresansky/Projects/largeJavaMultiProject/gradle-user-home
+Targets: [nonAbiChange]
+Warm-ups: 5
+Builds: 10
+
+* Scenarios
+Scenario: nonAbiChange using bazel
+  Targets: [build, --profile, bazel-profile/bazel.profile.gz]
+  Build changes: [ApplyNonAbiChangeToSourceFileMutator(/Users/ttresansky/Projects/largeJavaMultiProject/project0/src/main/java/org/gradle/test/performance/largejavamultiproject/project0/p0/Production0.java)]
+  Warm-ups: 5
+  Builds: 10
+
+* Running scenario nonAbiChange using bazel (scenario 1/1)
+
+* Running warm-up build #1
+Running command bazel build --profile bazel-profile/bazel.profile.gz
+Loading: 
+WARNING: Usage: bazel build <options> <targets>.
+Invoke `bazel help build` for full description of usage and options.
+Your request is correct, but requested an empty set of targets. Nothing will be built.
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 0 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 targets...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 3.079s, Critical Path: 0.01s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+Execution time 3914 ms
+
+* Running warm-up build #2
+Running command bazel build --profile bazel-profile/bazel.profile.gz
+Loading: 
+WARNING: Usage: bazel build <options> <targets>.
+Invoke `bazel help build` for full description of usage and options.
+Your request is correct, but requested an empty set of targets. Nothing will be built.
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 0 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 targets...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 2.078s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+Execution time 2501 ms
+
+* Running warm-up build #3
+Running command bazel build --profile bazel-profile/bazel.profile.gz
+Loading: 
+WARNING: Usage: bazel build <options> <targets>.
+Invoke `bazel help build` for full description of usage and options.
+Your request is correct, but requested an empty set of targets. Nothing will be built.
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 0 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 targets...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 2.530s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+Execution time 2916 ms
+
+* Running warm-up build #4
+Running command bazel build --profile bazel-profile/bazel.profile.gz
+Loading: 
+WARNING: Usage: bazel build <options> <targets>.
+Invoke `bazel help build` for full description of usage and options.
+Your request is correct, but requested an empty set of targets. Nothing will be built.
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 0 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 targets...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 2.054s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+Execution time 2492 ms
+
+* Running warm-up build #5
+Running command bazel build --profile bazel-profile/bazel.profile.gz
+Loading: 
+WARNING: Usage: bazel build <options> <targets>.
+Invoke `bazel help build` for full description of usage and options.
+Your request is correct, but requested an empty set of targets. Nothing will be built.
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 0 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 targets...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.926s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+Execution time 2355 ms
+
+* Running measured build #1
+Running command bazel build --profile bazel-profile/bazel.profile.gz
+Loading: 
+WARNING: Usage: bazel build <options> <targets>.
+Invoke `bazel help build` for full description of usage and options.
+Your request is correct, but requested an empty set of targets. Nothing will be built.
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 0 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 targets...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 2.062s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+Execution time 2441 ms
+
+* Running measured build #2
+Running command bazel build --profile bazel-profile/bazel.profile.gz
+Loading: 
+WARNING: Usage: bazel build <options> <targets>.
+Invoke `bazel help build` for full description of usage and options.
+Your request is correct, but requested an empty set of targets. Nothing will be built.
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 0 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 targets...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 2.042s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+Execution time 2457 ms
+
+* Running measured build #3
+Running command bazel build --profile bazel-profile/bazel.profile.gz
+Loading: 
+WARNING: Usage: bazel build <options> <targets>.
+Invoke `bazel help build` for full description of usage and options.
+Your request is correct, but requested an empty set of targets. Nothing will be built.
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 0 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 targets...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 2.301s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+Execution time 2774 ms
+
+* Running measured build #4
+Running command bazel build --profile bazel-profile/bazel.profile.gz
+Loading: 
+WARNING: Usage: bazel build <options> <targets>.
+Invoke `bazel help build` for full description of usage and options.
+Your request is correct, but requested an empty set of targets. Nothing will be built.
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 0 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 targets...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.927s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+Execution time 2290 ms
+
+* Running measured build #5
+Running command bazel build --profile bazel-profile/bazel.profile.gz
+Loading: 
+WARNING: Usage: bazel build <options> <targets>.
+Invoke `bazel help build` for full description of usage and options.
+Your request is correct, but requested an empty set of targets. Nothing will be built.
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 0 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 targets...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.722s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+Execution time 2337 ms
+
+* Running measured build #6
+Running command bazel build --profile bazel-profile/bazel.profile.gz
+Loading: 
+WARNING: Usage: bazel build <options> <targets>.
+Invoke `bazel help build` for full description of usage and options.
+Your request is correct, but requested an empty set of targets. Nothing will be built.
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 0 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 targets...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.724s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+Execution time 2060 ms
+
+* Running measured build #7
+Running command bazel build --profile bazel-profile/bazel.profile.gz
+Loading: 
+WARNING: Usage: bazel build <options> <targets>.
+Invoke `bazel help build` for full description of usage and options.
+Your request is correct, but requested an empty set of targets. Nothing will be built.
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 0 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 targets...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 2.080s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+Execution time 2416 ms
+
+* Running measured build #8
+Running command bazel build --profile bazel-profile/bazel.profile.gz
+Loading: 
+WARNING: Usage: bazel build <options> <targets>.
+Invoke `bazel help build` for full description of usage and options.
+Your request is correct, but requested an empty set of targets. Nothing will be built.
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 0 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 targets...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.775s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+Execution time 2148 ms
+
+* Running measured build #9
+Running command bazel build --profile bazel-profile/bazel.profile.gz
+Loading: 
+WARNING: Usage: bazel build <options> <targets>.
+Invoke `bazel help build` for full description of usage and options.
+Your request is correct, but requested an empty set of targets. Nothing will be built.
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 0 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 targets...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.680s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+Execution time 2021 ms
+
+* Running measured build #10
+Running command bazel build --profile bazel-profile/bazel.profile.gz
+Loading: 
+WARNING: Usage: bazel build <options> <targets>.
+Invoke `bazel help build` for full description of usage and options.
+Your request is correct, but requested an empty set of targets. Nothing will be built.
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 0 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 targets...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.586s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+Execution time 1943 ms
+
+* Results written to /Users/ttresansky/Projects/largeJavaMultiProject/results/nonAbiChange/bazel
+  /Users/ttresansky/Projects/largeJavaMultiProject/results/nonAbiChange/bazel/benchmark.csv
+  /Users/ttresansky/Projects/largeJavaMultiProject/results/nonAbiChange/bazel/benchmark.html
+
