@@ -5,7 +5,7 @@ nonAbiChange {
     targets = ["clean", "package", "-Dmaven.test.skip=true", "-T", "4"]
   }
   bazel {
-    targets = ["build", "--profile", "~/blog-tests/bazel.profile.gz", "//..."]
+    targets = ["build", "--profile", "bazel-profile/bazel.profile.gz"]
   }
 }
 
@@ -16,7 +16,7 @@ abiChange {
     targets = ["clean", "package", "-Dmaven.test.skip=true", "-T", "4"]
   }
   bazel {
-    targets = ["build", "--profile", "~/blog-tests/bazel.profile.gz", "//..."]
+    targets = ["build", "--profile", "bazel-profile/bazel.profile.gz"]
   }
 }
 
@@ -44,7 +44,7 @@ cleanBuildCached {
   maven {
     targets = ["clean", "package", "-T", "4"]
   }
-  gradle-args = ["build", "--profile", "~/blog-tests/bazel.profile.gz", "//..."]
+  gradle-args = ["build", "--profile", "bazel-profile/bazel.profile.gz"]
 }
 
 incrementalCompile {
