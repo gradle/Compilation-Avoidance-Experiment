@@ -1,5 +1,5 @@
 
-* Started at 2023-07-13T18:14:32.179761Z
+* Started at 2023-07-14T13:40:22.190109Z
 
 * Settings
 Project dir: /Users/ttresansky/Projects/largeJavaMultiProject
@@ -14,7 +14,7 @@ Builds: 10
 
 * Scenarios
 Scenario: abiChange using bazel
-  Targets: [build, --profile, bazel-profile/bazel.profile.gz]
+  Targets: [build, --profile, bazel-profile/bazel.profile.gz, //...]
   Build changes: [ApplyAbiChangeToSourceFileMutator(/Users/ttresansky/Projects/largeJavaMultiProject/project0/src/main/java/org/gradle/test/performance/largejavamultiproject/project0/p0/Production0.java)]
   Warm-ups: 5
   Builds: 10
@@ -22,259 +22,275 @@ Scenario: abiChange using bazel
 * Running scenario abiChange using bazel (scenario 1/1)
 
 * Running warm-up build #1
-Running command bazel build --profile bazel-profile/bazel.profile.gz
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
-WARNING: Usage: bazel build <options> <targets>.
-Invoke `bazel help build` for full description of usage and options.
-Your request is correct, but requested an empty set of targets. Nothing will be built.
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 0 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
-INFO: Found 0 targets...
-[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.527s, Critical Path: 0.00s
-INFO: 1 process: 1 internal.
-INFO: Build completed successfully, 1 total action
-Execution time 1889 ms
+Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
+INFO: Found 1503 targets...
+[0 / 14] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[9 / 23] [Prepa] Compiling Java headers project39/libproject39-hjar.jar (100 source files)
+[12 / 22] Compiling Java headers project120/libproject120-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
+INFO: Elapsed time: 6.876s, Critical Path: 5.36s
+INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
+INFO: Build completed successfully, 19 total actions
+Execution time 7308 ms
 
 * Running warm-up build #2
-Running command bazel build --profile bazel-profile/bazel.profile.gz
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
-WARNING: Usage: bazel build <options> <targets>.
-Invoke `bazel help build` for full description of usage and options.
-Your request is correct, but requested an empty set of targets. Nothing will be built.
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 0 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
-INFO: Found 0 targets...
-[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.690s, Critical Path: 0.00s
-INFO: 1 process: 1 internal.
-INFO: Build completed successfully, 1 total action
-Execution time 2030 ms
+Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
+INFO: Found 1503 targets...
+[0 / 17] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[6 / 24] [Prepa] Compiling Java headers project12/libproject12-hjar.jar (100 source files)
+[12 / 22] [Prepa] Compiling Java headers project120/libproject120-hjar.jar (100 source files) ... (2 actions, 0 running)
+[16 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (2 actions running)
+[18 / 20] Building project363/tests_for_project363.jar (101 source files); 0s multiplex-worker
+INFO: Elapsed time: 6.401s, Critical Path: 5.09s
+INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
+INFO: Build completed successfully, 19 total actions
+Execution time 6880 ms
 
 * Running warm-up build #3
-Running command bazel build --profile bazel-profile/bazel.profile.gz
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
-WARNING: Usage: bazel build <options> <targets>.
-Invoke `bazel help build` for full description of usage and options.
-Your request is correct, but requested an empty set of targets. Nothing will be built.
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 0 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
-INFO: Found 0 targets...
-[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.667s, Critical Path: 0.00s
-INFO: 1 process: 1 internal.
-INFO: Build completed successfully, 1 total action
-Execution time 2055 ms
+Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
+INFO: Found 1503 targets...
+[0 / 17] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[6 / 24] [Prepa] Compiling Java headers project12/libproject12-hjar.jar (100 source files)
+[12 / 22] [Prepa] Building project39/tests_for_project39.jar (101 source files)
+[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
+INFO: Elapsed time: 7.029s, Critical Path: 5.66s
+INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
+INFO: Build completed successfully, 19 total actions
+Execution time 7444 ms
 
 * Running warm-up build #4
-Running command bazel build --profile bazel-profile/bazel.profile.gz
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
-WARNING: Usage: bazel build <options> <targets>.
-Invoke `bazel help build` for full description of usage and options.
-Your request is correct, but requested an empty set of targets. Nothing will be built.
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 0 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
-INFO: Found 0 targets...
-[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.789s, Critical Path: 0.00s
-INFO: 1 process: 1 internal.
-INFO: Build completed successfully, 1 total action
-Execution time 2124 ms
+Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
+INFO: Found 1503 targets...
+[0 / 17] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[6 / 24] [Prepa] Compiling Java headers project12/libproject12-hjar.jar (100 source files)
+[12 / 22] [Prepa] Compiling Java headers project120/libproject120-hjar.jar (100 source files)
+[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
+[18 / 20] Building project363/tests_for_project363.jar (101 source files); 0s multiplex-worker
+INFO: Elapsed time: 7.259s, Critical Path: 5.83s
+INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
+INFO: Build completed successfully, 19 total actions
+Execution time 7731 ms
 
 * Running warm-up build #5
-Running command bazel build --profile bazel-profile/bazel.profile.gz
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
-WARNING: Usage: bazel build <options> <targets>.
-Invoke `bazel help build` for full description of usage and options.
-Your request is correct, but requested an empty set of targets. Nothing will be built.
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 0 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
-INFO: Found 0 targets...
-[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.713s, Critical Path: 0.00s
-INFO: 1 process: 1 internal.
-INFO: Build completed successfully, 1 total action
-Execution time 2133 ms
+Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
+INFO: Found 1503 targets...
+[0 / 17] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[6 / 24] [Prepa] Building project3/tests_for_project3.jar (101 source files) ... (2 actions, 0 running)
+[12 / 22] [Prepa] Building project39/tests_for_project39.jar (101 source files)
+[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
+INFO: Elapsed time: 7.167s, Critical Path: 5.51s
+INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
+INFO: Build completed successfully, 19 total actions
+Execution time 7609 ms
 
 * Running measured build #1
-Running command bazel build --profile bazel-profile/bazel.profile.gz
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
-WARNING: Usage: bazel build <options> <targets>.
-Invoke `bazel help build` for full description of usage and options.
-Your request is correct, but requested an empty set of targets. Nothing will be built.
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 0 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
-INFO: Found 0 targets...
-[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.627s, Critical Path: 0.00s
-INFO: 1 process: 1 internal.
-INFO: Build completed successfully, 1 total action
-Execution time 2165 ms
+Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
+INFO: Found 1503 targets...
+[0 / 25] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[9 / 23] [Prepa] Compiling Java headers project39/libproject39-hjar.jar (100 source files)
+[12 / 22] Compiling Java headers project120/libproject120-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
+[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
+INFO: Elapsed time: 7.124s, Critical Path: 5.58s
+INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
+INFO: Build completed successfully, 19 total actions
+Execution time 7498 ms
 
 * Running measured build #2
-Running command bazel build --profile bazel-profile/bazel.profile.gz
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
-WARNING: Usage: bazel build <options> <targets>.
-Invoke `bazel help build` for full description of usage and options.
-Your request is correct, but requested an empty set of targets. Nothing will be built.
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 0 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
-INFO: Found 0 targets...
-[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.784s, Critical Path: 0.00s
-INFO: 1 process: 1 internal.
-INFO: Build completed successfully, 1 total action
-Execution time 2133 ms
+Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
+INFO: Found 1503 targets...
+[0 / 17] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[6 / 24] [Prepa] Building project12/libproject12.jar (100 source files)
+[12 / 22] [Prepa] Compiling Java headers project120/libproject120-hjar.jar (100 source files) ... (2 actions, 0 running)
+[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
+INFO: Elapsed time: 7.251s, Critical Path: 5.65s
+INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
+INFO: Build completed successfully, 19 total actions
+Execution time 7668 ms
 
 * Running measured build #3
-Running command bazel build --profile bazel-profile/bazel.profile.gz
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
-WARNING: Usage: bazel build <options> <targets>.
-Invoke `bazel help build` for full description of usage and options.
-Your request is correct, but requested an empty set of targets. Nothing will be built.
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 0 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
-INFO: Found 0 targets...
-[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.428s, Critical Path: 0.00s
-INFO: 1 process: 1 internal.
-INFO: Build completed successfully, 1 total action
-Execution time 1791 ms
+Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
+INFO: Found 1503 targets...
+[0 / 2] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[6 / 24] [Prepa] Compiling Java headers project12/libproject12-hjar.jar (100 source files)
+[12 / 22] [Prepa] Building project39/tests_for_project39.jar (101 source files)
+[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
+INFO: Elapsed time: 7.036s, Critical Path: 5.57s
+INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
+INFO: Build completed successfully, 19 total actions
+Execution time 7405 ms
 
 * Running measured build #4
-Running command bazel build --profile bazel-profile/bazel.profile.gz
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
-WARNING: Usage: bazel build <options> <targets>.
-Invoke `bazel help build` for full description of usage and options.
-Your request is correct, but requested an empty set of targets. Nothing will be built.
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 0 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
-INFO: Found 0 targets...
-[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.594s, Critical Path: 0.00s
-INFO: 1 process: 1 internal.
-INFO: Build completed successfully, 1 total action
-Execution time 1942 ms
+Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
+INFO: Found 1503 targets...
+[0 / 19] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[6 / 24] [Prepa] Compiling Java headers project12/libproject12-hjar.jar (100 source files) ... (2 actions, 0 running)
+[12 / 22] [Prepa] Building project39/tests_for_project39.jar (101 source files)
+[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
+INFO: Elapsed time: 7.074s, Critical Path: 5.64s
+INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
+INFO: Build completed successfully, 19 total actions
+Execution time 7449 ms
 
 * Running measured build #5
-Running command bazel build --profile bazel-profile/bazel.profile.gz
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
-WARNING: Usage: bazel build <options> <targets>.
-Invoke `bazel help build` for full description of usage and options.
-Your request is correct, but requested an empty set of targets. Nothing will be built.
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 0 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
-INFO: Found 0 targets...
-[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.742s, Critical Path: 0.00s
-INFO: 1 process: 1 internal.
-INFO: Build completed successfully, 1 total action
-Execution time 2327 ms
+Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
+INFO: Found 1503 targets...
+[0 / 23] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[6 / 24] [Prepa] Compiling Java headers project12/libproject12-hjar.jar (100 source files)
+[12 / 22] [Prepa] Building project39/tests_for_project39.jar (101 source files)
+[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
+[18 / 20] Building project363/tests_for_project363.jar (101 source files); 0s multiplex-worker
+INFO: Elapsed time: 7.188s, Critical Path: 5.66s
+INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
+INFO: Build completed successfully, 19 total actions
+Execution time 7574 ms
 
 * Running measured build #6
-Running command bazel build --profile bazel-profile/bazel.profile.gz
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
-WARNING: Usage: bazel build <options> <targets>.
-Invoke `bazel help build` for full description of usage and options.
-Your request is correct, but requested an empty set of targets. Nothing will be built.
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 0 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
-INFO: Found 0 targets...
-[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.433s, Critical Path: 0.00s
-INFO: 1 process: 1 internal.
-INFO: Build completed successfully, 1 total action
-Execution time 1814 ms
+Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
+INFO: Found 1503 targets...
+[0 / 5] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[6 / 24] [Prepa] Compiling Java headers project12/libproject12-hjar.jar (100 source files)
+[12 / 22] [Prepa] Building project39/tests_for_project39.jar (101 source files) ... (2 actions, 0 running)
+[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
+INFO: Elapsed time: 7.126s, Critical Path: 5.59s
+INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
+INFO: Build completed successfully, 19 total actions
+Execution time 7517 ms
 
 * Running measured build #7
-Running command bazel build --profile bazel-profile/bazel.profile.gz
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
-WARNING: Usage: bazel build <options> <targets>.
-Invoke `bazel help build` for full description of usage and options.
-Your request is correct, but requested an empty set of targets. Nothing will be built.
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 0 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
-INFO: Found 0 targets...
-[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.613s, Critical Path: 0.00s
-INFO: 1 process: 1 internal.
-INFO: Build completed successfully, 1 total action
-Execution time 1948 ms
+Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
+INFO: Found 1503 targets...
+[0 / 2] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[6 / 24] [Prepa] Building project3/tests_for_project3.jar (101 source files)
+[12 / 22] [Prepa] Compiling Java headers project120/libproject120-hjar.jar (100 source files)
+[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
+INFO: Elapsed time: 7.068s, Critical Path: 5.54s
+INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
+INFO: Build completed successfully, 19 total actions
+Execution time 7449 ms
 
 * Running measured build #8
-Running command bazel build --profile bazel-profile/bazel.profile.gz
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
-WARNING: Usage: bazel build <options> <targets>.
-Invoke `bazel help build` for full description of usage and options.
-Your request is correct, but requested an empty set of targets. Nothing will be built.
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 0 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
-INFO: Found 0 targets...
-[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.747s, Critical Path: 0.00s
-INFO: 1 process: 1 internal.
-INFO: Build completed successfully, 1 total action
-Execution time 2100 ms
+Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
+INFO: Found 1503 targets...
+[0 / 17] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[6 / 24] [Prepa] Building project12/libproject12.jar (100 source files) ... (2 actions, 0 running)
+[12 / 22] [Prepa] Building project39/tests_for_project39.jar (101 source files)
+[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
+INFO: Elapsed time: 6.990s, Critical Path: 5.52s
+INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
+INFO: Build completed successfully, 19 total actions
+Execution time 7424 ms
 
 * Running measured build #9
-Running command bazel build --profile bazel-profile/bazel.profile.gz
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
-WARNING: Usage: bazel build <options> <targets>.
-Invoke `bazel help build` for full description of usage and options.
-Your request is correct, but requested an empty set of targets. Nothing will be built.
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 0 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
-INFO: Found 0 targets...
-[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.413s, Critical Path: 0.00s
-INFO: 1 process: 1 internal.
-INFO: Build completed successfully, 1 total action
-Execution time 1790 ms
+Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
+INFO: Found 1503 targets...
+[0 / 12] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[9 / 23] [Prepa] Building project12/tests_for_project12.jar (101 source files)
+[12 / 22] Compiling Java headers project120/libproject120-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
+[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
+INFO: Elapsed time: 7.070s, Critical Path: 5.53s
+INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
+INFO: Build completed successfully, 19 total actions
+Execution time 7446 ms
 
 * Running measured build #10
-Running command bazel build --profile bazel-profile/bazel.profile.gz
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
-WARNING: Usage: bazel build <options> <targets>.
-Invoke `bazel help build` for full description of usage and options.
-Your request is correct, but requested an empty set of targets. Nothing will be built.
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 0 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
-INFO: Found 0 targets...
-[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.625s, Critical Path: 0.00s
-INFO: 1 process: 1 internal.
-INFO: Build completed successfully, 1 total action
-Execution time 2021 ms
+Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
+INFO: Found 1503 targets...
+[0 / 19] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[6 / 24] [Prepa] Building project12/libproject12.jar (100 source files)
+[12 / 22] [Prepa] Building project39/tests_for_project39.jar (101 source files)
+[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
+INFO: Elapsed time: 7.018s, Critical Path: 5.48s
+INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
+INFO: Build completed successfully, 19 total actions
+Execution time 7447 ms
 
 * Results written to /Users/ttresansky/Projects/largeJavaMultiProject/results/abiChange/bazel
   /Users/ttresansky/Projects/largeJavaMultiProject/results/abiChange/bazel/benchmark.csv

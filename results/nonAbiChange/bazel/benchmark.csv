@@ -1,19 +1,19 @@
 scenario,nonAbiChange
 version,bazel
-tasks,build --profile bazel-profile/bazel.profile.gz
+tasks,build --profile bazel-profile/bazel.profile.gz //...
 value,total execution time
-warm-up build #1,3914.65
-warm-up build #2,2501.42
-warm-up build #3,2916.98
-warm-up build #4,2492.12
-warm-up build #5,2355.72
-measured build #1,2441.31
-measured build #2,2457.16
-measured build #3,2774.91
-measured build #4,2290.76
-measured build #5,2337.61
-measured build #6,2060.96
-measured build #7,2416.56
-measured build #8,2148.87
-measured build #9,2021.03
-measured build #10,1943.98
+warm-up build #1,7367.52
+warm-up build #2,2466.32
+warm-up build #3,2437.48
+warm-up build #4,2438.09
+warm-up build #5,2382.95
+measured build #1,2370.47
+measured build #2,2270.82
+measured build #3,2319.21
+measured build #4,2238.21
+measured build #5,2375.66
+measured build #6,2604.28
+measured build #7,2249.03
+measured build #8,2189.28
+measured build #9,2378.73
+measured build #10,2196.86
