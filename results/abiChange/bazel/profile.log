@@ -1,5 +1,5 @@
 
-* Started at 2023-07-14T19:55:24.330396Z
+* Started at 2023-07-18T20:56:14.677495Z
 
 * Settings
 Project dir: /Users/ttresansky/Projects/largeJavaMultiProject
@@ -15,7 +15,7 @@ Builds: 10
 * Scenarios
 Scenario: abiChange using bazel
   Targets: [build, --profile, bazel-profile/bazel.profile.gz, //...]
-  Build changes: [ApplyAbiChangeToSourceFileMutator(/Users/ttresansky/Projects/largeJavaMultiProject/project0/src/main/java/org/gradle/test/performance/largejavamultiproject/project0/p0/Production0.java)]
+  Build changes: [ApplyAbiChangeToSourceFileMutator(/Users/ttresansky/Projects/largeJavaMultiProject/project0/src/main/java/org/gradle/test/performance/headerjarsexperiment/project0/p0/Production0.java)]
   Warm-ups: 5
   Builds: 10
 
@@ -26,270 +26,240 @@ Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
-INFO: Found 1503 targets...
-[0 / 25] [Prepa] Building project0/libproject0.jar (100 source files) ... (2 actions, 0 running)
-[6 / 24] [Prepa] Building project12/libproject12.jar (100 source files) ... (2 actions, 0 running)
-[12 / 22] [Prepa] Compiling Java headers project120/libproject120-hjar.jar (100 source files)
-[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
-[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
-INFO: Elapsed time: 6.995s, Critical Path: 5.66s
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 3] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[12 / 22] [Prepa] Building project39/tests_for_project39.jar (11 source files)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox
+INFO: Elapsed time: 5.936s, Critical Path: 3.39s
 INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
 INFO: Build completed successfully, 19 total actions
-Execution time 7397 ms
+Execution time 6334 ms
 
 * Running warm-up build #2
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
-INFO: Found 1503 targets...
-[0 / 5] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[9 / 23] [Prepa] Compiling Java headers project39/libproject39-hjar.jar (100 source files)
-[14 / 21] Compiling Java headers project120/libproject120-hjar.jar (100 source files); 0s darwin-sandbox
-[16 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (2 actions running)
-[18 / 20] Building project363/tests_for_project363.jar (101 source files); 0s multiplex-worker
-INFO: Elapsed time: 6.608s, Critical Path: 5.18s
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 8] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[12 / 22] [Prepa] Building project39/tests_for_project39.jar (11 source files) ... (2 actions, 0 running)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox
+INFO: Elapsed time: 5.976s, Critical Path: 3.35s
 INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
 INFO: Build completed successfully, 19 total actions
-Execution time 7060 ms
+Execution time 6371 ms
 
 * Running warm-up build #3
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
-INFO: Found 1503 targets...
-[0 / 5] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[6 / 24] [Prepa] Building project12/libproject12.jar (100 source files) ... (2 actions, 0 running)
-[12 / 22] [Prepa] Compiling Java headers project120/libproject120-hjar.jar (100 source files)
-[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
-[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
-INFO: Elapsed time: 6.632s, Critical Path: 5.31s
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 17] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[9 / 23] [Prepa] Compiling Java headers project39/libproject39-hjar.jar (10 source files)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox
+INFO: Elapsed time: 6.113s, Critical Path: 3.46s
 INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
 INFO: Build completed successfully, 19 total actions
-Execution time 7008 ms
+Execution time 6541 ms
 
 * Running warm-up build #4
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
-INFO: Found 1503 targets...
-[0 / 17] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[9 / 23] [Prepa] Compiling Java headers project39/libproject39-hjar.jar (100 source files)
-[14 / 21] Compiling Java headers project120/libproject120-hjar.jar (100 source files); 0s darwin-sandbox
-[16 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (2 actions running)
-[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
-INFO: Elapsed time: 6.707s, Critical Path: 5.34s
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 4] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[12 / 22] [Prepa] Building project39/tests_for_project39.jar (11 source files)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox
+INFO: Elapsed time: 6.005s, Critical Path: 3.36s
 INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
 INFO: Build completed successfully, 19 total actions
-Execution time 7098 ms
+Execution time 6457 ms
 
 * Running warm-up build #5
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
-INFO: Found 1503 targets...
-[0 / 8] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[6 / 24] [Prepa] Compiling Java headers project12/libproject12-hjar.jar (100 source files)
-[12 / 22] [Prepa] Building project39/tests_for_project39.jar (101 source files)
-[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
-[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
-INFO: Elapsed time: 6.781s, Critical Path: 5.46s
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 16] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[12 / 22] [Prepa] Compiling Java headers project120/libproject120-hjar.jar (10 source files)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox
+INFO: Elapsed time: 6.081s, Critical Path: 3.47s
 INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
 INFO: Build completed successfully, 19 total actions
-Execution time 7167 ms
+Execution time 6521 ms
 
 * Running measured build #1
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
-INFO: Found 1503 targets...
-[0 / 2] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[6 / 24] [Prepa] Building project12/libproject12.jar (100 source files) ... (2 actions, 0 running)
-[12 / 22] [Prepa] Compiling Java headers project120/libproject120-hjar.jar (100 source files)
-[16 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (2 actions running)
-[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
-INFO: Elapsed time: 6.531s, Critical Path: 5.28s
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 15] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[12 / 22] [Prepa] Building project39/tests_for_project39.jar (11 source files) ... (2 actions, 0 running)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox
+INFO: Elapsed time: 5.950s, Critical Path: 3.36s
 INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
 INFO: Build completed successfully, 19 total actions
-Execution time 6981 ms
+Execution time 6346 ms
 
 * Running measured build #2
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
-INFO: Found 1503 targets...
-[0 / 19] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[9 / 23] [Prepa] Building project12/tests_for_project12.jar (101 source files)
-[14 / 21] Compiling Java headers project120/libproject120-hjar.jar (100 source files); 0s darwin-sandbox
-[16 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (2 actions running)
-[18 / 20] Building project363/tests_for_project363.jar (101 source files); 0s multiplex-worker
-INFO: Elapsed time: 6.595s, Critical Path: 5.13s
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 17] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[12 / 22] [Prepa] Compiling Java headers project120/libproject120-hjar.jar (10 source files)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox
+INFO: Elapsed time: 5.888s, Critical Path: 3.43s
 INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
 INFO: Build completed successfully, 19 total actions
-Execution time 7033 ms
+Execution time 6310 ms
 
 * Running measured build #3
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
-INFO: Found 1503 targets...
-[0 / 8] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[6 / 24] [Prepa] Compiling Java headers project12/libproject12-hjar.jar (100 source files)
-[12 / 22] [Prepa] Building project39/tests_for_project39.jar (101 source files)
-[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
-[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
-INFO: Elapsed time: 6.837s, Critical Path: 5.58s
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 5] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[12 / 22] [Prepa] Compiling Java headers project120/libproject120-hjar.jar (10 source files)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox
+INFO: Elapsed time: 5.962s, Critical Path: 3.31s
 INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
 INFO: Build completed successfully, 19 total actions
-Execution time 7261 ms
+Execution time 6359 ms
 
 * Running measured build #4
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
-INFO: Found 1503 targets...
-[0 / 17] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[6 / 24] [Prepa] Compiling Java headers project12/libproject12-hjar.jar (100 source files)
-[12 / 22] [Prepa] Building project39/tests_for_project39.jar (101 source files)
-[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
-[18 / 20] Building project363/tests_for_project363.jar (101 source files); 0s multiplex-worker
-INFO: Elapsed time: 6.718s, Critical Path: 5.26s
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 3] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[12 / 22] [Prepa] Building project39/tests_for_project39.jar (11 source files)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox
+INFO: Elapsed time: 5.955s, Critical Path: 3.34s
 INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
 INFO: Build completed successfully, 19 total actions
-Execution time 7117 ms
+Execution time 6344 ms
 
 * Running measured build #5
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
-INFO: Found 1503 targets...
-[0 / 17] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[9 / 23] [Prepa] Compiling Java headers project39/libproject39-hjar.jar (100 source files)
-[14 / 21] Compiling Java headers project120/libproject120-hjar.jar (100 source files); 0s darwin-sandbox
-[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
-[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
-INFO: Elapsed time: 6.938s, Critical Path: 5.39s
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 8] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[12 / 22] [Prepa] Compiling Java headers project120/libproject120-hjar.jar (10 source files)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox
+INFO: Elapsed time: 5.912s, Critical Path: 3.39s
 INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
 INFO: Build completed successfully, 19 total actions
-Execution time 7382 ms
+Execution time 6274 ms
 
 * Running measured build #6
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
-INFO: Found 1503 targets...
-[0 / 3] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[6 / 24] [Prepa] Compiling Java headers project12/libproject12-hjar.jar (100 source files)
-[12 / 22] [Prepa] Building project39/tests_for_project39.jar (101 source files)
-[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
-[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
-INFO: Elapsed time: 6.667s, Critical Path: 5.34s
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 5] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[12 / 22] [Prepa] Compiling Java headers project120/libproject120-hjar.jar (10 source files)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox
+INFO: Elapsed time: 5.852s, Critical Path: 3.37s
 INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
 INFO: Build completed successfully, 19 total actions
-Execution time 7084 ms
+Execution time 6714 ms
 
 * Running measured build #7
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
-INFO: Found 1503 targets...
-[0 / 5] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[6 / 24] [Prepa] Compiling Java headers project12/libproject12-hjar.jar (100 source files)
-[12 / 22] [Prepa] Building project39/tests_for_project39.jar (101 source files) ... (2 actions, 0 running)
-[16 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (2 actions running)
-[18 / 20] Building project363/tests_for_project363.jar (101 source files); 0s multiplex-worker
-INFO: Elapsed time: 6.851s, Critical Path: 5.36s
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 3] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[12 / 22] [Prepa] Compiling Java headers project120/libproject120-hjar.jar (10 source files)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox
+INFO: Elapsed time: 6.001s, Critical Path: 3.35s
 INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
 INFO: Build completed successfully, 19 total actions
-Execution time 7261 ms
+Execution time 6428 ms
 
 * Running measured build #8
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
-INFO: Found 1503 targets...
-[0 / 17] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[9 / 23] [Prepa] Compiling Java headers project39/libproject39-hjar.jar (100 source files)
-[14 / 21] Compiling Java headers project120/libproject120-hjar.jar (100 source files); 0s darwin-sandbox
-[16 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (2 actions running)
-[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
-INFO: Elapsed time: 7.125s, Critical Path: 5.57s
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 5] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[9 / 23] [Prepa] Building project12/tests_for_project12.jar (11 source files)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox
+INFO: Elapsed time: 5.927s, Critical Path: 3.42s
 INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
 INFO: Build completed successfully, 19 total actions
-Execution time 7482 ms
+Execution time 6356 ms
 
 * Running measured build #9
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
-INFO: Found 1503 targets...
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
 [0 / 3] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[6 / 24] [Prepa] Compiling Java headers project12/libproject12-hjar.jar (100 source files)
-[12 / 22] [Prepa] Compiling Java headers project120/libproject120-hjar.jar (100 source files)
-[15 / 21] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (3 actions running)
-[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
-INFO: Elapsed time: 6.783s, Critical Path: 5.52s
+[12 / 22] [Prepa] Building project39/tests_for_project39.jar (11 source files) ... (2 actions, 0 running)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox
+INFO: Elapsed time: 5.824s, Critical Path: 3.32s
 INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
 INFO: Build completed successfully, 19 total actions
-Execution time 7181 ms
+Execution time 6193 ms
 
 * Running measured build #10
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 1503 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 1503 targets (0 packages loaded, 0 targets configured).
-INFO: Found 1503 targets...
-[0 / 8] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[6 / 24] [Prepa] Building project12/libproject12.jar (100 source files) ... (2 actions, 0 running)
-[12 / 22] [Prepa] Building project39/tests_for_project39.jar (101 source files)
-[16 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 0s darwin-sandbox ... (2 actions running)
-[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (100 source files); 1s darwin-sandbox
-INFO: Elapsed time: 6.971s, Critical Path: 5.48s
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 16] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[12 / 22] [Prepa] Compiling Java headers project120/libproject120-hjar.jar (10 source files)
+[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox
+INFO: Elapsed time: 5.943s, Critical Path: 3.27s
 INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
 INFO: Build completed successfully, 19 total actions
-Execution time 7414 ms
+Execution time 6332 ms
 
 * Results written to /Users/ttresansky/Projects/largeJavaMultiProject/results/abiChange/bazel
   /Users/ttresansky/Projects/largeJavaMultiProject/results/abiChange/bazel/benchmark.csv
