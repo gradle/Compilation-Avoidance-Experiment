@@ -1,18 +1,18 @@
 
-* Started at 2023-07-19T18:12:38.046512Z
+* Started at 2023-07-19T18:13:22.430989Z
 
 * Settings
 Project dir: /Users/ttresansky/Projects/compilation-avoidance-experiment
-Output dir: /Users/ttresansky/Projects/compilation-avoidance-experiment/results/nonAbiChange/gradle-8.2.1
+Output dir: /Users/ttresansky/Projects/compilation-avoidance-experiment/results/nonAbiChange/gradle-8.3-RC-1
 Profiler: none
 Benchmark: true
-Versions: [8.2.1]
+Versions: [8.3-rc-1]
 Gradle User Home: /Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home
 Targets: [nonAbiChange]
 Warm-ups: 5
 Builds: 10
 
-* Inspecting the build using Gradle version '8.2.1'
+* Inspecting the build using Gradle version '8.3-rc-1'
 > Task :buildSrc:compileJava
 > Task :buildSrc:compileGroovy NO-SOURCE
 > Task :buildSrc:processResources NO-SOURCE
@@ -21,7 +21,7 @@ Builds: 10
 
 > Task :help
 
-Welcome to Gradle 8.2.1.
+Welcome to Gradle 8.3-rc-1.
 
 To run a build, run gradle <task> ...
 
@@ -31,7 +31,7 @@ To see more detail about a task, run gradle help --task <task>
 
 To see a list of command-line options, run gradle --help
 
-For more detail on using Gradle, see https://docs.gradle.org/8.2.1/userguide/command_line_interface.html
+For more detail on using Gradle, see https://docs.gradle.org/8.3-rc-1/userguide/command_line_interface.html
 
 For troubleshooting, visit https://help.gradle.org
 
@@ -39,13 +39,13 @@ BUILD SUCCESSFUL in 3s
 3 actionable tasks: 3 executed
 
 * Stopping daemons
-Running command /Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home/wrapper/dists/gradle-8.2.1-bin/5hap6b9n41hkg4jeh2au2pllh/gradle-8.2.1/bin/gradle --stop --gradle-user-home /Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home
+Running command /Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home/wrapper/dists/gradle-8.3-rc-1-bin/3lbs5z64xhcdp1uarsx2vp16o/gradle-8.3-rc-1/bin/gradle --stop --gradle-user-home /Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home
 Stopping Daemon(s)
 1 Daemon stopped
 
 * Scenarios
-Scenario: nonAbiChange using Gradle 8.2.1
-  Gradle 8.2.1 (/Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home/wrapper/dists/gradle-8.2.1-bin/5hap6b9n41hkg4jeh2au2pllh/gradle-8.2.1)
+Scenario: nonAbiChange using Gradle 8.3-rc-1
+  Gradle 8.3-rc-1 (/Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home/wrapper/dists/gradle-8.3-rc-1-bin/3lbs5z64xhcdp1uarsx2vp16o/gradle-8.3-rc-1)
   Run using: Tooling API
   Run: run tasks assemble
   Cleanup: do nothing
@@ -54,14 +54,14 @@ Scenario: nonAbiChange using Gradle 8.2.1
   Warm-ups: 5
   Builds: 10
 
-* Running scenario nonAbiChange using Gradle 8.2.1 (scenario 1/1)
+* Running scenario nonAbiChange using Gradle 8.3-rc-1 (scenario 1/1)
 
 * Stopping daemons
-Running command /Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home/wrapper/dists/gradle-8.2.1-bin/5hap6b9n41hkg4jeh2au2pllh/gradle-8.2.1/bin/gradle --stop --gradle-user-home /Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home
+Running command /Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home/wrapper/dists/gradle-8.3-rc-1-bin/3lbs5z64xhcdp1uarsx2vp16o/gradle-8.3-rc-1/bin/gradle --stop --gradle-user-home /Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home
 No Gradle daemons are running.
 
 * Build details
-Gradle version: Gradle 8.2.1
+Gradle version: Gradle 8.3-rc-1
 Java home: /Users/ttresansky/.sdkman/candidates/java/17.0.7-tem
 OS: mac os x aarch64 13.4.1
 JVM args:
@@ -84,7 +84,7 @@ Gradle args:
   --gradle-user-home
   /Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home
   -I
-  /private/var/folders/r8/y04vh5s12lb9fw5zz3vcd1mm0000gq/T/gradleProfiler17831013468869778333.gradle
+  /private/var/folders/r8/y04vh5s12lb9fw5zz3vcd1mm0000gq/T/gradleProfiler1215341853005994002.gradle
 
 * Running warm-up build #1
 > Task :buildSrc:compileJava UP-TO-DATE
@@ -94,20 +94,20 @@ Gradle args:
 > Task :buildSrc:jar UP-TO-DATE
 > Task :project3:processResources NO-SOURCE
 > Task :project4:processResources NO-SOURCE
-> Task :project2:compileJava
 > Task :project5:compileJava
-> Task :project1:compileJava
 > Task :project0:compileJava
+> Task :project2:compileJava
+> Task :project1:compileJava
+> Task :project2:processResources NO-SOURCE
 > Task :project1:processResources NO-SOURCE
 > Task :project0:processResources NO-SOURCE
-> Task :project2:processResources NO-SOURCE
-> Task :project0:classes
-> Task :project2:classes
 > Task :project1:classes
-> Task :project0:jar
+> Task :project2:classes
+> Task :project0:classes
 > Task :project2:jar
-> Task :project0:assemble
+> Task :project0:jar
 > Task :project2:assemble
+> Task :project0:assemble
 > Task :project1:jar
 > Task :project1:assemble
 > Task :project5:processResources NO-SOURCE
@@ -117,42 +117,42 @@ Gradle args:
 > Task :project7:processResources NO-SOURCE
 > Task :project3:compileJava
 > Task :project3:classes
-> Task :project6:compileJava
-> Task :project4:compileJava
-> Task :project4:classes
-> Task :project6:processResources NO-SOURCE
-> Task :project6:classes
 > Task :project3:jar
 > Task :project3:assemble
-> Task :project8:compileJava
-> Task :project8:processResources NO-SOURCE
-> Task :project8:classes
+> Task :project6:compileJava
+> Task :project6:processResources NO-SOURCE
+> Task :project6:classes
 > Task :project6:jar
 > Task :project6:assemble
+> Task :project8:compileJava
+> Task :project4:compileJava
+> Task :project4:classes
+> Task :project8:processResources NO-SOURCE
+> Task :project8:classes
 > Task :project4:jar
 > Task :project4:assemble
 > Task :project8:jar
 > Task :project8:assemble
-> Task :project7:compileJava
-> Task :project7:classes
-> Task :project7:jar
-> Task :project7:assemble
 > Task :project9:compileJava
 > Task :project9:processResources NO-SOURCE
 > Task :project9:classes
 > Task :project9:jar
 > Task :project9:assemble
+> Task :project7:compileJava
+> Task :project7:classes
+> Task :project7:jar
+> Task :project7:assemble
 
 Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
 
 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
-For more on this, please refer to https://docs.gradle.org/8.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+For more on this, please refer to https://docs.gradle.org/8.3-rc-1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 4s
+BUILD SUCCESSFUL in 3s
 22 actionable tasks: 20 executed, 2 up-to-date
-Used daemon with pid 88717
-Execution time 4502 ms
+Used daemon with pid 88961
+Execution time 3709 ms
 
 * Running warm-up build #2
 > Task :buildSrc:compileJava UP-TO-DATE
@@ -163,42 +163,42 @@ Execution time 4502 ms
 > Task :project3:processResources NO-SOURCE
 > Task :project4:processResources NO-SOURCE
 > Task :project2:compileJava UP-TO-DATE
-> Task :project1:compileJava UP-TO-DATE
 > Task :project5:compileJava UP-TO-DATE
+> Task :project1:compileJava UP-TO-DATE
 > Task :project2:processResources NO-SOURCE
 > Task :project5:processResources NO-SOURCE
 > Task :project1:processResources NO-SOURCE
+> Task :project5:classes UP-TO-DATE
 > Task :project2:classes UP-TO-DATE
 > Task :project1:classes UP-TO-DATE
-> Task :project5:classes UP-TO-DATE
 > Task :project1:jar UP-TO-DATE
 > Task :project5:jar UP-TO-DATE
-> Task :project2:jar UP-TO-DATE
 > Task :project1:assemble UP-TO-DATE
-> Task :project2:assemble UP-TO-DATE
 > Task :project5:assemble UP-TO-DATE
+> Task :project2:jar UP-TO-DATE
+> Task :project2:assemble UP-TO-DATE
 > Task :project7:processResources NO-SOURCE
 > Task :project8:processResources NO-SOURCE
 > Task :project6:compileJava UP-TO-DATE
 > Task :project9:compileJava UP-TO-DATE
 > Task :project6:processResources NO-SOURCE
-> Task :project9:processResources NO-SOURCE
 > Task :project6:classes UP-TO-DATE
+> Task :project9:processResources NO-SOURCE
 > Task :project9:classes UP-TO-DATE
-> Task :project6:jar UP-TO-DATE
 > Task :project9:jar UP-TO-DATE
+> Task :project6:jar UP-TO-DATE
 > Task :project6:assemble UP-TO-DATE
 > Task :project9:assemble UP-TO-DATE
 > Task :project0:compileJava
 > Task :project0:processResources NO-SOURCE
 > Task :project0:classes
-> Task :project0:jar
 > Task :project8:compileJava UP-TO-DATE
 > Task :project4:compileJava UP-TO-DATE
 > Task :project3:compileJava UP-TO-DATE
-> Task :project0:assemble
 > Task :project4:classes UP-TO-DATE
 > Task :project3:classes UP-TO-DATE
+> Task :project0:jar
+> Task :project0:assemble
 > Task :project8:classes UP-TO-DATE
 > Task :project4:jar UP-TO-DATE
 > Task :project4:assemble UP-TO-DATE
@@ -215,12 +215,12 @@ Deprecated Gradle features were used in this build, making it incompatible with 
 
 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
-For more on this, please refer to https://docs.gradle.org/8.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+For more on this, please refer to https://docs.gradle.org/8.3-rc-1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 651ms
+BUILD SUCCESSFUL in 225ms
 22 actionable tasks: 2 executed, 20 up-to-date
-Used daemon with pid 88717
-Execution time 671 ms
+Used daemon with pid 88961
+Execution time 244 ms
 
 * Running warm-up build #3
 > Task :buildSrc:compileJava UP-TO-DATE
@@ -230,27 +230,27 @@ Execution time 671 ms
 > Task :buildSrc:jar UP-TO-DATE
 > Task :project3:processResources NO-SOURCE
 > Task :project4:processResources NO-SOURCE
-> Task :project1:compileJava UP-TO-DATE
-> Task :project5:compileJava UP-TO-DATE
 > Task :project2:compileJava UP-TO-DATE
-> Task :project1:processResources NO-SOURCE
+> Task :project5:compileJava UP-TO-DATE
+> Task :project1:compileJava UP-TO-DATE
 > Task :project2:processResources NO-SOURCE
-> Task :project1:classes UP-TO-DATE
 > Task :project5:processResources NO-SOURCE
+> Task :project1:processResources NO-SOURCE
 > Task :project2:classes UP-TO-DATE
+> Task :project1:classes UP-TO-DATE
 > Task :project5:classes UP-TO-DATE
 > Task :project1:jar UP-TO-DATE
 > Task :project5:jar UP-TO-DATE
 > Task :project2:jar UP-TO-DATE
-> Task :project5:assemble UP-TO-DATE
 > Task :project1:assemble UP-TO-DATE
+> Task :project5:assemble UP-TO-DATE
 > Task :project2:assemble UP-TO-DATE
-> Task :project8:processResources NO-SOURCE
 > Task :project7:processResources NO-SOURCE
+> Task :project8:processResources NO-SOURCE
 > Task :project6:compileJava UP-TO-DATE
+> Task :project9:compileJava UP-TO-DATE
 > Task :project6:processResources NO-SOURCE
 > Task :project6:classes UP-TO-DATE
-> Task :project9:compileJava UP-TO-DATE
 > Task :project9:processResources NO-SOURCE
 > Task :project9:classes UP-TO-DATE
 > Task :project6:jar UP-TO-DATE
@@ -260,18 +260,18 @@ Execution time 671 ms
 > Task :project0:compileJava
 > Task :project0:processResources NO-SOURCE
 > Task :project0:classes
-> Task :project4:compileJava UP-TO-DATE
 > Task :project3:compileJava UP-TO-DATE
 > Task :project8:compileJava UP-TO-DATE
+> Task :project4:compileJava UP-TO-DATE
 > Task :project3:classes UP-TO-DATE
-> Task :project4:classes UP-TO-DATE
-> Task :project0:jar
-> Task :project0:assemble
 > Task :project8:classes UP-TO-DATE
+> Task :project4:classes UP-TO-DATE
 > Task :project4:jar UP-TO-DATE
-> Task :project3:jar UP-TO-DATE
 > Task :project4:assemble UP-TO-DATE
+> Task :project3:jar UP-TO-DATE
+> Task :project0:jar
 > Task :project3:assemble UP-TO-DATE
+> Task :project0:assemble
 > Task :project8:jar UP-TO-DATE
 > Task :project8:assemble UP-TO-DATE
 > Task :project7:compileJava UP-TO-DATE
@@ -283,12 +283,12 @@ Deprecated Gradle features were used in this build, making it incompatible with 
 
 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
-For more on this, please refer to https://docs.gradle.org/8.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+For more on this, please refer to https://docs.gradle.org/8.3-rc-1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 591ms
+BUILD SUCCESSFUL in 182ms
 22 actionable tasks: 2 executed, 20 up-to-date
-Used daemon with pid 88717
-Execution time 614 ms
+Used daemon with pid 88961
+Execution time 205 ms
 
 * Running warm-up build #4
 > Task :buildSrc:compileJava UP-TO-DATE
@@ -298,21 +298,21 @@ Execution time 614 ms
 > Task :buildSrc:jar UP-TO-DATE
 > Task :project3:processResources NO-SOURCE
 > Task :project4:processResources NO-SOURCE
-> Task :project5:compileJava UP-TO-DATE
 > Task :project1:compileJava UP-TO-DATE
 > Task :project2:compileJava UP-TO-DATE
-> Task :project5:processResources NO-SOURCE
-> Task :project1:processResources NO-SOURCE
+> Task :project5:compileJava UP-TO-DATE
 > Task :project2:processResources NO-SOURCE
-> Task :project5:classes UP-TO-DATE
+> Task :project1:processResources NO-SOURCE
 > Task :project2:classes UP-TO-DATE
 > Task :project1:classes UP-TO-DATE
-> Task :project5:jar UP-TO-DATE
+> Task :project5:processResources NO-SOURCE
+> Task :project5:classes UP-TO-DATE
 > Task :project1:jar UP-TO-DATE
 > Task :project2:jar UP-TO-DATE
-> Task :project2:assemble UP-TO-DATE
-> Task :project5:assemble UP-TO-DATE
 > Task :project1:assemble UP-TO-DATE
+> Task :project2:assemble UP-TO-DATE
+> Task :project5:jar UP-TO-DATE
+> Task :project5:assemble UP-TO-DATE
 > Task :project7:processResources NO-SOURCE
 > Task :project8:processResources NO-SOURCE
 > Task :project6:compileJava UP-TO-DATE
@@ -328,19 +328,19 @@ Execution time 614 ms
 > Task :project0:compileJava
 > Task :project0:processResources NO-SOURCE
 > Task :project0:classes
-> Task :project3:compileJava UP-TO-DATE
 > Task :project4:compileJava UP-TO-DATE
-> Task :project8:compileJava UP-TO-DATE
-> Task :project0:jar
 > Task :project4:classes UP-TO-DATE
+> Task :project3:compileJava UP-TO-DATE
+> Task :project8:compileJava UP-TO-DATE
 > Task :project3:classes UP-TO-DATE
-> Task :project0:assemble
-> Task :project8:classes UP-TO-DATE
+> Task :project0:jar
 > Task :project4:jar UP-TO-DATE
 > Task :project3:jar UP-TO-DATE
-> Task :project8:jar UP-TO-DATE
-> Task :project4:assemble UP-TO-DATE
 > Task :project3:assemble UP-TO-DATE
+> Task :project0:assemble
+> Task :project4:assemble UP-TO-DATE
+> Task :project8:classes UP-TO-DATE
+> Task :project8:jar UP-TO-DATE
 > Task :project8:assemble UP-TO-DATE
 > Task :project7:compileJava UP-TO-DATE
 > Task :project7:classes UP-TO-DATE
@@ -351,12 +351,12 @@ Deprecated Gradle features were used in this build, making it incompatible with 
 
 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
-For more on this, please refer to https://docs.gradle.org/8.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+For more on this, please refer to https://docs.gradle.org/8.3-rc-1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 590ms
+BUILD SUCCESSFUL in 175ms
 22 actionable tasks: 2 executed, 20 up-to-date
-Used daemon with pid 88717
-Execution time 612 ms
+Used daemon with pid 88961
+Execution time 194 ms
 
 * Running warm-up build #5
 > Task :buildSrc:compileJava UP-TO-DATE
@@ -366,50 +366,50 @@ Execution time 612 ms
 > Task :buildSrc:jar UP-TO-DATE
 > Task :project3:processResources NO-SOURCE
 > Task :project4:processResources NO-SOURCE
-> Task :project2:compileJava UP-TO-DATE
-> Task :project1:compileJava UP-TO-DATE
 > Task :project5:compileJava UP-TO-DATE
-> Task :project5:processResources NO-SOURCE
-> Task :project2:processResources NO-SOURCE
+> Task :project1:compileJava UP-TO-DATE
+> Task :project2:compileJava UP-TO-DATE
 > Task :project1:processResources NO-SOURCE
+> Task :project2:processResources NO-SOURCE
+> Task :project5:processResources NO-SOURCE
+> Task :project1:classes UP-TO-DATE
 > Task :project2:classes UP-TO-DATE
 > Task :project5:classes UP-TO-DATE
-> Task :project1:classes UP-TO-DATE
-> Task :project5:jar UP-TO-DATE
 > Task :project1:jar UP-TO-DATE
-> Task :project2:jar UP-TO-DATE
-> Task :project5:assemble UP-TO-DATE
 > Task :project1:assemble UP-TO-DATE
+> Task :project2:jar UP-TO-DATE
+> Task :project5:jar UP-TO-DATE
 > Task :project2:assemble UP-TO-DATE
+> Task :project5:assemble UP-TO-DATE
 > Task :project7:processResources NO-SOURCE
 > Task :project8:processResources NO-SOURCE
 > Task :project6:compileJava UP-TO-DATE
 > Task :project9:compileJava UP-TO-DATE
-> Task :project6:processResources NO-SOURCE
 > Task :project9:processResources NO-SOURCE
-> Task :project6:classes UP-TO-DATE
+> Task :project6:processResources NO-SOURCE
 > Task :project9:classes UP-TO-DATE
+> Task :project6:classes UP-TO-DATE
 > Task :project9:jar UP-TO-DATE
-> Task :project9:assemble UP-TO-DATE
 > Task :project6:jar UP-TO-DATE
 > Task :project6:assemble UP-TO-DATE
+> Task :project9:assemble UP-TO-DATE
 > Task :project0:compileJava
 > Task :project0:processResources NO-SOURCE
 > Task :project0:classes
 > Task :project4:compileJava UP-TO-DATE
-> Task :project3:compileJava UP-TO-DATE
-> Task :project3:classes UP-TO-DATE
 > Task :project8:compileJava UP-TO-DATE
+> Task :project3:compileJava UP-TO-DATE
 > Task :project4:classes UP-TO-DATE
+> Task :project3:classes UP-TO-DATE
 > Task :project3:jar UP-TO-DATE
 > Task :project3:assemble UP-TO-DATE
 > Task :project4:jar UP-TO-DATE
 > Task :project8:classes UP-TO-DATE
 > Task :project4:assemble UP-TO-DATE
-> Task :project8:jar UP-TO-DATE
-> Task :project8:assemble UP-TO-DATE
 > Task :project0:jar
 > Task :project0:assemble
+> Task :project8:jar UP-TO-DATE
+> Task :project8:assemble UP-TO-DATE
 > Task :project7:compileJava UP-TO-DATE
 > Task :project7:classes UP-TO-DATE
 > Task :project7:jar UP-TO-DATE
@@ -419,12 +419,12 @@ Deprecated Gradle features were used in this build, making it incompatible with 
 
 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
-For more on this, please refer to https://docs.gradle.org/8.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+For more on this, please refer to https://docs.gradle.org/8.3-rc-1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 572ms
+BUILD SUCCESSFUL in 166ms
 22 actionable tasks: 2 executed, 20 up-to-date
-Used daemon with pid 88717
-Execution time 679 ms
+Used daemon with pid 88961
+Execution time 191 ms
 
 * Using args for instrumented builds:
 
@@ -436,21 +436,21 @@ Execution time 679 ms
 > Task :buildSrc:jar UP-TO-DATE
 > Task :project3:processResources NO-SOURCE
 > Task :project4:processResources NO-SOURCE
+> Task :project5:compileJava UP-TO-DATE
 > Task :project2:compileJava UP-TO-DATE
 > Task :project1:compileJava UP-TO-DATE
-> Task :project5:compileJava UP-TO-DATE
-> Task :project2:processResources NO-SOURCE
 > Task :project5:processResources NO-SOURCE
 > Task :project1:processResources NO-SOURCE
-> Task :project2:classes UP-TO-DATE
+> Task :project2:processResources NO-SOURCE
 > Task :project5:classes UP-TO-DATE
+> Task :project2:classes UP-TO-DATE
 > Task :project1:classes UP-TO-DATE
-> Task :project2:jar UP-TO-DATE
-> Task :project5:jar UP-TO-DATE
-> Task :project2:assemble UP-TO-DATE
-> Task :project5:assemble UP-TO-DATE
 > Task :project1:jar UP-TO-DATE
+> Task :project5:jar UP-TO-DATE
+> Task :project2:jar UP-TO-DATE
 > Task :project1:assemble UP-TO-DATE
+> Task :project5:assemble UP-TO-DATE
+> Task :project2:assemble UP-TO-DATE
 > Task :project7:processResources NO-SOURCE
 > Task :project8:processResources NO-SOURCE
 > Task :project6:compileJava UP-TO-DATE
@@ -466,20 +466,20 @@ Execution time 679 ms
 > Task :project0:compileJava
 > Task :project0:processResources NO-SOURCE
 > Task :project0:classes
-> Task :project8:compileJava UP-TO-DATE
 > Task :project3:compileJava UP-TO-DATE
 > Task :project4:compileJava UP-TO-DATE
-> Task :project8:classes UP-TO-DATE
-> Task :project3:classes UP-TO-DATE
 > Task :project4:classes UP-TO-DATE
+> Task :project8:compileJava UP-TO-DATE
+> Task :project3:classes UP-TO-DATE
 > Task :project0:jar
-> Task :project4:jar UP-TO-DATE
-> Task :project3:jar UP-TO-DATE
 > Task :project0:assemble
-> Task :project4:assemble UP-TO-DATE
+> Task :project8:classes UP-TO-DATE
+> Task :project3:jar UP-TO-DATE
 > Task :project3:assemble UP-TO-DATE
 > Task :project8:jar UP-TO-DATE
+> Task :project4:jar UP-TO-DATE
 > Task :project8:assemble UP-TO-DATE
+> Task :project4:assemble UP-TO-DATE
 > Task :project7:compileJava UP-TO-DATE
 > Task :project7:classes UP-TO-DATE
 > Task :project7:jar UP-TO-DATE
@@ -489,12 +489,12 @@ Deprecated Gradle features were used in this build, making it incompatible with 
 
 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
-For more on this, please refer to https://docs.gradle.org/8.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+For more on this, please refer to https://docs.gradle.org/8.3-rc-1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 565ms
+BUILD SUCCESSFUL in 153ms
 22 actionable tasks: 2 executed, 20 up-to-date
-Used daemon with pid 88717
-Execution time 586 ms
+Used daemon with pid 88961
+Execution time 166 ms
 
 * Running measured build #2
 > Task :buildSrc:compileJava UP-TO-DATE
@@ -504,49 +504,49 @@ Execution time 586 ms
 > Task :buildSrc:jar UP-TO-DATE
 > Task :project3:processResources NO-SOURCE
 > Task :project4:processResources NO-SOURCE
-> Task :project1:compileJava UP-TO-DATE
 > Task :project5:compileJava UP-TO-DATE
 > Task :project2:compileJava UP-TO-DATE
+> Task :project1:compileJava UP-TO-DATE
+> Task :project1:processResources NO-SOURCE
 > Task :project2:processResources NO-SOURCE
 > Task :project5:processResources NO-SOURCE
-> Task :project1:processResources NO-SOURCE
+> Task :project1:classes UP-TO-DATE
 > Task :project2:classes UP-TO-DATE
 > Task :project5:classes UP-TO-DATE
-> Task :project1:classes UP-TO-DATE
 > Task :project2:jar UP-TO-DATE
+> Task :project1:jar UP-TO-DATE
 > Task :project2:assemble UP-TO-DATE
 > Task :project5:jar UP-TO-DATE
-> Task :project1:jar UP-TO-DATE
-> Task :project5:assemble UP-TO-DATE
 > Task :project1:assemble UP-TO-DATE
-> Task :project8:processResources NO-SOURCE
+> Task :project5:assemble UP-TO-DATE
 > Task :project7:processResources NO-SOURCE
+> Task :project8:processResources NO-SOURCE
 > Task :project6:compileJava UP-TO-DATE
 > Task :project9:compileJava UP-TO-DATE
 > Task :project6:processResources NO-SOURCE
 > Task :project9:processResources NO-SOURCE
 > Task :project6:classes UP-TO-DATE
 > Task :project9:classes UP-TO-DATE
-> Task :project9:jar UP-TO-DATE
 > Task :project6:jar UP-TO-DATE
 > Task :project6:assemble UP-TO-DATE
+> Task :project9:jar UP-TO-DATE
 > Task :project9:assemble UP-TO-DATE
 > Task :project0:compileJava
 > Task :project0:processResources NO-SOURCE
 > Task :project0:classes
-> Task :project4:compileJava UP-TO-DATE
 > Task :project3:compileJava UP-TO-DATE
-> Task :project8:compileJava UP-TO-DATE
 > Task :project3:classes UP-TO-DATE
-> Task :project4:classes UP-TO-DATE
-> Task :project0:jar
-> Task :project0:assemble
+> Task :project8:compileJava UP-TO-DATE
+> Task :project4:compileJava UP-TO-DATE
 > Task :project8:classes UP-TO-DATE
-> Task :project4:jar UP-TO-DATE
+> Task :project4:classes UP-TO-DATE
 > Task :project3:jar UP-TO-DATE
-> Task :project4:assemble UP-TO-DATE
+> Task :project4:jar UP-TO-DATE
 > Task :project3:assemble UP-TO-DATE
+> Task :project4:assemble UP-TO-DATE
+> Task :project0:jar
 > Task :project8:jar UP-TO-DATE
+> Task :project0:assemble
 > Task :project8:assemble UP-TO-DATE
 > Task :project7:compileJava UP-TO-DATE
 > Task :project7:classes UP-TO-DATE
@@ -557,12 +557,12 @@ Deprecated Gradle features were used in this build, making it incompatible with 
 
 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
-For more on this, please refer to https://docs.gradle.org/8.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+For more on this, please refer to https://docs.gradle.org/8.3-rc-1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 566ms
+BUILD SUCCESSFUL in 221ms
 22 actionable tasks: 2 executed, 20 up-to-date
-Used daemon with pid 88717
-Execution time 587 ms
+Used daemon with pid 88961
+Execution time 231 ms
 
 * Running measured build #3
 > Task :buildSrc:compileJava UP-TO-DATE
@@ -572,51 +572,51 @@ Execution time 587 ms
 > Task :buildSrc:jar UP-TO-DATE
 > Task :project3:processResources NO-SOURCE
 > Task :project4:processResources NO-SOURCE
-> Task :project1:compileJava UP-TO-DATE
-> Task :project5:compileJava UP-TO-DATE
 > Task :project2:compileJava UP-TO-DATE
-> Task :project1:processResources NO-SOURCE
-> Task :project1:classes UP-TO-DATE
+> Task :project5:compileJava UP-TO-DATE
+> Task :project1:compileJava UP-TO-DATE
 > Task :project2:processResources NO-SOURCE
 > Task :project5:processResources NO-SOURCE
-> Task :project2:classes UP-TO-DATE
 > Task :project5:classes UP-TO-DATE
-> Task :project1:jar UP-TO-DATE
+> Task :project1:processResources NO-SOURCE
+> Task :project2:classes UP-TO-DATE
+> Task :project1:classes UP-TO-DATE
 > Task :project2:jar UP-TO-DATE
-> Task :project1:assemble UP-TO-DATE
-> Task :project2:assemble UP-TO-DATE
 > Task :project5:jar UP-TO-DATE
+> Task :project1:jar UP-TO-DATE
 > Task :project5:assemble UP-TO-DATE
+> Task :project2:assemble UP-TO-DATE
+> Task :project1:assemble UP-TO-DATE
 > Task :project7:processResources NO-SOURCE
 > Task :project8:processResources NO-SOURCE
 > Task :project6:compileJava UP-TO-DATE
 > Task :project9:compileJava UP-TO-DATE
-> Task :project9:processResources NO-SOURCE
 > Task :project6:processResources NO-SOURCE
-> Task :project9:classes UP-TO-DATE
 > Task :project6:classes UP-TO-DATE
-> Task :project9:jar UP-TO-DATE
+> Task :project9:processResources NO-SOURCE
+> Task :project9:classes UP-TO-DATE
 > Task :project6:jar UP-TO-DATE
-> Task :project9:assemble UP-TO-DATE
+> Task :project9:jar UP-TO-DATE
 > Task :project6:assemble UP-TO-DATE
+> Task :project9:assemble UP-TO-DATE
 > Task :project0:compileJava
 > Task :project0:processResources NO-SOURCE
 > Task :project0:classes
-> Task :project4:compileJava UP-TO-DATE
-> Task :project8:compileJava UP-TO-DATE
 > Task :project3:compileJava UP-TO-DATE
+> Task :project8:compileJava UP-TO-DATE
+> Task :project4:compileJava UP-TO-DATE
+> Task :project8:classes UP-TO-DATE
 > Task :project4:classes UP-TO-DATE
 > Task :project3:classes UP-TO-DATE
 > Task :project4:jar UP-TO-DATE
-> Task :project0:jar
-> Task :project3:jar UP-TO-DATE
 > Task :project4:assemble UP-TO-DATE
-> Task :project0:assemble
+> Task :project3:jar UP-TO-DATE
 > Task :project3:assemble UP-TO-DATE
-> Task :project8:classes UP-TO-DATE
 > Task :project7:compileJava UP-TO-DATE
-> Task :project7:classes UP-TO-DATE
 > Task :project8:jar UP-TO-DATE
+> Task :project0:jar
+> Task :project7:classes UP-TO-DATE
+> Task :project0:assemble
 > Task :project8:assemble UP-TO-DATE
 > Task :project7:jar UP-TO-DATE
 > Task :project7:assemble UP-TO-DATE
@@ -625,12 +625,12 @@ Deprecated Gradle features were used in this build, making it incompatible with 
 
 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
-For more on this, please refer to https://docs.gradle.org/8.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+For more on this, please refer to https://docs.gradle.org/8.3-rc-1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 597ms
+BUILD SUCCESSFUL in 185ms
 22 actionable tasks: 2 executed, 20 up-to-date
-Used daemon with pid 88717
-Execution time 628 ms
+Used daemon with pid 88961
+Execution time 203 ms
 
 * Running measured build #4
 > Task :buildSrc:compileJava UP-TO-DATE
@@ -640,50 +640,50 @@ Execution time 628 ms
 > Task :buildSrc:jar UP-TO-DATE
 > Task :project3:processResources NO-SOURCE
 > Task :project4:processResources NO-SOURCE
-> Task :project5:compileJava UP-TO-DATE
 > Task :project2:compileJava UP-TO-DATE
 > Task :project1:compileJava UP-TO-DATE
-> Task :project2:processResources NO-SOURCE
+> Task :project5:compileJava UP-TO-DATE
 > Task :project5:processResources NO-SOURCE
+> Task :project2:processResources NO-SOURCE
 > Task :project1:processResources NO-SOURCE
-> Task :project2:classes UP-TO-DATE
 > Task :project5:classes UP-TO-DATE
+> Task :project2:classes UP-TO-DATE
 > Task :project1:classes UP-TO-DATE
-> Task :project1:jar UP-TO-DATE
-> Task :project5:jar UP-TO-DATE
 > Task :project2:jar UP-TO-DATE
-> Task :project1:assemble UP-TO-DATE
-> Task :project5:assemble UP-TO-DATE
+> Task :project5:jar UP-TO-DATE
+> Task :project1:jar UP-TO-DATE
 > Task :project2:assemble UP-TO-DATE
+> Task :project5:assemble UP-TO-DATE
+> Task :project1:assemble UP-TO-DATE
 > Task :project8:processResources NO-SOURCE
 > Task :project7:processResources NO-SOURCE
 > Task :project6:compileJava UP-TO-DATE
-> Task :project6:processResources NO-SOURCE
-> Task :project6:classes UP-TO-DATE
 > Task :project9:compileJava UP-TO-DATE
+> Task :project6:processResources NO-SOURCE
 > Task :project9:processResources NO-SOURCE
+> Task :project6:classes UP-TO-DATE
 > Task :project9:classes UP-TO-DATE
 > Task :project6:jar UP-TO-DATE
-> Task :project6:assemble UP-TO-DATE
 > Task :project9:jar UP-TO-DATE
+> Task :project6:assemble UP-TO-DATE
 > Task :project9:assemble UP-TO-DATE
 > Task :project0:compileJava
 > Task :project0:processResources NO-SOURCE
 > Task :project0:classes
-> Task :project4:compileJava UP-TO-DATE
 > Task :project8:compileJava UP-TO-DATE
-> Task :project3:compileJava UP-TO-DATE
-> Task :project4:classes UP-TO-DATE
-> Task :project3:classes UP-TO-DATE
-> Task :project3:jar UP-TO-DATE
-> Task :project4:jar UP-TO-DATE
-> Task :project0:jar
-> Task :project3:assemble UP-TO-DATE
-> Task :project4:assemble UP-TO-DATE
-> Task :project0:assemble
 > Task :project8:classes UP-TO-DATE
+> Task :project4:compileJava UP-TO-DATE
+> Task :project3:compileJava UP-TO-DATE
+> Task :project3:classes UP-TO-DATE
+> Task :project4:classes UP-TO-DATE
 > Task :project8:jar UP-TO-DATE
+> Task :project3:jar UP-TO-DATE
+> Task :project3:assemble UP-TO-DATE
 > Task :project8:assemble UP-TO-DATE
+> Task :project0:jar
+> Task :project4:jar UP-TO-DATE
+> Task :project0:assemble
+> Task :project4:assemble UP-TO-DATE
 > Task :project7:compileJava UP-TO-DATE
 > Task :project7:classes UP-TO-DATE
 > Task :project7:jar UP-TO-DATE
@@ -693,12 +693,12 @@ Deprecated Gradle features were used in this build, making it incompatible with 
 
 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
-For more on this, please refer to https://docs.gradle.org/8.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+For more on this, please refer to https://docs.gradle.org/8.3-rc-1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 542ms
+BUILD SUCCESSFUL in 131ms
 22 actionable tasks: 2 executed, 20 up-to-date
-Used daemon with pid 88717
-Execution time 564 ms
+Used daemon with pid 88961
+Execution time 143 ms
 
 * Running measured build #5
 > Task :buildSrc:compileJava UP-TO-DATE
@@ -708,48 +708,48 @@ Execution time 564 ms
 > Task :buildSrc:jar UP-TO-DATE
 > Task :project3:processResources NO-SOURCE
 > Task :project4:processResources NO-SOURCE
-> Task :project5:compileJava UP-TO-DATE
-> Task :project2:compileJava UP-TO-DATE
 > Task :project1:compileJava UP-TO-DATE
-> Task :project5:processResources NO-SOURCE
+> Task :project2:compileJava UP-TO-DATE
+> Task :project5:compileJava UP-TO-DATE
 > Task :project2:processResources NO-SOURCE
 > Task :project1:processResources NO-SOURCE
-> Task :project5:classes UP-TO-DATE
+> Task :project5:processResources NO-SOURCE
 > Task :project2:classes UP-TO-DATE
 > Task :project1:classes UP-TO-DATE
-> Task :project5:jar UP-TO-DATE
-> Task :project1:jar UP-TO-DATE
+> Task :project5:classes UP-TO-DATE
 > Task :project2:jar UP-TO-DATE
-> Task :project5:assemble UP-TO-DATE
+> Task :project1:jar UP-TO-DATE
+> Task :project5:jar UP-TO-DATE
 > Task :project1:assemble UP-TO-DATE
 > Task :project2:assemble UP-TO-DATE
+> Task :project5:assemble UP-TO-DATE
 > Task :project7:processResources NO-SOURCE
 > Task :project8:processResources NO-SOURCE
 > Task :project6:compileJava UP-TO-DATE
 > Task :project9:compileJava UP-TO-DATE
-> Task :project9:processResources NO-SOURCE
 > Task :project6:processResources NO-SOURCE
-> Task :project9:classes UP-TO-DATE
 > Task :project6:classes UP-TO-DATE
+> Task :project9:processResources NO-SOURCE
+> Task :project9:classes UP-TO-DATE
 > Task :project9:jar UP-TO-DATE
-> Task :project6:jar UP-TO-DATE
 > Task :project9:assemble UP-TO-DATE
+> Task :project6:jar UP-TO-DATE
 > Task :project6:assemble UP-TO-DATE
 > Task :project0:compileJava
 > Task :project0:processResources NO-SOURCE
 > Task :project0:classes
-> Task :project3:compileJava UP-TO-DATE
 > Task :project4:compileJava UP-TO-DATE
 > Task :project8:compileJava UP-TO-DATE
-> Task :project3:classes UP-TO-DATE
+> Task :project3:compileJava UP-TO-DATE
 > Task :project4:classes UP-TO-DATE
+> Task :project3:classes UP-TO-DATE
 > Task :project4:jar UP-TO-DATE
 > Task :project4:assemble UP-TO-DATE
-> Task :project3:jar UP-TO-DATE
 > Task :project8:classes UP-TO-DATE
-> Task :project3:assemble UP-TO-DATE
 > Task :project0:jar
 > Task :project0:assemble
+> Task :project3:jar UP-TO-DATE
+> Task :project3:assemble UP-TO-DATE
 > Task :project8:jar UP-TO-DATE
 > Task :project8:assemble UP-TO-DATE
 > Task :project7:compileJava UP-TO-DATE
@@ -761,12 +761,12 @@ Deprecated Gradle features were used in this build, making it incompatible with 
 
 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
-For more on this, please refer to https://docs.gradle.org/8.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+For more on this, please refer to https://docs.gradle.org/8.3-rc-1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 544ms
+BUILD SUCCESSFUL in 126ms
 22 actionable tasks: 2 executed, 20 up-to-date
-Used daemon with pid 88717
-Execution time 579 ms
+Used daemon with pid 88961
+Execution time 143 ms
 
 * Running measured build #6
 > Task :buildSrc:compileJava UP-TO-DATE
@@ -776,50 +776,50 @@ Execution time 579 ms
 > Task :buildSrc:jar UP-TO-DATE
 > Task :project3:processResources NO-SOURCE
 > Task :project4:processResources NO-SOURCE
+> Task :project2:compileJava UP-TO-DATE
 > Task :project5:compileJava UP-TO-DATE
 > Task :project1:compileJava UP-TO-DATE
-> Task :project2:compileJava UP-TO-DATE
-> Task :project5:processResources NO-SOURCE
 > Task :project1:processResources NO-SOURCE
+> Task :project5:processResources NO-SOURCE
 > Task :project2:processResources NO-SOURCE
-> Task :project5:classes UP-TO-DATE
 > Task :project1:classes UP-TO-DATE
+> Task :project5:classes UP-TO-DATE
 > Task :project2:classes UP-TO-DATE
 > Task :project5:jar UP-TO-DATE
+> Task :project1:jar UP-TO-DATE
+> Task :project1:assemble UP-TO-DATE
 > Task :project2:jar UP-TO-DATE
 > Task :project5:assemble UP-TO-DATE
 > Task :project2:assemble UP-TO-DATE
-> Task :project1:jar UP-TO-DATE
-> Task :project1:assemble UP-TO-DATE
 > Task :project7:processResources NO-SOURCE
 > Task :project8:processResources NO-SOURCE
 > Task :project6:compileJava UP-TO-DATE
 > Task :project9:compileJava UP-TO-DATE
 > Task :project6:processResources NO-SOURCE
-> Task :project6:classes UP-TO-DATE
 > Task :project9:processResources NO-SOURCE
 > Task :project9:classes UP-TO-DATE
+> Task :project6:classes UP-TO-DATE
 > Task :project6:jar UP-TO-DATE
 > Task :project9:jar UP-TO-DATE
-> Task :project6:assemble UP-TO-DATE
 > Task :project9:assemble UP-TO-DATE
+> Task :project6:assemble UP-TO-DATE
 > Task :project0:compileJava
 > Task :project0:processResources NO-SOURCE
 > Task :project0:classes
-> Task :project4:compileJava UP-TO-DATE
-> Task :project3:compileJava UP-TO-DATE
-> Task :project4:classes UP-TO-DATE
 > Task :project8:compileJava UP-TO-DATE
-> Task :project3:classes UP-TO-DATE
-> Task :project4:jar UP-TO-DATE
-> Task :project3:jar UP-TO-DATE
-> Task :project4:assemble UP-TO-DATE
-> Task :project3:assemble UP-TO-DATE
+> Task :project3:compileJava UP-TO-DATE
 > Task :project8:classes UP-TO-DATE
-> Task :project0:jar
-> Task :project0:assemble
+> Task :project3:classes UP-TO-DATE
+> Task :project4:compileJava UP-TO-DATE
+> Task :project4:classes UP-TO-DATE
+> Task :project3:jar UP-TO-DATE
+> Task :project3:assemble UP-TO-DATE
 > Task :project8:jar UP-TO-DATE
 > Task :project8:assemble UP-TO-DATE
+> Task :project4:jar UP-TO-DATE
+> Task :project4:assemble UP-TO-DATE
+> Task :project0:jar
+> Task :project0:assemble
 > Task :project7:compileJava UP-TO-DATE
 > Task :project7:classes UP-TO-DATE
 > Task :project7:jar UP-TO-DATE
@@ -829,12 +829,12 @@ Deprecated Gradle features were used in this build, making it incompatible with 
 
 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
-For more on this, please refer to https://docs.gradle.org/8.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+For more on this, please refer to https://docs.gradle.org/8.3-rc-1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 538ms
+BUILD SUCCESSFUL in 125ms
 22 actionable tasks: 2 executed, 20 up-to-date
-Used daemon with pid 88717
-Execution time 552 ms
+Used daemon with pid 88961
+Execution time 131 ms
 
 * Running measured build #7
 > Task :buildSrc:compileJava UP-TO-DATE
@@ -844,20 +844,20 @@ Execution time 552 ms
 > Task :buildSrc:jar UP-TO-DATE
 > Task :project3:processResources NO-SOURCE
 > Task :project4:processResources NO-SOURCE
+> Task :project1:compileJava UP-TO-DATE
 > Task :project5:compileJava UP-TO-DATE
 > Task :project2:compileJava UP-TO-DATE
-> Task :project1:compileJava UP-TO-DATE
-> Task :project2:processResources NO-SOURCE
-> Task :project5:processResources NO-SOURCE
 > Task :project1:processResources NO-SOURCE
-> Task :project2:classes UP-TO-DATE
-> Task :project5:classes UP-TO-DATE
+> Task :project2:processResources NO-SOURCE
 > Task :project1:classes UP-TO-DATE
-> Task :project2:jar UP-TO-DATE
+> Task :project2:classes UP-TO-DATE
+> Task :project5:processResources NO-SOURCE
+> Task :project5:classes UP-TO-DATE
 > Task :project1:jar UP-TO-DATE
-> Task :project2:assemble UP-TO-DATE
+> Task :project2:jar UP-TO-DATE
 > Task :project1:assemble UP-TO-DATE
 > Task :project5:jar UP-TO-DATE
+> Task :project2:assemble UP-TO-DATE
 > Task :project5:assemble UP-TO-DATE
 > Task :project7:processResources NO-SOURCE
 > Task :project8:processResources NO-SOURCE
@@ -865,31 +865,31 @@ Execution time 552 ms
 > Task :project6:processResources NO-SOURCE
 > Task :project6:classes UP-TO-DATE
 > Task :project9:compileJava UP-TO-DATE
-> Task :project6:jar UP-TO-DATE
-> Task :project6:assemble UP-TO-DATE
 > Task :project9:processResources NO-SOURCE
 > Task :project9:classes UP-TO-DATE
+> Task :project6:jar UP-TO-DATE
+> Task :project6:assemble UP-TO-DATE
 > Task :project9:jar UP-TO-DATE
 > Task :project9:assemble UP-TO-DATE
 > Task :project0:compileJava
 > Task :project0:processResources NO-SOURCE
 > Task :project0:classes
-> Task :project3:compileJava UP-TO-DATE
-> Task :project8:compileJava UP-TO-DATE
 > Task :project4:compileJava UP-TO-DATE
+> Task :project8:compileJava UP-TO-DATE
 > Task :project4:classes UP-TO-DATE
+> Task :project3:compileJava UP-TO-DATE
 > Task :project3:classes UP-TO-DATE
+> Task :project3:jar UP-TO-DATE
+> Task :project0:jar
+> Task :project3:assemble UP-TO-DATE
+> Task :project0:assemble
+> Task :project8:classes UP-TO-DATE
 > Task :project4:jar UP-TO-DATE
 > Task :project4:assemble UP-TO-DATE
-> Task :project3:jar UP-TO-DATE
-> Task :project8:classes UP-TO-DATE
-> Task :project3:assemble UP-TO-DATE
 > Task :project8:jar UP-TO-DATE
 > Task :project8:assemble UP-TO-DATE
 > Task :project7:compileJava UP-TO-DATE
 > Task :project7:classes UP-TO-DATE
-> Task :project0:jar
-> Task :project0:assemble
 > Task :project7:jar UP-TO-DATE
 > Task :project7:assemble UP-TO-DATE
 
@@ -897,12 +897,12 @@ Deprecated Gradle features were used in this build, making it incompatible with 
 
 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
-For more on this, please refer to https://docs.gradle.org/8.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+For more on this, please refer to https://docs.gradle.org/8.3-rc-1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 538ms
+BUILD SUCCESSFUL in 130ms
 22 actionable tasks: 2 executed, 20 up-to-date
-Used daemon with pid 88717
-Execution time 573 ms
+Used daemon with pid 88961
+Execution time 151 ms
 
 * Running measured build #8
 > Task :buildSrc:compileJava UP-TO-DATE
@@ -912,52 +912,52 @@ Execution time 573 ms
 > Task :buildSrc:jar UP-TO-DATE
 > Task :project3:processResources NO-SOURCE
 > Task :project4:processResources NO-SOURCE
-> Task :project1:compileJava UP-TO-DATE
-> Task :project2:compileJava UP-TO-DATE
 > Task :project5:compileJava UP-TO-DATE
-> Task :project5:processResources NO-SOURCE
-> Task :project2:processResources NO-SOURCE
+> Task :project2:compileJava UP-TO-DATE
+> Task :project1:compileJava UP-TO-DATE
 > Task :project1:processResources NO-SOURCE
-> Task :project5:classes UP-TO-DATE
+> Task :project2:processResources NO-SOURCE
+> Task :project5:processResources NO-SOURCE
 > Task :project1:classes UP-TO-DATE
 > Task :project2:classes UP-TO-DATE
+> Task :project5:classes UP-TO-DATE
+> Task :project1:jar UP-TO-DATE
 > Task :project5:jar UP-TO-DATE
 > Task :project2:jar UP-TO-DATE
-> Task :project1:jar UP-TO-DATE
-> Task :project5:assemble UP-TO-DATE
 > Task :project2:assemble UP-TO-DATE
 > Task :project1:assemble UP-TO-DATE
-> Task :project8:processResources NO-SOURCE
+> Task :project5:assemble UP-TO-DATE
 > Task :project7:processResources NO-SOURCE
+> Task :project8:processResources NO-SOURCE
 > Task :project6:compileJava UP-TO-DATE
 > Task :project6:processResources NO-SOURCE
-> Task :project6:classes UP-TO-DATE
 > Task :project9:compileJava UP-TO-DATE
-> Task :project6:jar UP-TO-DATE
-> Task :project6:assemble UP-TO-DATE
+> Task :project6:classes UP-TO-DATE
 > Task :project9:processResources NO-SOURCE
 > Task :project9:classes UP-TO-DATE
+> Task :project6:jar UP-TO-DATE
+> Task :project6:assemble UP-TO-DATE
 > Task :project9:jar UP-TO-DATE
 > Task :project9:assemble UP-TO-DATE
 > Task :project0:compileJava
 > Task :project0:processResources NO-SOURCE
 > Task :project0:classes
-> Task :project8:compileJava UP-TO-DATE
 > Task :project4:compileJava UP-TO-DATE
+> Task :project8:compileJava UP-TO-DATE
+> Task :project4:classes UP-TO-DATE
 > Task :project3:compileJava UP-TO-DATE
 > Task :project3:classes UP-TO-DATE
-> Task :project4:classes UP-TO-DATE
-> Task :project3:jar UP-TO-DATE
-> Task :project3:assemble UP-TO-DATE
-> Task :project8:classes UP-TO-DATE
 > Task :project4:jar UP-TO-DATE
 > Task :project4:assemble UP-TO-DATE
+> Task :project8:classes UP-TO-DATE
+> Task :project3:jar UP-TO-DATE
+> Task :project3:assemble UP-TO-DATE
 > Task :project8:jar UP-TO-DATE
-> Task :project0:jar
 > Task :project8:assemble UP-TO-DATE
-> Task :project0:assemble
 > Task :project7:compileJava UP-TO-DATE
+> Task :project0:jar
 > Task :project7:classes UP-TO-DATE
+> Task :project0:assemble
 > Task :project7:jar UP-TO-DATE
 > Task :project7:assemble UP-TO-DATE
 
@@ -965,12 +965,12 @@ Deprecated Gradle features were used in this build, making it incompatible with 
 
 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
-For more on this, please refer to https://docs.gradle.org/8.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+For more on this, please refer to https://docs.gradle.org/8.3-rc-1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 543ms
+BUILD SUCCESSFUL in 122ms
 22 actionable tasks: 2 executed, 20 up-to-date
-Used daemon with pid 88717
-Execution time 574 ms
+Used daemon with pid 88961
+Execution time 128 ms
 
 * Running measured build #9
 > Task :buildSrc:compileJava UP-TO-DATE
@@ -980,26 +980,26 @@ Execution time 574 ms
 > Task :buildSrc:jar UP-TO-DATE
 > Task :project3:processResources NO-SOURCE
 > Task :project4:processResources NO-SOURCE
-> Task :project1:compileJava UP-TO-DATE
-> Task :project5:compileJava UP-TO-DATE
 > Task :project2:compileJava UP-TO-DATE
-> Task :project5:processResources NO-SOURCE
-> Task :project1:processResources NO-SOURCE
-> Task :project5:classes UP-TO-DATE
-> Task :project1:classes UP-TO-DATE
+> Task :project5:compileJava UP-TO-DATE
+> Task :project1:compileJava UP-TO-DATE
 > Task :project2:processResources NO-SOURCE
+> Task :project5:processResources NO-SOURCE
 > Task :project2:classes UP-TO-DATE
-> Task :project1:jar UP-TO-DATE
-> Task :project5:jar UP-TO-DATE
+> Task :project5:classes UP-TO-DATE
+> Task :project1:processResources NO-SOURCE
+> Task :project1:classes UP-TO-DATE
 > Task :project2:jar UP-TO-DATE
-> Task :project5:assemble UP-TO-DATE
+> Task :project5:jar UP-TO-DATE
 > Task :project2:assemble UP-TO-DATE
+> Task :project5:assemble UP-TO-DATE
+> Task :project1:jar UP-TO-DATE
 > Task :project1:assemble UP-TO-DATE
-> Task :project8:processResources NO-SOURCE
 > Task :project7:processResources NO-SOURCE
+> Task :project8:processResources NO-SOURCE
 > Task :project6:compileJava UP-TO-DATE
-> Task :project6:processResources NO-SOURCE
 > Task :project9:compileJava UP-TO-DATE
+> Task :project6:processResources NO-SOURCE
 > Task :project6:classes UP-TO-DATE
 > Task :project9:processResources NO-SOURCE
 > Task :project9:classes UP-TO-DATE
@@ -1010,35 +1010,35 @@ Execution time 574 ms
 > Task :project0:compileJava
 > Task :project0:processResources NO-SOURCE
 > Task :project0:classes
-> Task :project8:compileJava UP-TO-DATE
-> Task :project3:compileJava UP-TO-DATE
 > Task :project4:compileJava UP-TO-DATE
-> Task :project8:classes UP-TO-DATE
+> Task :project8:compileJava UP-TO-DATE
 > Task :project4:classes UP-TO-DATE
+> Task :project3:compileJava UP-TO-DATE
 > Task :project3:classes UP-TO-DATE
-> Task :project3:jar UP-TO-DATE
 > Task :project4:jar UP-TO-DATE
-> Task :project3:assemble UP-TO-DATE
 > Task :project4:assemble UP-TO-DATE
-> Task :project0:jar
-> Task :project0:assemble
+> Task :project8:classes UP-TO-DATE
+> Task :project3:jar UP-TO-DATE
+> Task :project3:assemble UP-TO-DATE
 > Task :project8:jar UP-TO-DATE
 > Task :project8:assemble UP-TO-DATE
 > Task :project7:compileJava UP-TO-DATE
 > Task :project7:classes UP-TO-DATE
+> Task :project0:jar
 > Task :project7:jar UP-TO-DATE
+> Task :project0:assemble
 > Task :project7:assemble UP-TO-DATE
 
 Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
 
 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
-For more on this, please refer to https://docs.gradle.org/8.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+For more on this, please refer to https://docs.gradle.org/8.3-rc-1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 622ms
+BUILD SUCCESSFUL in 122ms
 22 actionable tasks: 2 executed, 20 up-to-date
-Used daemon with pid 88717
-Execution time 645 ms
+Used daemon with pid 88961
+Execution time 132 ms
 
 * Running measured build #10
 > Task :buildSrc:compileJava UP-TO-DATE
@@ -1048,23 +1048,23 @@ Execution time 645 ms
 > Task :buildSrc:jar UP-TO-DATE
 > Task :project3:processResources NO-SOURCE
 > Task :project4:processResources NO-SOURCE
-> Task :project5:compileJava UP-TO-DATE
 > Task :project1:compileJava UP-TO-DATE
+> Task :project5:compileJava UP-TO-DATE
 > Task :project2:compileJava UP-TO-DATE
-> Task :project1:processResources NO-SOURCE
-> Task :project5:processResources NO-SOURCE
-> Task :project5:classes UP-TO-DATE
 > Task :project2:processResources NO-SOURCE
-> Task :project1:classes UP-TO-DATE
+> Task :project5:processResources NO-SOURCE
+> Task :project1:processResources NO-SOURCE
 > Task :project2:classes UP-TO-DATE
+> Task :project1:classes UP-TO-DATE
+> Task :project5:classes UP-TO-DATE
+> Task :project2:jar UP-TO-DATE
 > Task :project1:jar UP-TO-DATE
 > Task :project5:jar UP-TO-DATE
+> Task :project2:assemble UP-TO-DATE
 > Task :project1:assemble UP-TO-DATE
 > Task :project5:assemble UP-TO-DATE
-> Task :project2:jar UP-TO-DATE
-> Task :project2:assemble UP-TO-DATE
-> Task :project7:processResources NO-SOURCE
 > Task :project8:processResources NO-SOURCE
+> Task :project7:processResources NO-SOURCE
 > Task :project6:compileJava UP-TO-DATE
 > Task :project6:processResources NO-SOURCE
 > Task :project6:classes UP-TO-DATE
@@ -1078,16 +1078,16 @@ Execution time 645 ms
 > Task :project0:compileJava
 > Task :project0:processResources NO-SOURCE
 > Task :project0:classes
-> Task :project4:compileJava UP-TO-DATE
 > Task :project3:compileJava UP-TO-DATE
-> Task :project8:compileJava UP-TO-DATE
 > Task :project3:classes UP-TO-DATE
+> Task :project4:compileJava UP-TO-DATE
 > Task :project4:classes UP-TO-DATE
-> Task :project4:jar UP-TO-DATE
+> Task :project8:compileJava UP-TO-DATE
 > Task :project3:jar UP-TO-DATE
-> Task :project4:assemble UP-TO-DATE
 > Task :project3:assemble UP-TO-DATE
 > Task :project8:classes UP-TO-DATE
+> Task :project4:jar UP-TO-DATE
+> Task :project4:assemble UP-TO-DATE
 > Task :project8:jar UP-TO-DATE
 > Task :project8:assemble UP-TO-DATE
 > Task :project7:compileJava UP-TO-DATE
@@ -1101,19 +1101,19 @@ Deprecated Gradle features were used in this build, making it incompatible with 
 
 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
-For more on this, please refer to https://docs.gradle.org/8.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+For more on this, please refer to https://docs.gradle.org/8.3-rc-1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 529ms
+BUILD SUCCESSFUL in 126ms
 22 actionable tasks: 2 executed, 20 up-to-date
-Used daemon with pid 88717
-Execution time 554 ms
+Used daemon with pid 88961
+Execution time 145 ms
 
 * Stopping daemons
-Running command /Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home/wrapper/dists/gradle-8.2.1-bin/5hap6b9n41hkg4jeh2au2pllh/gradle-8.2.1/bin/gradle --stop --gradle-user-home /Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home
+Running command /Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home/wrapper/dists/gradle-8.3-rc-1-bin/3lbs5z64xhcdp1uarsx2vp16o/gradle-8.3-rc-1/bin/gradle --stop --gradle-user-home /Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home
 Stopping Daemon(s)
 1 Daemon stopped
 
-* Results written to /Users/ttresansky/Projects/compilation-avoidance-experiment/results/nonAbiChange/gradle-8.2.1
-  /Users/ttresansky/Projects/compilation-avoidance-experiment/results/nonAbiChange/gradle-8.2.1/benchmark.csv
-  /Users/ttresansky/Projects/compilation-avoidance-experiment/results/nonAbiChange/gradle-8.2.1/benchmark.html
+* Results written to /Users/ttresansky/Projects/compilation-avoidance-experiment/results/nonAbiChange/gradle-8.3-RC-1
+  /Users/ttresansky/Projects/compilation-avoidance-experiment/results/nonAbiChange/gradle-8.3-RC-1/benchmark.csv
+  /Users/ttresansky/Projects/compilation-avoidance-experiment/results/nonAbiChange/gradle-8.3-RC-1/benchmark.html
 

@@ -1,0 +1,239 @@
+
+* Started at 2023-07-19T18:10:30.780922Z
+
+* Settings
+Project dir: /Users/ttresansky/Projects/compilation-avoidance-experiment
+Output dir: /Users/ttresansky/Projects/compilation-avoidance-experiment/results/abiChange/bazel
+Profiler: none
+Benchmark: true
+Versions: []
+Gradle User Home: /Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home
+Targets: [abiChange]
+Warm-ups: 5
+Builds: 10
+
+* Scenarios
+Scenario: abiChange using bazel
+  Targets: [build, --profile, bazel-profile/bazel.profile.gz, //...]
+  Build changes: [ApplyAbiChangeToSourceFileMutator(/Users/ttresansky/Projects/compilation-avoidance-experiment/project0/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project0/p0/Production0.java)]
+  Warm-ups: 5
+  Builds: 10
+
+* Running scenario abiChange using bazel (scenario 1/1)
+
+* Running warm-up build #1
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 33 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
+INFO: Found 33 targets...
+[0 / 21] [Prepa] Compiling Java headers project0/libproject0-hjar.jar (10 source files) ... (2 actions, 0 running)
+INFO: Elapsed time: 7.769s, Critical Path: 0.91s
+INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
+INFO: Build completed successfully, 15 total actions
+Execution time 8171 ms
+
+* Running warm-up build #2
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 33 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
+INFO: Found 33 targets...
+[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 7.983s, Critical Path: 0.90s
+INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
+INFO: Build completed successfully, 15 total actions
+Execution time 8402 ms
+
+* Running warm-up build #3
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 33 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
+INFO: Found 33 targets...
+[0 / 21] [Prepa] Compiling Java headers project0/libproject0-hjar.jar (10 source files)
+INFO: Elapsed time: 7.784s, Critical Path: 0.99s
+INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
+INFO: Build completed successfully, 15 total actions
+Execution time 8271 ms
+
+* Running warm-up build #4
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 33 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
+INFO: Found 33 targets...
+[0 / 21] [Prepa] Compiling Java headers project0/libproject0-hjar.jar (10 source files)
+INFO: Elapsed time: 7.661s, Critical Path: 0.90s
+INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
+INFO: Build completed successfully, 15 total actions
+Execution time 8066 ms
+
+* Running warm-up build #5
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 33 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
+INFO: Found 33 targets...
+[0 / 21] [Prepa] Compiling Java headers project0/libproject0-hjar.jar (10 source files) ... (2 actions, 0 running)
+INFO: Elapsed time: 7.641s, Critical Path: 0.97s
+INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
+INFO: Build completed successfully, 15 total actions
+Execution time 8060 ms
+
+* Running measured build #1
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 33 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
+INFO: Found 33 targets...
+[0 / 21] [Prepa] Compiling Java headers project0/libproject0-hjar.jar (10 source files) ... (3 actions, 0 running)
+INFO: Elapsed time: 8.170s, Critical Path: 0.94s
+INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
+INFO: Build completed successfully, 15 total actions
+Execution time 8574 ms
+
+* Running measured build #2
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 33 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
+INFO: Found 33 targets...
+[0 / 15] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 7.892s, Critical Path: 0.96s
+INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
+INFO: Build completed successfully, 15 total actions
+Execution time 8297 ms
+
+* Running measured build #3
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 33 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
+INFO: Found 33 targets...
+[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 7.681s, Critical Path: 0.93s
+INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
+INFO: Build completed successfully, 15 total actions
+Execution time 8067 ms
+
+* Running measured build #4
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 33 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
+INFO: Found 33 targets...
+[0 / 21] [Prepa] Compiling Java headers project0/libproject0-hjar.jar (10 source files) ... (2 actions, 0 running)
+INFO: Elapsed time: 7.972s, Critical Path: 0.92s
+INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
+INFO: Build completed successfully, 15 total actions
+Execution time 8401 ms
+
+* Running measured build #5
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 33 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
+INFO: Found 33 targets...
+[0 / 21] [Prepa] Compiling Java headers project0/libproject0-hjar.jar (10 source files) ... (3 actions, 0 running)
+INFO: Elapsed time: 8.301s, Critical Path: 0.91s
+INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
+INFO: Build completed successfully, 15 total actions
+Execution time 8715 ms
+
+* Running measured build #6
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 33 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
+INFO: Found 33 targets...
+[0 / 16] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 7.756s, Critical Path: 0.91s
+INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
+INFO: Build completed successfully, 15 total actions
+Execution time 8157 ms
+
+* Running measured build #7
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 33 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
+INFO: Found 33 targets...
+[0 / 21] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 7.748s, Critical Path: 0.88s
+INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
+INFO: Build completed successfully, 15 total actions
+Execution time 8200 ms
+
+* Running measured build #8
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 33 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
+INFO: Found 33 targets...
+[0 / 21] [Prepa] Compiling Java headers project0/libproject0-hjar.jar (10 source files) ... (3 actions, 0 running)
+INFO: Elapsed time: 7.737s, Critical Path: 1.02s
+INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
+INFO: Build completed successfully, 15 total actions
+Execution time 8156 ms
+
+* Running measured build #9
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 33 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
+INFO: Found 33 targets...
+[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[7 / 20] Compiling Java headers project4/libproject4-hjar.jar (10 source files); 1s darwin-sandbox ... (3 actions running)
+INFO: Elapsed time: 9.177s, Critical Path: 1.94s
+INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
+INFO: Build completed successfully, 15 total actions
+Execution time 9623 ms
+
+* Running measured build #10
+Running command bazel build --profile bazel-profile/bazel.profile.gz //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 33 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
+INFO: Found 33 targets...
+[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[7 / 20] Compiling Java headers project8/libproject8-hjar.jar (10 source files); 1s darwin-sandbox ... (3 actions running)
+INFO: Elapsed time: 9.205s, Critical Path: 1.95s
+INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
+INFO: Build completed successfully, 15 total actions
+Execution time 9638 ms
+
+* Results written to /Users/ttresansky/Projects/compilation-avoidance-experiment/results/abiChange/bazel
+  /Users/ttresansky/Projects/compilation-avoidance-experiment/results/abiChange/bazel/benchmark.csv
+  /Users/ttresansky/Projects/compilation-avoidance-experiment/results/abiChange/bazel/benchmark.html
+
