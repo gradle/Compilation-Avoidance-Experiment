@@ -1,5 +1,5 @@
 
-* Started at 2023-07-19T18:10:30.780922Z
+* Started at 2023-07-19T20:48:18.956448Z
 
 * Settings
 Project dir: /Users/ttresansky/Projects/compilation-avoidance-experiment
@@ -26,212 +26,1001 @@ Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 33 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
-INFO: Found 33 targets...
-[0 / 21] [Prepa] Compiling Java headers project0/libproject0-hjar.jar (10 source files) ... (2 actions, 0 running)
-INFO: Elapsed time: 7.769s, Critical Path: 0.91s
-INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
-INFO: Build completed successfully, 15 total actions
-Execution time 8171 ms
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[11 / 2,001] Compiling Java headers project88/libproject88-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[36 / 1,997] Building project118/libproject118.jar (10 source files); 0s multiplex-worker ... (12 actions, 8 running)
+[72 / 1,990] Compiling Java headers project92/libproject92-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[96 / 1,988] Compiling Java headers project72/libproject72-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[136 / 1,983] Compiling Java headers project932/libproject932-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[146 / 1,983] Compiling Java headers project420/libproject420-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[195 / 1,972] Compiling Java headers project900/libproject900-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[207 / 1,972] Compiling Java headers project896/libproject896-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[251 / 1,964] Compiling Java headers project812/libproject812-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[259 / 1,961] Compiling Java headers project804/libproject804-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[303 / 1,957] Building project69/tests_for_project69.jar (11 source files); 0s multiplex-worker ... (12 actions, 11 running)
+[327 / 1,954] Compiling Java headers project712/libproject712-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[368 / 1,942] Compiling Java headers project168/libproject168-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[383 / 1,941] Compiling Java headers project356/libproject356-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[426 / 1,932] Compiling Java headers project648/libproject648-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[442 / 1,932] Compiling Java headers project24/libproject24-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[490 / 1,928] Building project622/tests_for_project622.jar (11 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[512 / 1,922] Compiling Java headers project300/libproject300-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[552 / 1,913] Building project307/libproject307.jar (10 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[571 / 1,906] Compiling Java headers project544/libproject544-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[607 / 1,901] Compiling Java headers project488/libproject488-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[641 / 1,889] Compiling Java headers project856/libproject856-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[668 / 1,886] Compiling Java headers project464/libproject464-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[705 / 1,873] Compiling Java headers project248/libproject248-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[721 / 1,864] Compiling Java headers project956/libproject956-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[764 / 1,859] Building project473/tests_for_project473.jar (11 source files); 0s multiplex-worker ... (12 actions, 8 running)
+[786 / 1,841] Compiling Java headers project196/libproject196-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[814 / 1,836] Compiling Java headers project716/libproject716-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[857 / 1,825] Compiling Java headers project724/libproject724-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[889 / 1,819] Compiling Java headers project128/libproject128-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[936 / 1,788] Compiling Java headers project684/libproject684-hjar.jar (10 source files); 1s darwin-sandbox ... (10 actions, 8 running)
+[957 / 1,770] Compiling Java headers project596/libproject596-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[999 / 1,754] Building project510/tests_for_project510.jar (11 source files); 0s multiplex-worker ... (12 actions, 8 running)
+[1,027 / 1,732] Compiling Java headers project4/libproject4-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,065 / 1,723] Compiling Java headers project700/libproject700-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,106 / 1,701] Compiling Java headers project792/libproject792-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,129 / 1,696] Compiling Java headers project552/libproject552-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,168 / 1,689] Compiling Java headers project376/libproject376-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,207 / 1,663] Compiling Java headers project484/libproject484-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,235 / 1,645] Compiling Java headers project964/libproject964-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,274 / 1,641] Compiling Java headers project916/libproject916-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,300 / 1,626] Compiling Java headers project928/libproject928-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,333 / 1,591] Compiling Java headers project524/libproject524-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,353 / 1,579] Compiling Java headers project172/libproject172-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,388 / 1,570] Compiling Java headers project200/libproject200-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,429 / 1,545] Compiling Java headers project848/libproject848-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,440 / 1,525] Compiling Java headers project40/libproject40-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 7 running)
+[1,469 / 1,513] Compiling Java headers project564/libproject564-hjar.jar (10 source files); 0s darwin-sandbox ... (4 actions running)
+[1,488 / 1,507] Compiling Java headers project39/libproject39-hjar.jar (10 source files); 0s darwin-sandbox ... (6 actions running)
+[1,499 / 1,502] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 1s darwin-sandbox
+INFO: Elapsed time: 59.484s, Critical Path: 6.15s
+INFO: 1254 processes: 1 internal, 253 darwin-sandbox, 1000 worker.
+INFO: Build completed successfully, 1254 total actions
+Execution time 59890 ms
 
 * Running warm-up build #2
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 33 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
-INFO: Found 33 targets...
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
 [0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 7.983s, Critical Path: 0.90s
-INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
-INFO: Build completed successfully, 15 total actions
-Execution time 8402 ms
+[9 / 2,001] Compiling Java headers project8/libproject8-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[17 / 2,001] Compiling Java headers project80/libproject80-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[57 / 1,999] Compiling Java headers project500/libproject500-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[74 / 1,999] Compiling Java headers project504/libproject504-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[108 / 1,992] Building project994/tests_for_project994.jar (11 source files); 0s multiplex-worker ... (12 actions, 8 running)
+[132 / 1,988] Compiling Java headers project148/libproject148-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[155 / 1,987] Building project927/tests_for_project927.jar (11 source files); 0s multiplex-worker ... (11 actions, 8 running)
+[185 / 1,979] Compiling Java headers project880/libproject880-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[189 / 1,979] Compiling Java headers project880/libproject880-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[228 / 1,973] Compiling Java headers project832/libproject832-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[246 / 1,969] Compiling Java headers project840/libproject840-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[266 / 1,968] Compiling Java headers project392/libproject392-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[298 / 1,964] Compiling Java headers project784/libproject784-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[310 / 1,962] Compiling Java headers project744/libproject744-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[329 / 1,959] Compiling Java headers project208/libproject208-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[368 / 1,951] Compiling Java headers project548/libproject548-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[407 / 1,939] Compiling Java headers project676/libproject676-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[436 / 1,935] Compiling Java headers project664/libproject664-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[454 / 1,933] Compiling Java headers project624/libproject624-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[498 / 1,927] Compiling Java headers project660/libproject660-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[515 / 1,924] Compiling Java headers project272/libproject272-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[547 / 1,924] Compiling Java headers project144/libproject144-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[564 / 1,920] Compiling Java headers project144/libproject144-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[594 / 1,909] Compiling Java headers project516/libproject516-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[617 / 1,904] Compiling Java headers project788/libproject788-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[651 / 1,895] Compiling Java headers project988/libproject988-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[683 / 1,881] Compiling Java headers project936/libproject936-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[707 / 1,875] Compiling Java headers project480/libproject480-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[741 / 1,866] Compiling Java headers project116/libproject116-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[767 / 1,858] Compiling Java headers project356/libproject356-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[803 / 1,850] Compiling Java headers project796/libproject796-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[842 / 1,835] Compiling Java headers project384/libproject384-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[874 / 1,822] Compiling Java headers project216/libproject216-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[917 / 1,804] Compiling Java headers project88/libproject88-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[948 / 1,787] Compiling Java headers project292/libproject292-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[995 / 1,771] Compiling Java headers project524/libproject524-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[1,017 / 1,748] Compiling Java headers project844/libproject844-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,065 / 1,739] Compiling Java headers project820/libproject820-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,108 / 1,705] Compiling Java headers project236/libproject236-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,129 / 1,693] Compiling Java headers project16/libproject16-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,180 / 1,683] Compiling Java headers project39/libproject39-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,214 / 1,640] Compiling Java headers project572/libproject572-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,250 / 1,637] Compiling Java headers project604/libproject604-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,303 / 1,590] Compiling Java headers project640/libproject640-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,317 / 1,587] Compiling Java headers project768/libproject768-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,368 / 1,572] Compiling Java headers project780/libproject780-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,392 / 1,568] Compiling Java headers project484/libproject484-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,414 / 1,558] Compiling Java headers project120/libproject120-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 9 running)
+[1,442 / 1,523] Compiling Java headers project728/libproject728-hjar.jar (10 source files); 0s darwin-sandbox ... (7 actions, 5 running)
+[1,484 / 1,508] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 1s darwin-sandbox ... (3 actions, 2 running)
+[1,497 / 1,504] Building project727/libproject727.jar (10 source files); 1s multiplex-worker ... (4 actions, 3 running)
+INFO: Elapsed time: 63.273s, Critical Path: 10.65s
+INFO: 1254 processes: 1 internal, 253 darwin-sandbox, 1000 worker.
+INFO: Build completed successfully, 1254 total actions
+Execution time 63824 ms
 
 * Running warm-up build #3
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 33 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
-INFO: Found 33 targets...
-[0 / 21] [Prepa] Compiling Java headers project0/libproject0-hjar.jar (10 source files)
-INFO: Elapsed time: 7.784s, Critical Path: 0.99s
-INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
-INFO: Build completed successfully, 15 total actions
-Execution time 8271 ms
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 19] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[17 / 2,001] Compiling Java headers project176/libproject176-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[49 / 2,000] Building project488/tests_for_project488.jar (11 source files); 0s multiplex-worker ... (12 actions, 8 running)
+[75 / 1,994] Compiling Java headers project620/libproject620-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[104 / 1,989] Compiling Java headers project388/libproject388-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 7 running)
+[130 / 1,983] Compiling Java headers project692/libproject692-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[153 / 1,979] Compiling Java headers project232/libproject232-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[190 / 1,972] Compiling Java headers project868/libproject868-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[211 / 1,966] Compiling Java headers project76/libproject76-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[248 / 1,957] Compiling Java headers project996/libproject996-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[255 / 1,957] Compiling Java headers project932/libproject932-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[294 / 1,953] Building project603/tests_for_project603.jar (11 source files); 0s multiplex-worker ... (10 actions, 7 running)
+[315 / 1,948] Compiling Java headers project132/libproject132-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[320 / 1,948] Compiling Java headers project964/libproject964-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[359 / 1,945] Compiling Java headers project204/libproject204-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 9 running)
+[385 / 1,937] Compiling Java headers project164/libproject164-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[405 / 1,935] Compiling Java headers project328/libproject328-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[448 / 1,926] Compiling Java headers project796/libproject796-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[463 / 1,924] Compiling Java headers project304/libproject304-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[495 / 1,919] Compiling Java headers project532/libproject532-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[523 / 1,916] Compiling Java headers project124/libproject124-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[534 / 1,916] Compiling Java headers project124/libproject124-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[577 / 1,910] Compiling Java headers project512/libproject512-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[586 / 1,905] Compiling Java headers project512/libproject512-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[625 / 1,902] Building project267/tests_for_project267.jar (11 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[663 / 1,888] Compiling Java headers project608/libproject608-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[668 / 1,883] Compiling Java headers project608/libproject608-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[712 / 1,876] Compiling Java headers project12/libproject12-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[745 / 1,855] Compiling Java headers project39/libproject39-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[756 / 1,854] Compiling Java headers project924/libproject924-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions running)
+[808 / 1,844] Building project953/tests_for_project953.jar (11 source files); 0s multiplex-worker ... (12 actions, 11 running)
+[824 / 1,828] Compiling Java headers project420/libproject420-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[844 / 1,827] Compiling Java headers project812/libproject812-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions running)
+[895 / 1,810] Compiling Java headers project800/libproject800-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[909 / 1,799] Compiling Java headers project800/libproject800-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[957 / 1,779] Compiling Java headers project780/libproject780-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[970 / 1,771] Compiling Java headers project856/libproject856-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,012 / 1,765] Compiling Java headers project240/libproject240-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[1,053 / 1,730] Compiling Java headers project712/libproject712-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,082 / 1,720] Compiling Java headers project724/libproject724-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[1,121 / 1,702] Compiling Java headers project820/libproject820-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,147 / 1,683] Compiling Java headers project192/libproject192-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,173 / 1,681] Compiling Java headers project152/libproject152-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions running)
+[1,203 / 1,672] Compiling Java headers project200/libproject200-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,230 / 1,665] Compiling Java headers project740/libproject740-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[1,245 / 1,657] Building project241/tests_for_project241.jar (11 source files); 0s multiplex-worker ... (12 actions running)
+[1,265 / 1,637] Compiling Java headers project948/libproject948-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,296 / 1,632] Building project726/libproject726.jar (10 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[1,333 / 1,619] Compiling Java headers project52/libproject52-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,365 / 1,564] Compiling Java headers project876/libproject876-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,403 / 1,555] Compiling Java headers project848/libproject848-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,437 / 1,544] Building project119/tests_for_project119.jar (11 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[1,457 / 1,517] Building project605/tests_for_project605.jar (11 source files); 0s multiplex-worker ... (5 actions running)
+[1,480 / 1,511] Building project362/tests_for_project362.jar (11 source files); 0s multiplex-worker ... (12 actions, 10 running)
+[1,493 / 1,505] Compiling Java headers project120/libproject120-hjar.jar (10 source files); 1s darwin-sandbox ... (4 actions running)
+[1,496 / 1,503] Building project727/libproject727.jar (10 source files); 1s multiplex-worker ... (4 actions running)
+[1,500 / 1,502] Building project363/tests_for_project363.jar (11 source files); 0s multiplex-worker
+INFO: Elapsed time: 65.735s, Critical Path: 8.00s
+INFO: 1254 processes: 1 internal, 253 darwin-sandbox, 1000 worker.
+INFO: Build completed successfully, 1254 total actions
+Execution time 66167 ms
 
 * Running warm-up build #4
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 33 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
-INFO: Found 33 targets...
-[0 / 21] [Prepa] Compiling Java headers project0/libproject0-hjar.jar (10 source files)
-INFO: Elapsed time: 7.661s, Critical Path: 0.90s
-INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
-INFO: Build completed successfully, 15 total actions
-Execution time 8066 ms
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[11 / 2,001] Compiling Java headers project64/libproject64-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[47 / 2,001] Compiling Java headers project992/libproject992-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[72 / 1,997] Compiling Java headers project900/libproject900-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[109 / 1,990] Compiling Java headers project908/libproject908-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[138 / 1,985] Compiling Java headers project464/libproject464-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[168 / 1,982] Compiling Java headers project864/libproject864-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[181 / 1,980] Compiling Java headers project748/libproject748-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[221 / 1,972] Compiling Java headers project140/libproject140-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[231 / 1,970] Compiling Java headers project804/libproject804-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[276 / 1,968] Compiling Java headers project820/libproject820-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[286 / 1,962] Compiling Java headers project820/libproject820-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[345 / 1,954] Compiling Java headers project376/libproject376-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[356 / 1,954] Compiling Java headers project116/libproject116-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions running)
+[405 / 1,948] Compiling Java headers project724/libproject724-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[418 / 1,948] Compiling Java headers project616/libproject616-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 9 running)
+[458 / 1,940] Building project293/tests_for_project293.jar (11 source files); 0s multiplex-worker ... (12 actions, 11 running)
+[480 / 1,938] Compiling Java headers project184/libproject184-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[515 / 1,931] Compiling Java headers project296/libproject296-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[545 / 1,922] Compiling Java headers project300/libproject300-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[582 / 1,916] Compiling Java headers project256/libproject256-hjar.jar (10 source files); 1s darwin-sandbox ... (10 actions, 9 running)
+[610 / 1,904] Compiling Java headers project248/libproject248-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[642 / 1,896] Compiling Java headers project960/libproject960-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[684 / 1,880] Compiling Java headers project264/libproject264-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[693 / 1,879] Compiling Java headers project868/libproject868-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[737 / 1,873] Compiling Java headers project888/libproject888-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 9 running)
+[765 / 1,846] Compiling Java headers project408/libproject408-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[811 / 1,835] Compiling Java headers project740/libproject740-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions running)
+[840 / 1,811] Compiling Java headers project352/libproject352-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[881 / 1,803] Building project630/tests_for_project630.jar (11 source files); 0s multiplex-worker ... (12 actions, 8 running)
+[916 / 1,784] Compiling Java headers project580/libproject580-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[948 / 1,781] Compiling Java headers project952/libproject952-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions running)
+[990 / 1,767] Building project281/tests_for_project281.jar (11 source files); 0s multiplex-worker ... (11 actions, 9 running)
+[1,012 / 1,751] Compiling Java headers project892/libproject892-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,056 / 1,742] Compiling Java headers project456/libproject456-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,099 / 1,698] Compiling Java headers project396/libproject396-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,132 / 1,693] Compiling Java headers project660/libproject660-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 9 running)
+[1,163 / 1,683] Compiling Java headers project240/libproject240-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,196 / 1,648] Compiling Java headers project528/libproject528-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,240 / 1,625] Compiling Java headers project416/libproject416-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,261 / 1,617] Compiling Java headers project112/libproject112-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,301 / 1,608] Compiling Java headers project780/libproject780-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,328 / 1,581] Compiling Java headers project972/libproject972-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,371 / 1,572] Compiling Java headers project604/libproject604-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions running)
+[1,404 / 1,554] Compiling Java headers project484/libproject484-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[1,434 / 1,531] Compiling Java headers project120/libproject120-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,474 / 1,514] Building project120/tests_for_project120.jar (11 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[1,489 / 1,507] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 1s darwin-sandbox ... (5 actions, 4 running)
+[1,500 / 1,502] [Prepa] Building project363/tests_for_project363.jar (11 source files)
+INFO: Elapsed time: 58.452s, Critical Path: 7.40s
+INFO: 1254 processes: 1 internal, 253 darwin-sandbox, 1000 worker.
+INFO: Build completed successfully, 1254 total actions
+Execution time 58960 ms
 
 * Running warm-up build #5
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 33 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
-INFO: Found 33 targets...
-[0 / 21] [Prepa] Compiling Java headers project0/libproject0-hjar.jar (10 source files) ... (2 actions, 0 running)
-INFO: Elapsed time: 7.641s, Critical Path: 0.97s
-INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
-INFO: Build completed successfully, 15 total actions
-Execution time 8060 ms
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 56] [Prepa] Compiling Java headers project0/libproject0-hjar.jar (10 source files)
+[11 / 2,001] Compiling Java headers project100/libproject100-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[61 / 1,997] Compiling Java headers project988/libproject988-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[71 / 1,997] Compiling Java headers project980/libproject980-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[120 / 1,989] Compiling Java headers project568/libproject568-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[135 / 1,989] Compiling Java headers project568/libproject568-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[186 / 1,982] Compiling Java headers project860/libproject860-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[196 / 1,981] Compiling Java headers project216/libproject216-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[249 / 1,971] Compiling Java headers project808/libproject808-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[258 / 1,971] Compiling Java headers project808/libproject808-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[300 / 1,966] Building project771/tests_for_project771.jar (11 source files); 0s multiplex-worker ... (12 actions, 11 running)
+[324 / 1,963] Compiling Java headers project60/libproject60-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[364 / 1,953] Compiling Java headers project464/libproject464-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[377 / 1,950] Compiling Java headers project452/libproject452-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[421 / 1,945] Compiling Java headers project52/libproject52-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[444 / 1,935] Compiling Java headers project704/libproject704-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[499 / 1,931] Compiling Java headers project660/libproject660-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[515 / 1,927] Compiling Java headers project176/libproject176-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[561 / 1,918] Compiling Java headers project600/libproject600-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[569 / 1,909] Compiling Java headers project348/libproject348-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[614 / 1,908] Building project941/libproject941.jar (10 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[649 / 1,893] Compiling Java headers project204/libproject204-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[687 / 1,887] Compiling Java headers project360/libproject360-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[720 / 1,876] Compiling Java headers project968/libproject968-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[737 / 1,876] Compiling Java headers project756/libproject756-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[783 / 1,856] Compiling Java headers project740/libproject740-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[796 / 1,854] Compiling Java headers project500/libproject500-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[837 / 1,842] Building project477/tests_for_project477.jar (11 source files); 0s multiplex-worker ... (12 actions, 8 running)
+[866 / 1,809] Compiling Java headers project796/libproject796-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[878 / 1,808] Compiling Java headers project432/libproject432-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[916 / 1,805] Building project680/tests_for_project680.jar (11 source files); 0s multiplex-worker ... (12 actions, 8 running)
+[948 / 1,786] Compiling Java headers project676/libproject676-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[976 / 1,783] Compiling Java headers project144/libproject144-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,024 / 1,758] Compiling Java headers project576/libproject576-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,049 / 1,745] Compiling Java headers project472/libproject472-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,088 / 1,732] Compiling Java headers project820/libproject820-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions running)
+[1,126 / 1,694] Compiling Java headers project692/libproject692-hjar.jar (10 source files); 0s darwin-sandbox ... (10 actions running)
+[1,144 / 1,689] Compiling Java headers project672/libproject672-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,183 / 1,677] Compiling Java headers project524/libproject524-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[1,218 / 1,647] Compiling Java headers project3/libproject3-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,228 / 1,643] Compiling Java headers project712/libproject712-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,255 / 1,639] Compiling Java headers project888/libproject888-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,270 / 1,630] Compiling Java headers project888/libproject888-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,295 / 1,616] Compiling Java headers project172/libproject172-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[1,307 / 1,597] Compiling Java headers project172/libproject172-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,341 / 1,590] Compiling Java headers project664/libproject664-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,379 / 1,573] Compiling Java headers project92/libproject92-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,414 / 1,563] Compiling Java headers project848/libproject848-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,432 / 1,527] Compiling Java headers project260/libproject260-hjar.jar (10 source files); 1s darwin-sandbox ... (7 actions running)
+[1,477 / 1,511] Compiling Java headers project484/libproject484-hjar.jar (10 source files); 0s darwin-sandbox ... (6 actions running)
+[1,490 / 1,507] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox ... (10 actions, 9 running)
+[1,500 / 1,502] [Prepa] Building project363/tests_for_project363.jar (11 source files)
+INFO: Elapsed time: 62.383s, Critical Path: 7.88s
+INFO: 1254 processes: 1 internal, 253 darwin-sandbox, 1000 worker.
+INFO: Build completed successfully, 1254 total actions
+Execution time 62971 ms
 
 * Running measured build #1
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 33 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
-INFO: Found 33 targets...
-[0 / 21] [Prepa] Compiling Java headers project0/libproject0-hjar.jar (10 source files) ... (3 actions, 0 running)
-INFO: Elapsed time: 8.170s, Critical Path: 0.94s
-INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
-INFO: Build completed successfully, 15 total actions
-Execution time 8574 ms
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[12 / 2,001] Compiling Java headers project80/libproject80-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[34 / 1,998] Compiling Java headers project948/libproject948-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 9 running)
+[72 / 1,993] Compiling Java headers project92/libproject92-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[79 / 1,993] Compiling Java headers project944/libproject944-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[110 / 1,988] Building project581/tests_for_project581.jar (11 source files); 0s multiplex-worker ... (12 actions, 8 running)
+[145 / 1,982] Compiling Java headers project960/libproject960-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[153 / 1,982] Compiling Java headers project872/libproject872-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[202 / 1,968] Building project397/tests_for_project397.jar (11 source files); 0s multiplex-worker ... (12 actions, 11 running)
+[212 / 1,964] Compiling Java headers project892/libproject892-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[246 / 1,961] Compiling Java headers project504/libproject504-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[264 / 1,958] Compiling Java headers project912/libproject912-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[289 / 1,954] Building project44/tests_for_project44.jar (11 source files); 0s multiplex-worker ... (11 actions, 8 running)
+[325 / 1,947] Compiling Java headers project728/libproject728-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[329 / 1,947] Compiling Java headers project224/libproject224-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[374 / 1,940] Compiling Java headers project740/libproject740-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[399 / 1,931] Compiling Java headers project768/libproject768-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[444 / 1,916] Compiling Java headers project660/libproject660-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[487 / 1,900] Compiling Java headers project636/libproject636-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[516 / 1,893] Compiling Java headers project432/libproject432-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[542 / 1,889] Compiling Java headers project168/libproject168-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[565 / 1,883] Compiling Java headers project368/libproject368-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[585 / 1,879] Compiling Java headers project388/libproject388-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[640 / 1,863] Compiling Java headers project124/libproject124-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions running)
+[644 / 1,863] Compiling Java headers project124/libproject124-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[690 / 1,855] Compiling Java headers project320/libproject320-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[727 / 1,843] Compiling Java headers project40/libproject40-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[731 / 1,841] Compiling Java headers project392/libproject392-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[773 / 1,834] Building project402/tests_for_project402.jar (11 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[804 / 1,813] Compiling Java headers project916/libproject916-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[824 / 1,808] Compiling Java headers project784/libproject784-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[867 / 1,791] Compiling Java headers project456/libproject456-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[884 / 1,778] Compiling Java headers project676/libproject676-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[914 / 1,768] Building project496/tests_for_project496.jar (11 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[943 / 1,747] Compiling Java headers project644/libproject644-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions running)
+[959 / 1,746] Compiling Java headers project884/libproject884-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,005 / 1,730] Building project909/tests_for_project909.jar (11 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[1,024 / 1,712] Compiling Java headers project360/libproject360-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions running)
+[1,056 / 1,708] Compiling Java headers project564/libproject564-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[1,105 / 1,683] Compiling Java headers project460/libproject460-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,114 / 1,682] Compiling Java headers project328/libproject328-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,155 / 1,675] Compiling Java headers project620/libproject620-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,190 / 1,648] Compiling Java headers project408/libproject408-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,208 / 1,643] Compiling Java headers project132/libproject132-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,252 / 1,632] Compiling Java headers project888/libproject888-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,277 / 1,614] Compiling Java headers project512/libproject512-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,305 / 1,606] Compiling Java headers project524/libproject524-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,354 / 1,563] Compiling Java headers project39/libproject39-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,380 / 1,558] Compiling Java headers project896/libproject896-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,422 / 1,541] Compiling Java headers project928/libproject928-hjar.jar (10 source files); 0s darwin-sandbox ... (10 actions running)
+[1,440 / 1,526] Compiling Java headers project484/libproject484-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 9 running)
+[1,471 / 1,517] Compiling Java headers project848/libproject848-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[1,494 / 1,504] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 1s darwin-sandbox ... (6 actions running)
+INFO: Elapsed time: 62.653s, Critical Path: 8.08s
+INFO: 1254 processes: 1 internal, 253 darwin-sandbox, 1000 worker.
+INFO: Build completed successfully, 1254 total actions
+Execution time 63157 ms
 
 * Running measured build #2
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 33 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
-INFO: Found 33 targets...
-[0 / 15] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 7.892s, Critical Path: 0.96s
-INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
-INFO: Build completed successfully, 15 total actions
-Execution time 8297 ms
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 44] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[20 / 2,001] Compiling Java headers project100/libproject100-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[60 / 1,993] Building project198/libproject198.jar (10 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[76 / 1,985] Compiling Java headers project656/libproject656-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[105 / 1,985] Building project481/tests_for_project481.jar (11 source files); 0s multiplex-worker ... (12 actions, 8 running)
+[139 / 1,983] Compiling Java headers project124/libproject124-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[150 / 1,983] Compiling Java headers project976/libproject976-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[186 / 1,975] Building project962/tests_for_project962.jar (11 source files); 0s multiplex-worker ... (12 actions, 10 running)
+[208 / 1,971] Compiling Java headers project944/libproject944-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[248 / 1,967] Compiling Java headers project912/libproject912-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[275 / 1,963] Compiling Java headers project760/libproject760-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions running)
+[316 / 1,957] Compiling Java headers project224/libproject224-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[334 / 1,954] Compiling Java headers project776/libproject776-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[355 / 1,952] Compiling Java headers project804/libproject804-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[382 / 1,942] Compiling Java headers project796/libproject796-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[413 / 1,940] Compiling Java headers project256/libproject256-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[447 / 1,930] Compiling Java headers project464/libproject464-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[460 / 1,928] Compiling Java headers project296/libproject296-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[501 / 1,917] Compiling Java headers project168/libproject168-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[518 / 1,913] Compiling Java headers project20/libproject20-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[563 / 1,901] Compiling Java headers project360/libproject360-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[581 / 1,891] Compiling Java headers project560/libproject560-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[614 / 1,889] Building project469/tests_for_project469.jar (11 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[655 / 1,875] Compiling Java headers project684/libproject684-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[680 / 1,865] Compiling Java headers project916/libproject916-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[723 / 1,850] Compiling Java headers project908/libproject908-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[744 / 1,847] Compiling Java headers project380/libproject380-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[775 / 1,838] Compiling Java headers project840/libproject840-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[812 / 1,821] Compiling Java headers project88/libproject88-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[827 / 1,820] Compiling Java headers project748/libproject748-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[870 / 1,810] Compiling Java headers project740/libproject740-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[894 / 1,801] Compiling Java headers project96/libproject96-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[930 / 1,793] Compiling Java headers project532/libproject532-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[973 / 1,749] Compiling Java headers project172/libproject172-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[997 / 1,746] Compiling Java headers project956/libproject956-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,038 / 1,733] Building project109/tests_for_project109.jar (11 source files); 0s multiplex-worker ... (12 actions, 8 running)
+[1,063 / 1,708] Compiling Java headers project892/libproject892-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,097 / 1,701] Compiling Java headers project708/libproject708-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,132 / 1,681] Compiling Java headers project280/libproject280-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,152 / 1,676] Compiling Java headers project768/libproject768-hjar.jar (10 source files); 1s darwin-sandbox ... (10 actions, 9 running)
+[1,184 / 1,667] Compiling Java headers project696/libproject696-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,224 / 1,640] Compiling Java headers project968/libproject968-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,243 / 1,630] Compiling Java headers project260/libproject260-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,283 / 1,618] Compiling Java headers project160/libproject160-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,305 / 1,607] Compiling Java headers project316/libproject316-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,339 / 1,596] Compiling Java headers project528/libproject528-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,377 / 1,592] Compiling Java headers project120/libproject120-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[1,404 / 1,581] Compiling Java headers project484/libproject484-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[1,432 / 1,562] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox ... (10 actions, 9 running)
+[1,463 / 1,517] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 2s darwin-sandbox ... (10 actions, 9 running)
+[1,491 / 1,506] Compiling Java headers project604/libproject604-hjar.jar (10 source files); 1s darwin-sandbox ... (3 actions, 2 running)
+INFO: Elapsed time: 60.805s, Critical Path: 9.10s
+INFO: 1254 processes: 1 internal, 253 darwin-sandbox, 1000 worker.
+INFO: Build completed successfully, 1254 total actions
+Execution time 61342 ms
 
 * Running measured build #3
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 33 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
-INFO: Found 33 targets...
-[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 7.681s, Critical Path: 0.93s
-INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
-INFO: Build completed successfully, 15 total actions
-Execution time 8067 ms
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 12] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[14 / 2,001] Compiling Java headers project8/libproject8-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[46 / 1,997] Building project981/tests_for_project981.jar (11 source files); 0s multiplex-worker ... (12 actions, 8 running)
+[69 / 1,996] Compiling Java headers project140/libproject140-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[76 / 1,996] Compiling Java headers project500/libproject500-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[116 / 1,992] Building project953/tests_for_project953.jar (11 source files); 0s multiplex-worker ... (12 actions, 11 running)
+[130 / 1,991] Compiling Java headers project48/libproject48-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[142 / 1,991] Compiling Java headers project444/libproject444-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[184 / 1,990] Compiling Java headers project452/libproject452-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[198 / 1,987] Compiling Java headers project436/libproject436-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[235 / 1,978] Compiling Java headers project836/libproject836-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[245 / 1,977] Compiling Java headers project760/libproject760-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[283 / 1,973] Building project828/tests_for_project828.jar (11 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[312 / 1,969] Compiling Java headers project800/libproject800-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[333 / 1,967] Compiling Java headers project184/libproject184-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[371 / 1,953] Compiling Java headers project392/libproject392-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[386 / 1,951] Compiling Java headers project236/libproject236-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[428 / 1,943] Building project359/tests_for_project359.jar (11 source files); 0s multiplex-worker ... (12 actions running)
+[444 / 1,939] Compiling Java headers project340/libproject340-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[493 / 1,934] Building project347/libproject347.jar (10 source files); 0s multiplex-worker ... (12 actions, 8 running)
+[519 / 1,924] Compiling Java headers project128/libproject128-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[542 / 1,923] Compiling Java headers project20/libproject20-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[589 / 1,908] Compiling Java headers project28/libproject28-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[605 / 1,898] Compiling Java headers project212/libproject212-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions running)
+[650 / 1,883] Compiling Java headers project948/libproject948-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions running)
+[659 / 1,881] Compiling Java headers project108/libproject108-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[709 / 1,861] Compiling Java headers project404/libproject404-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[735 / 1,846] Compiling Java headers project144/libproject144-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[773 / 1,836] Compiling Java headers project820/libproject820-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[790 / 1,829] Compiling Java headers project348/libproject348-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[844 / 1,817] Compiling Java headers project360/libproject360-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[872 / 1,798] Compiling Java headers project716/libproject716-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[912 / 1,790] Compiling Java headers project724/libproject724-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 9 running)
+[940 / 1,756] Compiling Java headers project304/libproject304-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[975 / 1,749] Compiling Java headers project260/libproject260-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,030 / 1,723] Compiling Java headers project780/libproject780-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[1,052 / 1,710] Compiling Java headers project856/libproject856-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions running)
+[1,098 / 1,690] Compiling Java headers project400/libproject400-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[1,111 / 1,679] Compiling Java headers project620/libproject620-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,155 / 1,662] Compiling Java headers project684/libproject684-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,180 / 1,641] Compiling Java headers project268/libproject268-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,213 / 1,628] Compiling Java headers project192/libproject192-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,259 / 1,600] Compiling Java headers project968/libproject968-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,280 / 1,595] Compiling Java headers project592/libproject592-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[1,320 / 1,582] Compiling Java headers project888/libproject888-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,359 / 1,556] Compiling Java headers project200/libproject200-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,398 / 1,548] Compiling Java headers project120/libproject120-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[1,429 / 1,534] Compiling Java headers project376/libproject376-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,453 / 1,521] Compiling Java headers project484/libproject484-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,486 / 1,509] Compiling Java headers project848/libproject848-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,499 / 1,502] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 1s darwin-sandbox
+INFO: Elapsed time: 60.932s, Critical Path: 7.84s
+INFO: 1254 processes: 1 internal, 253 darwin-sandbox, 1000 worker.
+INFO: Build completed successfully, 1254 total actions
+Execution time 61323 ms
 
 * Running measured build #4
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 33 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
-INFO: Found 33 targets...
-[0 / 21] [Prepa] Compiling Java headers project0/libproject0-hjar.jar (10 source files) ... (2 actions, 0 running)
-INFO: Elapsed time: 7.972s, Critical Path: 0.92s
-INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
-INFO: Build completed successfully, 15 total actions
-Execution time 8401 ms
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 45] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[7 / 2,000] Compiling Java headers project68/libproject68-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[53 / 1,997] Compiling Java headers project272/libproject272-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[70 / 1,996] Compiling Java headers project528/libproject528-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[120 / 1,990] Compiling Java headers project932/libproject932-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[138 / 1,990] Compiling Java headers project452/libproject452-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[181 / 1,981] Compiling Java headers project448/libproject448-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[207 / 1,981] Compiling Java headers project836/libproject836-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[243 / 1,978] Compiling Java headers project428/libproject428-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[278 / 1,973] Compiling Java headers project792/libproject792-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[300 / 1,965] Compiling Java headers project28/libproject28-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[344 / 1,958] Compiling Java headers project168/libproject168-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[355 / 1,958] Compiling Java headers project708/libproject708-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[414 / 1,945] Compiling Java headers project680/libproject680-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[430 / 1,943] Compiling Java headers project76/libproject76-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[473 / 1,936] Building project333/libproject333.jar (10 source files); 0s multiplex-worker ... (12 actions running)
+[500 / 1,926] Compiling Java headers project72/libproject72-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[532 / 1,923] Compiling Java headers project308/libproject308-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[570 / 1,908] Compiling Java headers project320/libproject320-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[585 / 1,904] Compiling Java headers project548/libproject548-hjar.jar (10 source files); 1s darwin-sandbox ... (9 actions, 8 running)
+[610 / 1,900] Compiling Java headers project988/libproject988-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[650 / 1,882] Compiling Java headers project976/libproject976-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[696 / 1,877] Compiling Java headers project864/libproject864-hjar.jar (10 source files); 1s darwin-sandbox ... (10 actions, 9 running)
+[717 / 1,861] Compiling Java headers project876/libproject876-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[752 / 1,856] Building project874/libproject874.jar (10 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[800 / 1,830] Compiling Java headers project736/libproject736-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[813 / 1,827] Compiling Java headers project696/libproject696-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[858 / 1,814] Building project740/tests_for_project740.jar (11 source files); 0s multiplex-worker ... (8 actions, 6 running)
+[884 / 1,796] Compiling Java headers project644/libproject644-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[919 / 1,791] Compiling Java headers project360/libproject360-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[962 / 1,757] Compiling Java headers project224/libproject224-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,005 / 1,735] Compiling Java headers project924/libproject924-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,042 / 1,718] Compiling Java headers project692/libproject692-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,080 / 1,706] Compiling Java headers project724/libproject724-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[1,123 / 1,681] Compiling Java headers project280/libproject280-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,127 / 1,679] Compiling Java headers project60/libproject60-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,179 / 1,664] Building project999/tests_for_project999.jar (11 source files); 0s multiplex-worker ... (11 actions, 10 running)
+[1,198 / 1,644] Compiling Java headers project248/libproject248-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,235 / 1,640] Building project484/libproject484.jar (10 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[1,282 / 1,629] Compiling Java headers project484/libproject484-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,311 / 1,607] Compiling Java headers project628/libproject628-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions running)
+[1,343 / 1,590] Compiling Java headers project904/libproject904-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,383 / 1,575] Compiling Java headers project928/libproject928-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,404 / 1,565] Compiling Java headers project848/libproject848-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,434 / 1,526] Compiling Java headers project540/libproject540-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[1,471 / 1,514] Compiling Java headers project524/libproject524-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,482 / 1,509] Compiling Java headers project160/libproject160-hjar.jar (10 source files); 1s darwin-sandbox ... (4 actions, 3 running)
+[1,493 / 1,506] Building project605/tests_for_project605.jar (11 source files); 0s multiplex-worker ... (7 actions running)
+[1,499 / 1,502] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 1s darwin-sandbox
+INFO: Elapsed time: 58.381s, Critical Path: 7.94s
+INFO: 1254 processes: 1 internal, 253 darwin-sandbox, 1000 worker.
+INFO: Build completed successfully, 1254 total actions
+Execution time 58797 ms
 
 * Running measured build #5
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 33 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
-INFO: Found 33 targets...
-[0 / 21] [Prepa] Compiling Java headers project0/libproject0-hjar.jar (10 source files) ... (3 actions, 0 running)
-INFO: Elapsed time: 8.301s, Critical Path: 0.91s
-INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
-INFO: Build completed successfully, 15 total actions
-Execution time 8715 ms
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 19] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[16 / 2,001] Compiling Java headers project108/libproject108-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[29 / 2,001] Compiling Java headers project80/libproject80-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[65 / 1,991] Compiling Java headers project736/libproject736-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[69 / 1,991] Compiling Java headers project520/libproject520-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[108 / 1,984] Building project244/tests_for_project244.jar (11 source files); 0s multiplex-worker ... (11 actions running)
+[121 / 1,984] Compiling Java headers project800/libproject800-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[163 / 1,975] Compiling Java headers project828/libproject828-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[180 / 1,972] Compiling Java headers project224/libproject224-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[217 / 1,968] Compiling Java headers project48/libproject48-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[239 / 1,962] Compiling Java headers project872/libproject872-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[271 / 1,958] Compiling Java headers project396/libproject396-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[294 / 1,951] Compiling Java headers project384/libproject384-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[318 / 1,947] Building project389/tests_for_project389.jar (11 source files); 0s multiplex-worker ... (12 actions, 8 running)
+[355 / 1,944] Compiling Java headers project920/libproject920-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[358 / 1,944] Compiling Java headers project720/libproject720-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[394 / 1,939] Compiling Java headers project660/libproject660-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[432 / 1,931] Compiling Java headers project324/libproject324-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[469 / 1,927] Building project671/tests_for_project671.jar (11 source files); 0s multiplex-worker ... (12 actions, 11 running)
+[494 / 1,921] Compiling Java headers project308/libproject308-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[539 / 1,912] Compiling Java headers project556/libproject556-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[559 / 1,903] Compiling Java headers project600/libproject600-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[598 / 1,898] Building project753/tests_for_project753.jar (11 source files); 0s multiplex-worker ... (10 actions, 9 running)
+[633 / 1,879] Compiling Java headers project512/libproject512-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[671 / 1,874] Compiling Java headers project980/libproject980-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[702 / 1,863] Compiling Java headers project464/libproject464-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[716 / 1,862] Compiling Java headers project8/libproject8-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[748 / 1,854] Building project874/tests_for_project874.jar (11 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[773 / 1,838] Compiling Java headers project948/libproject948-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[803 / 1,835] Building project913/tests_for_project913.jar (11 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[845 / 1,813] Compiling Java headers project92/libproject92-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[875 / 1,806] Compiling Java headers project552/libproject552-hjar.jar (10 source files); 1s darwin-sandbox ... (9 actions, 7 running)
+[916 / 1,795] Compiling Java headers project320/libproject320-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[939 / 1,779] Compiling Java headers project276/libproject276-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[982 / 1,760] Compiling Java headers project280/libproject280-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[998 / 1,748] Compiling Java headers project836/libproject836-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,027 / 1,745] Compiling Java headers project876/libproject876-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,079 / 1,727] Compiling Java headers project740/libproject740-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,103 / 1,708] Compiling Java headers project632/libproject632-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,146 / 1,700] Compiling Java headers project684/libproject684-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,190 / 1,653] Compiling Java headers project256/libproject256-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,229 / 1,641] Compiling Java headers project584/libproject584-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,254 / 1,638] Building project362/tests_for_project362.jar (11 source files); 0s multiplex-worker ... (11 actions, 9 running)
+[1,283 / 1,610] Compiling Java headers project160/libproject160-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,300 / 1,601] Compiling Java headers project648/libproject648-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions running)
+[1,336 / 1,592] Compiling Java headers project52/libproject52-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,372 / 1,577] Compiling Java headers project456/libproject456-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[1,399 / 1,549] Compiling Java headers project204/libproject204-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,418 / 1,534] Compiling Java headers project484/libproject484-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,444 / 1,529] Compiling Java headers project968/libproject968-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,453 / 1,528] Compiling Java headers project968/libproject968-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[1,475 / 1,517] Building project727/libproject727.jar (10 source files); 1s multiplex-worker ... (12 actions, 10 running)
+[1,489 / 1,506] Building project727/tests_for_project727.jar (11 source files); 2s multiplex-worker ... (4 actions running)
+[1,498 / 1,502] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox ... (2 actions running)
+[1,501 / 1,501] checking cached actions
+INFO: Elapsed time: 63.669s, Critical Path: 8.28s
+INFO: 1254 processes: 1 internal, 253 darwin-sandbox, 1000 worker.
+INFO: Build completed successfully, 1254 total actions
+Execution time 64068 ms
 
 * Running measured build #6
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 33 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
-INFO: Found 33 targets...
-[0 / 16] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 7.756s, Critical Path: 0.91s
-INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
-INFO: Build completed successfully, 15 total actions
-Execution time 8157 ms
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[9 / 2,000] Compiling Java headers project44/libproject44-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[58 / 1,998] Compiling Java headers project244/libproject244-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[75 / 1,998] Compiling Java headers project960/libproject960-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[119 / 1,988] Building project944/tests_for_project944.jar (11 source files); 0s multiplex-worker ... (10 actions, 9 running)
+[135 / 1,986] Compiling Java headers project496/libproject496-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[170 / 1,979] Building project504/tests_for_project504.jar (11 source files); 0s multiplex-worker ... (12 actions, 10 running)
+[187 / 1,977] Compiling Java headers project156/libproject156-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[222 / 1,976] Building project156/tests_for_project156.jar (11 source files); 0s multiplex-worker ... (12 actions, 10 running)
+[245 / 1,972] Compiling Java headers project836/libproject836-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[292 / 1,966] Compiling Java headers project804/libproject804-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[302 / 1,964] Compiling Java headers project80/libproject80-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[352 / 1,954] Compiling Java headers project36/libproject36-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[358 / 1,954] Compiling Java headers project36/libproject36-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[397 / 1,947] Compiling Java headers project416/libproject416-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 9 running)
+[425 / 1,940] Compiling Java headers project772/libproject772-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[438 / 1,938] Compiling Java headers project372/libproject372-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[481 / 1,930] Compiling Java headers project644/libproject644-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[493 / 1,927] Compiling Java headers project352/libproject352-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[532 / 1,921] Compiling Java headers project360/libproject360-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[571 / 1,911] Compiling Java headers project208/libproject208-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[598 / 1,906] Compiling Java headers project536/libproject536-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[639 / 1,893] Compiling Java headers project544/libproject544-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[667 / 1,888] Compiling Java headers project204/libproject204-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[703 / 1,870] Compiling Java headers project912/libproject912-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[749 / 1,867] Compiling Java headers project524/libproject524-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[785 / 1,855] Compiling Java headers project764/libproject764-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[818 / 1,849] Compiling Java headers project172/libproject172-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 8 running)
+[844 / 1,838] Compiling Java headers project216/libproject216-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[875 / 1,836] Compiling Java headers project716/libproject716-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[911 / 1,823] Compiling Java headers project260/libproject260-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[930 / 1,815] Compiling Java headers project648/libproject648-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions running)
+[990 / 1,805] Compiling Java headers project200/libproject200-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[1,027 / 1,763] Compiling Java headers project328/libproject328-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,080 / 1,734] Compiling Java headers project220/libproject220-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,116 / 1,715] Compiling Java headers project528/libproject528-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[1,152 / 1,706] Compiling Java headers project724/libproject724-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,195 / 1,676] Compiling Java headers project684/libproject684-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,242 / 1,654] Compiling Java headers project52/libproject52-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,276 / 1,630] Compiling Java headers project400/libproject400-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,319 / 1,620] Compiling Java headers project820/libproject820-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,360 / 1,589] Compiling Java headers project292/libproject292-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[1,391 / 1,582] Building project727/tests_for_project727.jar (11 source files); 1s multiplex-worker ... (12 actions, 10 running)
+[1,424 / 1,530] Compiling Java headers project120/libproject120-hjar.jar (10 source files); 0s darwin-sandbox ... (7 actions, 6 running)
+[1,462 / 1,518] Compiling Java headers project848/libproject848-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,486 / 1,508] Compiling Java headers project320/libproject320-hjar.jar (10 source files); 0s darwin-sandbox ... (4 actions, 2 running)
+[1,498 / 1,502] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 1s darwin-sandbox ... (2 actions running)
+[1,500 / 1,502] Building project363/tests_for_project363.jar (11 source files); 0s multiplex-worker
+INFO: Elapsed time: 58.369s, Critical Path: 7.52s
+INFO: 1254 processes: 1 internal, 253 darwin-sandbox, 1000 worker.
+INFO: Build completed successfully, 1254 total actions
+Execution time 58807 ms
 
 * Running measured build #7
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 33 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
-INFO: Found 33 targets...
-[0 / 21] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 7.748s, Critical Path: 0.88s
-INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
-INFO: Build completed successfully, 15 total actions
-Execution time 8200 ms
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[8 / 2,001] Compiling Java headers project96/libproject96-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[57 / 2,000] Compiling Java headers project492/libproject492-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[67 / 2,000] Compiling Java headers project508/libproject508-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[118 / 1,995] Compiling Java headers project128/libproject128-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[137 / 1,995] Compiling Java headers project952/libproject952-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[180 / 1,993] Compiling Java headers project932/libproject932-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[190 / 1,988] Compiling Java headers project936/libproject936-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[231 / 1,985] Building project367/libproject367.jar (10 source files); 0s multiplex-worker ... (12 actions running)
+[251 / 1,978] Compiling Java headers project116/libproject116-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[296 / 1,971] Compiling Java headers project876/libproject876-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[312 / 1,967] Compiling Java headers project452/libproject452-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[354 / 1,961] Compiling Java headers project456/libproject456-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[372 / 1,956] Compiling Java headers project216/libproject216-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[419 / 1,945] Compiling Java headers project748/libproject748-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[438 / 1,944] Compiling Java headers project212/libproject212-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[483 / 1,937] Compiling Java headers project668/libproject668-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[515 / 1,931] Compiling Java headers project192/libproject192-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[553 / 1,918] Compiling Java headers project616/libproject616-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[569 / 1,918] Compiling Java headers project308/libproject308-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[616 / 1,906] Compiling Java headers project320/libproject320-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[637 / 1,904] Compiling Java headers project288/libproject288-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[679 / 1,898] Compiling Java headers project960/libproject960-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[703 / 1,882] Compiling Java headers project520/libproject520-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[743 / 1,873] Compiling Java headers project924/libproject924-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[785 / 1,846] Compiling Java headers project172/libproject172-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[799 / 1,843] Compiling Java headers project860/libproject860-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[851 / 1,819] Compiling Java headers project12/libproject12-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[879 / 1,806] Compiling Java headers project348/libproject348-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[926 / 1,776] Compiling Java headers project360/libproject360-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[945 / 1,769] Compiling Java headers project48/libproject48-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[985 / 1,756] Building project992/tests_for_project992.jar (11 source files); 0s multiplex-worker ... (12 actions, 11 running)
+[1,016 / 1,718] Compiling Java headers project44/libproject44-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,056 / 1,706] Compiling Java headers project332/libproject332-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,100 / 1,686] Compiling Java headers project648/libproject648-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,116 / 1,681] Compiling Java headers project580/libproject580-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,167 / 1,664] Compiling Java headers project684/libproject684-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[1,201 / 1,632] Compiling Java headers project632/libproject632-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,235 / 1,628] Compiling Java headers project284/libproject284-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,272 / 1,614] Compiling Java headers project724/libproject724-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,295 / 1,589] Compiling Java headers project732/libproject732-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,322 / 1,586] Compiling Java headers project740/libproject740-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,385 / 1,564] Compiling Java headers project120/libproject120-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,416 / 1,536] Compiling Java headers project848/libproject848-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions running)
+[1,452 / 1,525] Compiling Java headers project968/libproject968-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,485 / 1,509] Compiling Java headers project888/libproject888-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[1,495 / 1,504] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 1s darwin-sandbox ... (5 actions running)
+INFO: Elapsed time: 56.177s, Critical Path: 7.48s
+INFO: 1254 processes: 1 internal, 253 darwin-sandbox, 1000 worker.
+INFO: Build completed successfully, 1254 total actions
+Execution time 56615 ms
 
 * Running measured build #8
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 33 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
-INFO: Found 33 targets...
-[0 / 21] [Prepa] Compiling Java headers project0/libproject0-hjar.jar (10 source files) ... (3 actions, 0 running)
-INFO: Elapsed time: 7.737s, Critical Path: 1.02s
-INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
-INFO: Build completed successfully, 15 total actions
-Execution time 8156 ms
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[17 / 2,000] Compiling Java headers project108/libproject108-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[43 / 1,998] Compiling Java headers project576/libproject576-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[73 / 1,995] Compiling Java headers project964/libproject964-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[120 / 1,988] Compiling Java headers project948/libproject948-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[137 / 1,986] Compiling Java headers project900/libproject900-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[178 / 1,973] Compiling Java headers project8/libproject8-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[199 / 1,973] Compiling Java headers project868/libproject868-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[232 / 1,965] Building project510/tests_for_project510.jar (11 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[263 / 1,956] Compiling Java headers project260/libproject260-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[290 / 1,953] Compiling Java headers project420/libproject420-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[327 / 1,950] Compiling Java headers project768/libproject768-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[360 / 1,943] Compiling Java headers project56/libproject56-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[382 / 1,938] Compiling Java headers project24/libproject24-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[411 / 1,933] Compiling Java headers project216/libproject216-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[446 / 1,926] Compiling Java headers project188/libproject188-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[453 / 1,925] Compiling Java headers project364/libproject364-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[505 / 1,911] Building project188/tests_for_project188.jar (11 source files); 0s multiplex-worker ... (10 actions running)
+[521 / 1,905] Compiling Java headers project396/libproject396-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[549 / 1,903] Compiling Java headers project936/libproject936-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 9 running)
+[583 / 1,879] Compiling Java headers project976/libproject976-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[594 / 1,874] Compiling Java headers project840/libproject840-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[618 / 1,873] Compiling Java headers project40/libproject40-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[660 / 1,851] Compiling Java headers project864/libproject864-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[674 / 1,850] Compiling Java headers project460/libproject460-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[712 / 1,834] Building project819/libproject819.jar (10 source files); 0s multiplex-worker ... (12 actions, 10 running)
+[733 / 1,822] Compiling Java headers project476/libproject476-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[765 / 1,818] Compiling Java headers project196/libproject196-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[804 / 1,804] Compiling Java headers project136/libproject136-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[824 / 1,797] Compiling Java headers project308/libproject308-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[864 / 1,785] Compiling Java headers project320/libproject320-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[885 / 1,768] Compiling Java headers project32/libproject32-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[918 / 1,762] Compiling Java headers project39/libproject39-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[956 / 1,751] Compiling Java headers project916/libproject916-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[964 / 1,742] Compiling Java headers project916/libproject916-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[999 / 1,734] Compiling Java headers project888/libproject888-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions running)
+[1,033 / 1,723] Compiling Java headers project740/libproject740-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,051 / 1,709] Compiling Java headers project600/libproject600-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,082 / 1,703] Compiling Java headers project688/libproject688-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 9 running)
+[1,134 / 1,679] Compiling Java headers project448/libproject448-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[1,154 / 1,656] Compiling Java headers project440/libproject440-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,199 / 1,643] Compiling Java headers project928/libproject928-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,223 / 1,624] Compiling Java headers project604/libproject604-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,245 / 1,619] Compiling Java headers project400/libproject400-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[1,300 / 1,588] Compiling Java headers project200/libproject200-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,310 / 1,583] Compiling Java headers project148/libproject148-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,343 / 1,575] Compiling Java headers project416/libproject416-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,387 / 1,558] Compiling Java headers project644/libproject644-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,413 / 1,534] Compiling Java headers project228/libproject228-hjar.jar (10 source files); 0s darwin-sandbox ... (8 actions, 7 running)
+[1,449 / 1,524] Compiling Java headers project240/libproject240-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,473 / 1,515] Compiling Java headers project92/libproject92-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[1,495 / 1,504] Building project727/libproject727.jar (10 source files); 0s multiplex-worker ... (3 actions, 2 running)
+[1,499 / 1,502] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 1s darwin-sandbox
+INFO: Elapsed time: 63.661s, Critical Path: 7.51s
+INFO: 1254 processes: 1 internal, 253 darwin-sandbox, 1000 worker.
+INFO: Build completed successfully, 1254 total actions
+Execution time 64117 ms
 
 * Running measured build #9
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 33 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
-INFO: Found 33 targets...
-[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[7 / 20] Compiling Java headers project4/libproject4-hjar.jar (10 source files); 1s darwin-sandbox ... (3 actions running)
-INFO: Elapsed time: 9.177s, Critical Path: 1.94s
-INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
-INFO: Build completed successfully, 15 total actions
-Execution time 9623 ms
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 9] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[13 / 2,001] Compiling Java headers project16/libproject16-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[21 / 2,001] Compiling Java headers project16/libproject16-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[27 / 1,998] Compiling Java headers project236/libproject236-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions, 11 running)
+[49 / 1,995] Compiling Java headers project504/libproject504-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions, 11 running)
+[79 / 1,987] Compiling Java headers project628/libproject628-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[97 / 1,985] Compiling Java headers project628/libproject628-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[114 / 1,985] Compiling Java headers project500/libproject500-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[137 / 1,984] Compiling Java headers project448/libproject448-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[155 / 1,977] Compiling Java headers project468/libproject468-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[167 / 1,974] Compiling Java headers project468/libproject468-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[169 / 1,974] Compiling Java headers project656/libproject656-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions running)
+[189 / 1,974] Compiling Java headers project648/libproject648-hjar.jar (10 source files); 3s darwin-sandbox ... (12 actions, 11 running)
+[217 / 1,968] Compiling Java headers project736/libproject736-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[250 / 1,967] Compiling Java headers project392/libproject392-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 9 running)
+[266 / 1,965] Compiling Java headers project860/libproject860-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[294 / 1,959] Compiling Java headers project216/libproject216-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 9 running)
+[309 / 1,955] Compiling Java headers project980/libproject980-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[317 / 1,955] Compiling Java headers project980/libproject980-hjar.jar (10 source files); 2s darwin-sandbox ... (11 actions running)
+[321 / 1,955] Compiling Java headers project692/libproject692-hjar.jar (10 source files); 3s darwin-sandbox ... (12 actions running)
+[343 / 1,955] Compiling Java headers project300/libproject300-hjar.jar (10 source files); 3s darwin-sandbox ... (12 actions running)
+[367 / 1,951] Compiling Java headers project924/libproject924-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[376 / 1,948] Compiling Java headers project900/libproject900-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[391 / 1,948] Compiling Java headers project208/libproject208-hjar.jar (10 source files); 2s darwin-sandbox ... (11 actions running)
+[417 / 1,942] Compiling Java headers project700/libproject700-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[428 / 1,942] Compiling Java headers project700/libproject700-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[466 / 1,936] Compiling Java headers project188/libproject188-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[485 / 1,931] Compiling Java headers project600/libproject600-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[497 / 1,928] Compiling Java headers project964/libproject964-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[526 / 1,923] Compiling Java headers project168/libproject168-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[543 / 1,918] Compiling Java headers project192/libproject192-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[553 / 1,918] Compiling Java headers project8/libproject8-hjar.jar (10 source files); 2s darwin-sandbox ... (11 actions running)
+[573 / 1,914] Compiling Java headers project816/libproject816-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[617 / 1,899] Compiling Java headers project12/libproject12-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[633 / 1,891] Compiling Java headers project512/libproject512-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[669 / 1,875] Compiling Java headers project632/libproject632-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[699 / 1,855] Compiling Java headers project68/libproject68-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions running)
+[733 / 1,842] Compiling Java headers project868/libproject868-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[753 / 1,832] Compiling Java headers project992/libproject992-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[784 / 1,824] Compiling Java headers project348/libproject348-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[815 / 1,809] Compiling Java headers project916/libproject916-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[836 / 1,807] Compiling Java headers project284/libproject284-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[860 / 1,802] Compiling Java headers project892/libproject892-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions running)
+[893 / 1,791] Compiling Java headers project708/libproject708-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[901 / 1,788] Compiling Java headers project428/libproject428-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[913 / 1,788] Compiling Java headers project248/libproject248-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions running)
+[928 / 1,785] Compiling Java headers project764/libproject764-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions running)
+[967 / 1,772] Compiling Java headers project728/libproject728-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[982 / 1,757] Compiling Java headers project728/libproject728-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[998 / 1,756] Compiling Java headers project92/libproject92-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions running)
+[1,032 / 1,746] Compiling Java headers project740/libproject740-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[1,058 / 1,725] Compiling Java headers project880/libproject880-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,073 / 1,718] Compiling Java headers project148/libproject148-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions running)
+[1,086 / 1,712] Compiling Java headers project244/libproject244-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions, 11 running)
+[1,127 / 1,703] Compiling Java headers project52/libproject52-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[1,156 / 1,675] Compiling Java headers project196/libproject196-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[1,168 / 1,669] Compiling Java headers project180/libproject180-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,195 / 1,661] Compiling Java headers project752/libproject752-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions, 11 running)
+[1,215 / 1,656] Compiling Java headers project604/libproject604-hjar.jar (10 source files); 2s darwin-sandbox ... (10 actions, 9 running)
+[1,233 / 1,647] Compiling Java headers project684/libproject684-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions, 11 running)
+[1,245 / 1,631] Compiling Java headers project644/libproject644-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,257 / 1,623] Compiling Java headers project856/libproject856-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions, 11 running)
+[1,280 / 1,615] Compiling Java headers project856/libproject856-hjar.jar (10 source files); 3s darwin-sandbox ... (12 actions, 11 running)
+[1,293 / 1,609] Compiling Java headers project704/libproject704-hjar.jar (10 source files); 3s darwin-sandbox ... (12 actions running)
+[1,322 / 1,594] Compiling Java headers project852/libproject852-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,359 / 1,581] Compiling Java headers project524/libproject524-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,389 / 1,546] Compiling Java headers project292/libproject292-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,404 / 1,539] Compiling Java headers project108/libproject108-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,447 / 1,526] Compiling Java headers project376/libproject376-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[1,471 / 1,519] Compiling Java headers project848/libproject848-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,492 / 1,505] Compiling Java headers project120/libproject120-hjar.jar (10 source files); 1s darwin-sandbox ... (5 actions running)
+[1,496 / 1,503] Building project727/libproject727.jar (10 source files); 1s multiplex-worker ... (4 actions running)
+[1,500 / 1,502] Building project363/tests_for_project363.jar (11 source files); 0s multiplex-worker
+INFO: Elapsed time: 88.122s, Critical Path: 10.08s
+INFO: 1254 processes: 1 internal, 253 darwin-sandbox, 1000 worker.
+INFO: Build completed successfully, 1254 total actions
+Execution time 88600 ms
 
 * Running measured build #10
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 33 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 33 targets (0 packages loaded, 0 targets configured).
-INFO: Found 33 targets...
-[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[7 / 20] Compiling Java headers project8/libproject8-hjar.jar (10 source files); 1s darwin-sandbox ... (3 actions running)
-INFO: Elapsed time: 9.205s, Critical Path: 1.95s
-INFO: 15 processes: 1 internal, 4 darwin-sandbox, 10 worker.
-INFO: Build completed successfully, 15 total actions
-Execution time 9638 ms
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 43] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[12 / 2,001] Compiling Java headers project88/libproject88-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[31 / 1,996] Compiling Java headers project112/libproject112-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[83 / 1,985] Compiling Java headers project92/libproject92-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[90 / 1,985] Compiling Java headers project576/libproject576-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[99 / 1,985] Compiling Java headers project460/libproject460-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions running)
+[116 / 1,984] Compiling Java headers project788/libproject788-hjar.jar (10 source files); 3s darwin-sandbox ... (12 actions running)
+[132 / 1,976] Compiling Java headers project748/libproject748-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[143 / 1,975] Compiling Java headers project728/libproject728-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[154 / 1,972] Compiling Java headers project736/libproject736-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions, 11 running)
+[166 / 1,970] Compiling Java headers project768/libproject768-hjar.jar (10 source files); 3s darwin-sandbox ... (12 actions running)
+[191 / 1,968] Compiling Java headers project584/libproject584-hjar.jar (10 source files); 3s darwin-sandbox ... (12 actions running)
+[217 / 1,968] Compiling Java headers project688/libproject688-hjar.jar (10 source files); 1s darwin-sandbox ... (10 actions, 9 running)
+[257 / 1,962] Compiling Java headers project192/libproject192-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[270 / 1,960] Compiling Java headers project24/libproject24-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[278 / 1,960] Compiling Java headers project352/libproject352-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions running)
+[283 / 1,960] Compiling Java headers project220/libproject220-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions running)
+[310 / 1,950] Compiling Java headers project944/libproject944-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions running)
+[331 / 1,947] Compiling Java headers project908/libproject908-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[342 / 1,945] Compiling Java headers project364/libproject364-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[364 / 1,940] Compiling Java headers project860/libproject860-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions, 11 running)
+[390 / 1,935] Compiling Java headers project708/libproject708-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[399 / 1,933] Compiling Java headers project316/libproject316-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[414 / 1,931] Compiling Java headers project712/libproject712-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions running)
+[453 / 1,925] Compiling Java headers project96/libproject96-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions running)
+[462 / 1,925] Compiling Java headers project96/libproject96-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[467 / 1,925] Compiling Java headers project20/libproject20-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions running)
+[489 / 1,923] Compiling Java headers project388/libproject388-hjar.jar (10 source files); 3s darwin-sandbox ... (12 actions running)
+[521 / 1,916] Compiling Java headers project48/libproject48-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[528 / 1,915] Compiling Java headers project400/libproject400-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[547 / 1,912] Compiling Java headers project540/libproject540-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions running)
+[568 / 1,908] Compiling Java headers project536/libproject536-hjar.jar (10 source files); 3s darwin-sandbox ... (12 actions running)
+[593 / 1,897] Compiling Java headers project356/libproject356-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[613 / 1,885] Compiling Java headers project448/libproject448-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[641 / 1,881] Compiling Java headers project248/libproject248-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions running)
+[667 / 1,868] Compiling Java headers project152/libproject152-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[677 / 1,863] Compiling Java headers project152/libproject152-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[701 / 1,859] Compiling Java headers project592/libproject592-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[744 / 1,845] Compiling Java headers project740/libproject740-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[779 / 1,832] Compiling Java headers project232/libproject232-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 10 running)
+[811 / 1,819] Compiling Java headers project340/libproject340-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[832 / 1,815] Compiling Java headers project64/libproject64-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[875 / 1,796] Compiling Java headers project12/libproject12-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[886 / 1,795] Compiling Java headers project520/libproject520-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[929 / 1,784] Compiling Java headers project956/libproject956-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[957 / 1,763] Compiling Java headers project444/libproject444-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[994 / 1,752] Compiling Java headers project456/libproject456-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,015 / 1,729] Compiling Java headers project252/libproject252-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[1,048 / 1,723] Compiling Java headers project372/libproject372-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions running)
+[1,092 / 1,694] Compiling Java headers project376/libproject376-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,109 / 1,686] Compiling Java headers project992/libproject992-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,153 / 1,676] Building project289/tests_for_project289.jar (11 source files); 0s multiplex-worker ... (12 actions, 9 running)
+[1,172 / 1,650] Compiling Java headers project292/libproject292-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
+[1,208 / 1,646] Compiling Java headers project428/libproject428-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 9 running)
+[1,251 / 1,631] Compiling Java headers project888/libproject888-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,279 / 1,599] Compiling Java headers project208/libproject208-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,304 / 1,592] Compiling Java headers project648/libproject648-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[1,357 / 1,577] Compiling Java headers project484/libproject484-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
+[1,380 / 1,567] Compiling Java headers project240/libproject240-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 9 running)
+[1,400 / 1,546] Compiling Java headers project892/libproject892-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,428 / 1,530] Compiling Java headers project928/libproject928-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,472 / 1,520] Compiling Java headers project39/libproject39-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 9 running)
+[1,482 / 1,515] Building project727/libproject727.jar (10 source files); 1s multiplex-worker ... (12 actions, 10 running)
+[1,497 / 1,503] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox ... (3 actions running)
+[1,499 / 1,502] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 1s darwin-sandbox
+INFO: Elapsed time: 80.743s, Critical Path: 8.66s
+INFO: 1254 processes: 1 internal, 253 darwin-sandbox, 1000 worker.
+INFO: Build completed successfully, 1254 total actions
+Execution time 81295 ms
 
 * Results written to /Users/ttresansky/Projects/compilation-avoidance-experiment/results/abiChange/bazel
   /Users/ttresansky/Projects/compilation-avoidance-experiment/results/abiChange/bazel/benchmark.csv
