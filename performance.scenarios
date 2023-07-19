@@ -1,6 +1,6 @@
 nonAbiChange {
   tasks = ["assemble"]
-  apply-non-abi-change-to = "project0/src/main/java/org/gradle/test/performance/compilationAvoidanceExperiment/project0/p0/Production0.java"
+  apply-non-abi-change-to = "project0/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project0/p0/Production0.java"
   maven {
     targets = ["clean", "package", "-Dmaven.test.skip=true", "-T", "4"]
   }
@@ -11,7 +11,7 @@ nonAbiChange {
 
 abiChange {
   tasks = ["assemble"]
-  apply-abi-change-to = "project0/src/main/java/org/gradle/test/performance/compilationAvoidanceExperiment/project0/p0/Production0.java"
+  apply-abi-change-to = "project0/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project0/p0/Production0.java"
   maven {
     targets = ["clean", "package", "-Dmaven.test.skip=true", "-T", "4"]
   }
@@ -52,12 +52,12 @@ incrementalCompile {
    maven {
     targets = ["compile", "-T", "4"]
   }
-  apply-non-abi-change-to = "project0/src/main/java/org/gradle/test/performance/compilationAvoidanceExperiment/project0/p0/Production0.java"
+  apply-non-abi-change-to = "project0/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project0/p0/Production0.java"
 }
 
 incrementalTest {
   tasks = ["build"]
-  apply-non-abi-change-to = "project0/src/main/java/org/gradle/test/performance/compilationAvoidanceExperiment/project0/p0/Production0.java"
+  apply-non-abi-change-to = "project0/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project0/p0/Production0.java"
    maven {
     targets = ["test", "-T", "4"]
   }
