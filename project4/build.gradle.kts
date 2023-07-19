@@ -28,7 +28,7 @@ repositories {
             "implementation"(libs.reflectasm)
             "testImplementation"(libs.junit)
 
-
+            "implementation"(project(":project0"))
 
     }
 

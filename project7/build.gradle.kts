@@ -1,7 +1,5 @@
 plugins {
-
-            id("java-library")
-
+    id("java")
 id("eclipse")
 id("idea")
 }
@@ -21,14 +19,14 @@ repositories {
 
     dependencies {
 
-            "api"(libs.commonsLang)
-    "api"(libs.commonsHttpClient)
-    "api"(libs.commonsCodec)
-    "api"(libs.jclOverSlf4j)
+            "implementation"(libs.commonsLang)
+    "implementation"(libs.commonsHttpClient)
+    "implementation"(libs.commonsCodec)
+    "implementation"(libs.jclOverSlf4j)
             "implementation"(libs.reflectasm)
             "testImplementation"(libs.junit)
 
-            "api"(project(":project4"))
+            "implementation"(project(":project4"))
     "implementation"(project(":project5"))
     "implementation"(project(":project6"))
 

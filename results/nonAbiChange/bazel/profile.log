@@ -1,13 +1,13 @@
 
-* Started at 2023-07-18T20:55:20.056986Z
+* Started at 2023-07-19T16:39:41.582514Z
 
 * Settings
-Project dir: /Users/ttresansky/Projects/largeJavaMultiProject
-Output dir: /Users/ttresansky/Projects/largeJavaMultiProject/results/nonAbiChange/bazel
+Project dir: /Users/ttresansky/Projects/compilation-avoidance-experiment
+Output dir: /Users/ttresansky/Projects/compilation-avoidance-experiment/results/nonAbiChange/bazel
 Profiler: none
 Benchmark: true
 Versions: []
-Gradle User Home: /Users/ttresansky/Projects/largeJavaMultiProject/gradle-user-home
+Gradle User Home: /Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home
 Targets: [nonAbiChange]
 Warm-ups: 5
 Builds: 10
@@ -15,7 +15,7 @@ Builds: 10
 * Scenarios
 Scenario: nonAbiChange using bazel
   Targets: [build, --profile, bazel-profile/bazel.profile.gz, //...]
-  Build changes: [ApplyNonAbiChangeToSourceFileMutator(/Users/ttresansky/Projects/largeJavaMultiProject/project0/src/main/java/org/gradle/test/performance/headerjarsexperiment/project0/p0/Production0.java)]
+  Build changes: [ApplyNonAbiChangeToSourceFileMutator(/Users/ttresansky/Projects/compilation-avoidance-experiment/project0/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project0/p0/Production0.java)]
   Warm-ups: 5
   Builds: 10
 
@@ -23,217 +23,415 @@ Scenario: nonAbiChange using bazel
 
 * Running warm-up build #1
 Running command bazel build --profile bazel-profile/bazel.profile.gz //...
+ERROR: Error while creating profile file: /Users/ttresansky/Projects/compilation-avoidance-experiment/bazel-profile/bazel.profile.gz (No such file or directory)
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
-INFO: Found 3003 targets...
-[0 / 13] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[12 / 22] [Prepa] Compiling Java headers project120/libproject120-hjar.jar (10 source files)
-[17 / 20] Compiling Java headers project363/libproject363-hjar.jar (10 source files); 1s darwin-sandbox
-INFO: Elapsed time: 6.692s, Critical Path: 3.34s
-INFO: 19 processes: 1 internal, 6 darwin-sandbox, 12 worker.
-INFO: Build completed successfully, 19 total actions
-Execution time 7598 ms
-
-* Running warm-up build #2
-Running command bazel build --profile bazel-profile/bazel.profile.gz //...
+Analyzing: 33 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 33 targets (0 packages loaded, 30 targets configured).
+INFO: Found 33 targets...
+[22 / 40] [Prepa] BazelWorkspaceStatusAction stable-status.txt ... (10 actions, 5 running)
+ERROR: /Users/ttresansky/Projects/compilation-avoidance-experiment/project8/BUILD.bazel:4:13: Building project8/libproject8.jar (10 source files) failed: (Exit 1): java failed: error executing command (from target //project8:project8) external/remotejdk11_macos_aarch64/bin/java -XX:-CompactStrings '--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED' '--add-exports=jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED' ... (remaining 18 arguments skipped)
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production80.java:3: error: package org.gradle.test.performance.compilationavoidanceexperiment.project0.p0 does not exist
+import org.gradle.test.performance.compilationavoidanceexperiment.project0.p0.Production0;
+                                                                             ^
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production80.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+            ^
+  symbol:   class Production0
+  location: class Production80
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production80.java:9: error: cannot find symbol
+    public Production0 getProperty0() {
+           ^
+  symbol:   class Production0
+  location: class Production80
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production80.java:13: error: cannot find symbol
+    public void setProperty0(Production0 value) {
+                             ^
+  symbol:   class Production0
+  location: class Production80
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production81.java:3: error: package org.gradle.test.performance.compilationavoidanceexperiment.project0.p0 does not exist
+import org.gradle.test.performance.compilationavoidanceexperiment.project0.p0.Production0;
+                                                                             ^
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production81.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+            ^
+  symbol:   class Production0
+  location: class Production81
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production81.java:9: error: cannot find symbol
+    public Production0 getProperty0() {
+           ^
+  symbol:   class Production0
+  location: class Production81
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production81.java:13: error: cannot find symbol
+    public void setProperty0(Production0 value) {
+                             ^
+  symbol:   class Production0
+  location: class Production81
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production82.java:3: error: package org.gradle.test.performance.compilationavoidanceexperiment.project0.p0 does not exist
+import org.gradle.test.performance.compilationavoidanceexperiment.project0.p0.Production0;
+                                                                             ^
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production82.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+            ^
+  symbol:   class Production0
+  location: class Production82
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production82.java:9: error: cannot find symbol
+    public Production0 getProperty0() {
+           ^
+  symbol:   class Production0
+  location: class Production82
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production82.java:13: error: cannot find symbol
+    public void setProperty0(Production0 value) {
+                             ^
+  symbol:   class Production0
+  location: class Production82
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production84.java:3: error: package org.gradle.test.performance.compilationavoidanceexperiment.project0.p0 does not exist
+import org.gradle.test.performance.compilationavoidanceexperiment.project0.p0.Production0;
+                                                                             ^
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production84.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+            ^
+  symbol:   class Production0
+  location: class Production84
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production84.java:9: error: cannot find symbol
+    public Production0 getProperty0() {
+           ^
+  symbol:   class Production0
+  location: class Production84
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production84.java:13: error: cannot find symbol
+    public void setProperty0(Production0 value) {
+                             ^
+  symbol:   class Production0
+  location: class Production84
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production85.java:3: error: package org.gradle.test.performance.compilationavoidanceexperiment.project0.p0 does not exist
+import org.gradle.test.performance.compilationavoidanceexperiment.project0.p0.Production0;
+                                                                             ^
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production85.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+            ^
+  symbol:   class Production0
+  location: class Production85
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production85.java:9: error: cannot find symbol
+    public Production0 getProperty0() {
+           ^
+  symbol:   class Production0
+  location: class Production85
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production85.java:13: error: cannot find symbol
+    public void setProperty0(Production0 value) {
+                             ^
+  symbol:   class Production0
+  location: class Production85
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production86.java:3: error: package org.gradle.test.performance.compilationavoidanceexperiment.project0.p0 does not exist
+import org.gradle.test.performance.compilationavoidanceexperiment.project0.p0.Production0;
+                                                                             ^
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production86.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+            ^
+  symbol:   class Production0
+  location: class Production86
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production86.java:9: error: cannot find symbol
+    public Production0 getProperty0() {
+           ^
+  symbol:   class Production0
+  location: class Production86
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production86.java:13: error: cannot find symbol
+    public void setProperty0(Production0 value) {
+                             ^
+  symbol:   class Production0
+  location: class Production86
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production88.java:3: error: package org.gradle.test.performance.compilationavoidanceexperiment.project0.p0 does not exist
+import org.gradle.test.performance.compilationavoidanceexperiment.project0.p0.Production0;
+                                                                             ^
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production88.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+            ^
+  symbol:   class Production0
+  location: class Production88
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production88.java:9: error: cannot find symbol
+    public Production0 getProperty0() {
+           ^
+  symbol:   class Production0
+  location: class Production88
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production88.java:13: error: cannot find symbol
+    public void setProperty0(Production0 value) {
+                             ^
+  symbol:   class Production0
+  location: class Production88
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production89.java:3: error: package org.gradle.test.performance.compilationavoidanceexperiment.project0.p0 does not exist
+import org.gradle.test.performance.compilationavoidanceexperiment.project0.p0.Production0;
+                                                                             ^
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production89.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+            ^
+  symbol:   class Production0
+  location: class Production89
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production89.java:9: error: cannot find symbol
+    public Production0 getProperty0() {
+           ^
+  symbol:   class Production0
+  location: class Production89
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production89.java:13: error: cannot find symbol
+    public void setProperty0(Production0 value) {
+                             ^
+  symbol:   class Production0
+  location: class Production89
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production80.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+                                        ^
+  symbol:   class Production0
+  location: class Production80
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production81.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+                                        ^
+  symbol:   class Production0
+  location: class Production81
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production82.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+                                        ^
+  symbol:   class Production0
+  location: class Production82
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production84.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+                                        ^
+  symbol:   class Production0
+  location: class Production84
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production85.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+                                        ^
+  symbol:   class Production0
+  location: class Production85
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production86.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+                                        ^
+  symbol:   class Production0
+  location: class Production86
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production88.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+                                        ^
+  symbol:   class Production0
+  location: class Production88
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production89.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+                                        ^
+  symbol:   class Production0
+  location: class Production89
+INFO: Elapsed time: 7.450s, Critical Path: 0.35s
+INFO: 12 processes: 12 internal.
+FAILED: Build did NOT complete successfully
+java.lang.RuntimeException: Could not run command bazel build --profile bazel-profile/bazel.profile.gz //...
+Output:
+======
+ERROR: Error while creating profile file: /Users/ttresansky/Projects/compilation-avoidance-experiment/bazel-profile/bazel.profile.gz (No such file or directory)
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
-INFO: Found 3003 targets...
-[0 / 13] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 2.873s, Critical Path: 0.37s
-INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
-INFO: Build completed successfully, 3 total actions
-Execution time 3233 ms
+Analyzing: 33 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 33 targets (0 packages loaded, 30 targets configured).
+INFO: Found 33 targets...
+[22 / 40] [Prepa] BazelWorkspaceStatusAction stable-status.txt ... (10 actions, 5 running)
+ERROR: /Users/ttresansky/Projects/compilation-avoidance-experiment/project8/BUILD.bazel:4:13: Building project8/libproject8.jar (10 source files) failed: (Exit 1): java failed: error executing command (from target //project8:project8) external/remotejdk11_macos_aarch64/bin/java -XX:-CompactStrings '--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED' '--add-exports=jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED' ... (remaining 18 arguments skipped)
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production80.java:3: error: package org.gradle.test.performance.compilationavoidanceexperiment.project0.p0 does not exist
+import org.gradle.test.performance.compilationavoidanceexperiment.project0.p0.Production0;
+                                                                             ^
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production80.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+            ^
+  symbol:   class Production0
+  location: class Production80
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production80.java:9: error: cannot find symbol
+    public Production0 getProperty0() {
+           ^
+  symbol:   class Production0
+  location: class Production80
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production80.java:13: error: cannot find symbol
+    public void setProperty0(Production0 value) {
+                             ^
+  symbol:   class Production0
+  location: class Production80
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production81.java:3: error: package org.gradle.test.performance.compilationavoidanceexperiment.project0.p0 does not exist
+import org.gradle.test.performance.compilationavoidanceexperiment.project0.p0.Production0;
+                                                                             ^
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production81.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+            ^
+  symbol:   class Production0
+  location: class Production81
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production81.java:9: error: cannot find symbol
+    public Production0 getProperty0() {
+           ^
+  symbol:   class Production0
+  location: class Production81
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production81.java:13: error: cannot find symbol
+    public void setProperty0(Production0 value) {
+                             ^
+  symbol:   class Production0
+  location: class Production81
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production82.java:3: error: package org.gradle.test.performance.compilationavoidanceexperiment.project0.p0 does not exist
+import org.gradle.test.performance.compilationavoidanceexperiment.project0.p0.Production0;
+                                                                             ^
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production82.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+            ^
+  symbol:   class Production0
+  location: class Production82
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production82.java:9: error: cannot find symbol
+    public Production0 getProperty0() {
+           ^
+  symbol:   class Production0
+  location: class Production82
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production82.java:13: error: cannot find symbol
+    public void setProperty0(Production0 value) {
+                             ^
+  symbol:   class Production0
+  location: class Production82
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production84.java:3: error: package org.gradle.test.performance.compilationavoidanceexperiment.project0.p0 does not exist
+import org.gradle.test.performance.compilationavoidanceexperiment.project0.p0.Production0;
+                                                                             ^
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production84.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+            ^
+  symbol:   class Production0
+  location: class Production84
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production84.java:9: error: cannot find symbol
+    public Production0 getProperty0() {
+           ^
+  symbol:   class Production0
+  location: class Production84
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production84.java:13: error: cannot find symbol
+    public void setProperty0(Production0 value) {
+                             ^
+  symbol:   class Production0
+  location: class Production84
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production85.java:3: error: package org.gradle.test.performance.compilationavoidanceexperiment.project0.p0 does not exist
+import org.gradle.test.performance.compilationavoidanceexperiment.project0.p0.Production0;
+                                                                             ^
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production85.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+            ^
+  symbol:   class Production0
+  location: class Production85
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production85.java:9: error: cannot find symbol
+    public Production0 getProperty0() {
+           ^
+  symbol:   class Production0
+  location: class Production85
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production85.java:13: error: cannot find symbol
+    public void setProperty0(Production0 value) {
+                             ^
+  symbol:   class Production0
+  location: class Production85
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production86.java:3: error: package org.gradle.test.performance.compilationavoidanceexperiment.project0.p0 does not exist
+import org.gradle.test.performance.compilationavoidanceexperiment.project0.p0.Production0;
+                                                                             ^
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production86.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+            ^
+  symbol:   class Production0
+  location: class Production86
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production86.java:9: error: cannot find symbol
+    public Production0 getProperty0() {
+           ^
+  symbol:   class Production0
+  location: class Production86
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production86.java:13: error: cannot find symbol
+    public void setProperty0(Production0 value) {
+                             ^
+  symbol:   class Production0
+  location: class Production86
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production88.java:3: error: package org.gradle.test.performance.compilationavoidanceexperiment.project0.p0 does not exist
+import org.gradle.test.performance.compilationavoidanceexperiment.project0.p0.Production0;
+                                                                             ^
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production88.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+            ^
+  symbol:   class Production0
+  location: class Production88
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production88.java:9: error: cannot find symbol
+    public Production0 getProperty0() {
+           ^
+  symbol:   class Production0
+  location: class Production88
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production88.java:13: error: cannot find symbol
+    public void setProperty0(Production0 value) {
+                             ^
+  symbol:   class Production0
+  location: class Production88
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production89.java:3: error: package org.gradle.test.performance.compilationavoidanceexperiment.project0.p0 does not exist
+import org.gradle.test.performance.compilationavoidanceexperiment.project0.p0.Production0;
+                                                                             ^
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production89.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+            ^
+  symbol:   class Production0
+  location: class Production89
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production89.java:9: error: cannot find symbol
+    public Production0 getProperty0() {
+           ^
+  symbol:   class Production0
+  location: class Production89
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production89.java:13: error: cannot find symbol
+    public void setProperty0(Production0 value) {
+                             ^
+  symbol:   class Production0
+  location: class Production89
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production80.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+                                        ^
+  symbol:   class Production0
+  location: class Production80
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production81.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+                                        ^
+  symbol:   class Production0
+  location: class Production81
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production82.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+                                        ^
+  symbol:   class Production0
+  location: class Production82
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production84.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+                                        ^
+  symbol:   class Production0
+  location: class Production84
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production85.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+                                        ^
+  symbol:   class Production0
+  location: class Production85
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production86.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+                                        ^
+  symbol:   class Production0
+  location: class Production86
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production88.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+                                        ^
+  symbol:   class Production0
+  location: class Production88
+project8/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project8/p4/Production89.java:7: error: cannot find symbol
+    private Production0 property0 = new Production0();
+                                        ^
+  symbol:   class Production0
+  location: class Production89
+INFO: Elapsed time: 7.450s, Critical Path: 0.35s
+INFO: 12 processes: 12 internal.
+FAILED: Build did NOT complete successfully
+======
+	at org.gradle.profiler.CommandExec$RunHandle.waitForSuccess(CommandExec.java:227)
+	at org.gradle.profiler.CommandExec.run(CommandExec.java:49)
+	at org.gradle.profiler.BuildToolCommandLineInvoker$1.run(BuildToolCommandLineInvoker.java:49)
+	at org.gradle.profiler.RunBuildStepAction.run(RunBuildStepAction.java:29)
+	at org.gradle.profiler.ScenarioInvoker.runMeasured(ScenarioInvoker.java:28)
+	at org.gradle.profiler.BuildToolCommandLineInvoker.doRun(BuildToolCommandLineInvoker.java:24)
+	at org.gradle.profiler.bazel.BazelScenarioInvoker.run(BazelScenarioInvoker.java:20)
+	at org.gradle.profiler.bazel.BazelScenarioInvoker.run(BazelScenarioInvoker.java:11)
+	at org.gradle.profiler.Main.invoke(Main.java:140)
+	at org.gradle.profiler.Main.run(Main.java:92)
+	at org.gradle.profiler.Main.main(Main.java:37)
 
-* Running warm-up build #3
-Running command bazel build --profile bazel-profile/bazel.profile.gz //...
-Loading: 
-Loading: 
-Loading: 0 packages loaded
-Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
-INFO: Found 3003 targets...
-[0 / 2] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 3.209s, Critical Path: 0.35s
-INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
-INFO: Build completed successfully, 3 total actions
-Execution time 3589 ms
-
-* Running warm-up build #4
-Running command bazel build --profile bazel-profile/bazel.profile.gz //...
-Loading: 
-Loading: 
-Loading: 0 packages loaded
-Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
-INFO: Found 3003 targets...
-[0 / 13] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 3.405s, Critical Path: 0.36s
-INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
-INFO: Build completed successfully, 3 total actions
-Execution time 3817 ms
-
-* Running warm-up build #5
-Running command bazel build --profile bazel-profile/bazel.profile.gz //...
-Loading: 
-Loading: 
-Loading: 0 packages loaded
-Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
-INFO: Found 3003 targets...
-[0 / 5] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 2.858s, Critical Path: 0.37s
-INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
-INFO: Build completed successfully, 3 total actions
-Execution time 3257 ms
-
-* Running measured build #1
-Running command bazel build --profile bazel-profile/bazel.profile.gz //...
-Loading: 
-Loading: 
-Loading: 0 packages loaded
-Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
-INFO: Found 3003 targets...
-[0 / 8] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 2.873s, Critical Path: 0.35s
-INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
-INFO: Build completed successfully, 3 total actions
-Execution time 3258 ms
-
-* Running measured build #2
-Running command bazel build --profile bazel-profile/bazel.profile.gz //...
-Loading: 
-Loading: 
-Loading: 0 packages loaded
-Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
-INFO: Found 3003 targets...
-[0 / 3] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 2.931s, Critical Path: 0.35s
-INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
-INFO: Build completed successfully, 3 total actions
-Execution time 3357 ms
-
-* Running measured build #3
-Running command bazel build --profile bazel-profile/bazel.profile.gz //...
-Loading: 
-Loading: 
-Loading: 0 packages loaded
-Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
-INFO: Found 3003 targets...
-[0 / 12] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 2.882s, Critical Path: 0.37s
-INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
-INFO: Build completed successfully, 3 total actions
-Execution time 3372 ms
-
-* Running measured build #4
-Running command bazel build --profile bazel-profile/bazel.profile.gz //...
-Loading: 
-Loading: 
-Loading: 0 packages loaded
-Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
-INFO: Found 3003 targets...
-[0 / 14] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 2.844s, Critical Path: 0.34s
-INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
-INFO: Build completed successfully, 3 total actions
-Execution time 3253 ms
-
-* Running measured build #5
-Running command bazel build --profile bazel-profile/bazel.profile.gz //...
-Loading: 
-Loading: 
-Loading: 0 packages loaded
-Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
-INFO: Found 3003 targets...
-[0 / 3] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 2.885s, Critical Path: 0.34s
-INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
-INFO: Build completed successfully, 3 total actions
-Execution time 3295 ms
-
-* Running measured build #6
-Running command bazel build --profile bazel-profile/bazel.profile.gz //...
-Loading: 
-Loading: 
-Loading: 0 packages loaded
-Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
-INFO: Found 3003 targets...
-[0 / 4] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 2.979s, Critical Path: 0.33s
-INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
-INFO: Build completed successfully, 3 total actions
-Execution time 3372 ms
-
-* Running measured build #7
-Running command bazel build --profile bazel-profile/bazel.profile.gz //...
-Loading: 
-Loading: 
-Loading: 0 packages loaded
-Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
-INFO: Found 3003 targets...
-[0 / 8] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 2.848s, Critical Path: 0.35s
-INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
-INFO: Build completed successfully, 3 total actions
-Execution time 3229 ms
-
-* Running measured build #8
-Running command bazel build --profile bazel-profile/bazel.profile.gz //...
-Loading: 
-Loading: 
-Loading: 0 packages loaded
-Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
-INFO: Found 3003 targets...
-[0 / 3] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 2.955s, Critical Path: 0.34s
-INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
-INFO: Build completed successfully, 3 total actions
-Execution time 3417 ms
-
-* Running measured build #9
-Running command bazel build --profile bazel-profile/bazel.profile.gz //...
-Loading: 
-Loading: 
-Loading: 0 packages loaded
-Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
-INFO: Found 3003 targets...
-[0 / 3] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 2.856s, Critical Path: 0.34s
-INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
-INFO: Build completed successfully, 3 total actions
-Execution time 3264 ms
-
-* Running measured build #10
-Running command bazel build --profile bazel-profile/bazel.profile.gz //...
-Loading: 
-Loading: 
-Loading: 0 packages loaded
-Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
-INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
-INFO: Found 3003 targets...
-[0 / 4] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 2.512s, Critical Path: 0.34s
-INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
-INFO: Build completed successfully, 3 total actions
-Execution time 2940 ms
-
-* Results written to /Users/ttresansky/Projects/largeJavaMultiProject/results/nonAbiChange/bazel
-  /Users/ttresansky/Projects/largeJavaMultiProject/results/nonAbiChange/bazel/benchmark.csv
-  /Users/ttresansky/Projects/largeJavaMultiProject/results/nonAbiChange/bazel/benchmark.html
+* Results written to /Users/ttresansky/Projects/compilation-avoidance-experiment/results/nonAbiChange/bazel
+  /Users/ttresansky/Projects/compilation-avoidance-experiment/results/nonAbiChange/bazel/benchmark.csv
+  /Users/ttresansky/Projects/compilation-avoidance-experiment/results/nonAbiChange/bazel/benchmark.html
 
