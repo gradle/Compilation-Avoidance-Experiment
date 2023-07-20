@@ -1,0 +1,40 @@
+stateDiagram-v2
+    direction RL
+    classDef origin fill:white
+    classDef directImpact fill:red
+    classDef transitiveImpact fill:yellow
+    classDef noImpact fill:white
+
+    Production0Ref1: Production0 (from project0)
+
+    project0
+    project3 --> project0: api
+    project3 --> project1: implementation
+    project3 --> project2: implementation
+    project4 --> project0: implementation
+    project7 --> project4: api
+    project7 --> project5: implementation
+    project7 --> project6: implementation
+    project8 --> project0: implementation
+
+    state project0 {
+        Production0
+        note right of Production0
+            This class will be changed.
+        end note
+    }
+
+    state project4 {
+        Production47 --> Production44: contains instance
+        Production44 --> Production0Ref1: contains instance
+    }
+
+    class project0 origin
+    class project1 noImpact
+    class project2 noImpact
+    class project3 transitiveImpact
+    class project4 directImpact
+    class project5 noImpact
+    class project6 noImpact
+    class project7 transitiveImpact
+    class project8 directImpact
