@@ -9,6 +9,7 @@ java_library(
     deps = [
       "//project465:project465",
       "//project466:project466",
+      "//project0:project0",
       "//project467:project467"
     ]
 )
@@ -21,6 +22,7 @@ junit_tests(
         "project468",
               "//project465:project465",
       "//project466:project466",
+      "//project0:project0",
       "//project467:project467"
     ],
 )

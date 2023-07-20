@@ -7,18 +7,18 @@ java_library(
     javacopts = ["-XepDisableAllChecks"],
     visibility = ["//visibility:public"],
     deps = [
-      "//project433:project433",
-      "//project437:project437",
-      "//project441:project441",
-      "//project430:project430",
-      "//project431:project431",
-      "//project432:project432",
-      "//project434:project434",
-      "//project435:project435",
-      "//project436:project436",
       "//project438:project438",
+      "//project437:project437",
+      "//project432:project432",
       "//project439:project439",
-      "//project440:project440"
+      "//project434:project434",
+      "//project433:project433",
+      "//project430:project430",
+      "//project435:project435",
+      "//project441:project441",
+      "//project440:project440",
+      "//project431:project431",
+      "//project436:project436"
     ]
 )
 
@@ -28,17 +28,17 @@ junit_tests(
     srcs = glob(["src/test/java/**/*.java"]),
     deps = [
         "project442",
-              "//project433:project433",
+              "//project438:project438",
       "//project437:project437",
-      "//project441:project441",
-      "//project430:project430",
-      "//project431:project431",
       "//project432:project432",
-      "//project434:project434",
-      "//project435:project435",
-      "//project436:project436",
-      "//project438:project438",
       "//project439:project439",
-      "//project440:project440"
+      "//project434:project434",
+      "//project433:project433",
+      "//project430:project430",
+      "//project435:project435",
+      "//project441:project441",
+      "//project440:project440",
+      "//project431:project431",
+      "//project436:project436"
     ],
 )

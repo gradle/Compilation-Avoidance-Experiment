@@ -7,9 +7,10 @@ java_library(
     javacopts = ["-XepDisableAllChecks"],
     visibility = ["//visibility:public"],
     deps = [
-      "//project13:project13",
       "//project14:project14",
-      "//project15:project15"
+      "//project0:project0",
+      "//project15:project15",
+      "//project13:project13"
     ]
 )
 
@@ -19,8 +20,9 @@ junit_tests(
     srcs = glob(["src/test/java/**/*.java"]),
     deps = [
         "project16",
-              "//project13:project13",
-      "//project14:project14",
-      "//project15:project15"
+              "//project14:project14",
+      "//project0:project0",
+      "//project15:project15",
+      "//project13:project13"
     ],
 )

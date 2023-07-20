@@ -8,17 +8,18 @@ java_library(
     visibility = ["//visibility:public"],
     deps = [
       "//project43:project43",
-      "//project47:project47",
-      "//project51:project51",
-      "//project40:project40",
-      "//project41:project41",
-      "//project42:project42",
-      "//project44:project44",
-      "//project45:project45",
-      "//project46:project46",
       "//project48:project48",
+      "//project0:project0",
+      "//project50:project50",
+      "//project46:project46",
+      "//project42:project42",
+      "//project40:project40",
+      "//project47:project47",
+      "//project44:project44",
+      "//project41:project41",
+      "//project51:project51",
       "//project49:project49",
-      "//project50:project50"
+      "//project45:project45"
     ]
 )
 
@@ -29,16 +30,17 @@ junit_tests(
     deps = [
         "project52",
               "//project43:project43",
-      "//project47:project47",
-      "//project51:project51",
-      "//project40:project40",
-      "//project41:project41",
-      "//project42:project42",
-      "//project44:project44",
-      "//project45:project45",
-      "//project46:project46",
       "//project48:project48",
+      "//project0:project0",
+      "//project50:project50",
+      "//project46:project46",
+      "//project42:project42",
+      "//project40:project40",
+      "//project47:project47",
+      "//project44:project44",
+      "//project41:project41",
+      "//project51:project51",
       "//project49:project49",
-      "//project50:project50"
+      "//project45:project45"
     ],
 )

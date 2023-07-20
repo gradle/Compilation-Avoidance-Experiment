@@ -8,8 +8,9 @@ java_library(
     visibility = ["//visibility:public"],
     deps = [
       "//project101:project101",
+      "//project103:project103",
       "//project102:project102",
-      "//project103:project103"
+      "//project0:project0"
     ]
 )
 
@@ -20,7 +21,8 @@ junit_tests(
     deps = [
         "project104",
               "//project101:project101",
+      "//project103:project103",
       "//project102:project102",
-      "//project103:project103"
+      "//project0:project0"
     ],
 )
