@@ -5,7 +5,7 @@ nonAbiChange {
     targets = ["clean", "package", "-Dmaven.test.skip=true", "-T", "4"]
   }
   bazel {
-    targets = ["build", "--profile", "bazel-profile/bazel.profile.gz", "//..."]
+    targets = ["build", "--nogenerate_json_trace_profile", "--spawn_strategy=standalone", "//..."]
   }
 }
 
@@ -16,7 +16,7 @@ abiChange {
     targets = ["clean", "package", "-Dmaven.test.skip=true", "-T", "4"]
   }
   bazel {
-    targets = ["build", "--profile", "bazel-profile/bazel.profile.gz", "//..."]
+    targets = ["build", "--nogenerate_json_trace_profile", "--spawn_strategy=standalone", "//..."]
   }
 }
 
