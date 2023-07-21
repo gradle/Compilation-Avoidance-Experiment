@@ -1,0 +1,248 @@
+
+* Started at 2023-07-21T16:56:16.624955Z
+
+* Settings
+Project dir: /Users/ttresansky/Projects/compilation-avoidance-experiment
+Output dir: /Users/ttresansky/Projects/compilation-avoidance-experiment/results/nonAbiChange/bazel
+Profiler: none
+Benchmark: true
+Versions: []
+Gradle User Home: /Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home
+Targets: [nonAbiChange]
+Warm-ups: 5
+Builds: 10
+
+* Scenarios
+Scenario: nonAbiChange using bazel
+  Targets: [build, --nogenerate_json_trace_profile, --spawn_strategy=standalone, //...]
+  Build changes: [ApplyNonAbiChangeToSourceFileMutator(/Users/ttresansky/Projects/compilation-avoidance-experiment/subprojects/project0/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project0/p0/Production0.java)]
+  Warm-ups: 5
+  Builds: 10
+
+* Running scenario nonAbiChange using bazel (scenario 1/1)
+
+* Running warm-up build #1
+Running command bazel build --nogenerate_json_trace_profile --spawn_strategy=standalone //...
+Starting local Bazel server and connecting to it...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Loading: 185 packages loaded
+    currently loading: subprojects/project111
+Loading: 551 packages loaded
+    currently loading: subprojects/project903
+Loading: 987 packages loaded
+    currently loading: subprojects/project176
+Analyzing: 3003 targets (1001 packages loaded, 0 targets configured)
+Analyzing: 3003 targets (1046 packages loaded, 21815 targets configured)
+Analyzing: 3003 targets (1046 packages loaded, 21815 targets configured)
+INFO: Analyzed 3003 targets (1047 packages loaded, 23905 targets configured).
+ checking cached actions
+INFO: Found 3003 targets...
+[3 / 24] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[4,468 / 6,403] [Prepa] Building subprojects/project0/libproject0.jar (10 source files)
+INFO: Elapsed time: 15.637s, Critical Path: 1.31s
+INFO: 3 processes: 1 internal, 2 local.
+INFO: Build completed successfully, 3 total actions
+Execution time 16541 ms
+
+* Running warm-up build #2
+Running command bazel build --nogenerate_json_trace_profile --spawn_strategy=standalone //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 29] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.696s, Critical Path: 0.72s
+INFO: 3 processes: 1 internal, 2 local.
+INFO: Build completed successfully, 3 total actions
+Execution time 2068 ms
+
+* Running warm-up build #3
+Running command bazel build --nogenerate_json_trace_profile --spawn_strategy=standalone //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 12] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.579s, Critical Path: 0.67s
+INFO: 3 processes: 1 internal, 2 local.
+INFO: Build completed successfully, 3 total actions
+Execution time 1992 ms
+
+* Running warm-up build #4
+Running command bazel build --nogenerate_json_trace_profile --spawn_strategy=standalone //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 16] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.504s, Critical Path: 0.69s
+INFO: 3 processes: 1 internal, 2 local.
+INFO: Build completed successfully, 3 total actions
+Execution time 1914 ms
+
+* Running warm-up build #5
+Running command bazel build --nogenerate_json_trace_profile --spawn_strategy=standalone //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 31] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.509s, Critical Path: 0.66s
+INFO: 3 processes: 1 internal, 2 local.
+INFO: Build completed successfully, 3 total actions
+Execution time 1906 ms
+
+* Running measured build #1
+Running command bazel build --nogenerate_json_trace_profile --spawn_strategy=standalone //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 9] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.467s, Critical Path: 0.67s
+INFO: 3 processes: 1 internal, 2 local.
+INFO: Build completed successfully, 3 total actions
+Execution time 1856 ms
+
+* Running measured build #2
+Running command bazel build --nogenerate_json_trace_profile --spawn_strategy=standalone //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.481s, Critical Path: 0.67s
+INFO: 3 processes: 1 internal, 2 local.
+INFO: Build completed successfully, 3 total actions
+Execution time 1871 ms
+
+* Running measured build #3
+Running command bazel build --nogenerate_json_trace_profile --spawn_strategy=standalone //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 19] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.511s, Critical Path: 0.70s
+INFO: 3 processes: 1 internal, 2 local.
+INFO: Build completed successfully, 3 total actions
+Execution time 1907 ms
+
+* Running measured build #4
+Running command bazel build --nogenerate_json_trace_profile --spawn_strategy=standalone //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 8] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.471s, Critical Path: 0.66s
+INFO: 3 processes: 1 internal, 2 local.
+INFO: Build completed successfully, 3 total actions
+Execution time 1877 ms
+
+* Running measured build #5
+Running command bazel build --nogenerate_json_trace_profile --spawn_strategy=standalone //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.422s, Critical Path: 0.66s
+INFO: 3 processes: 1 internal, 2 local.
+INFO: Build completed successfully, 3 total actions
+Execution time 1818 ms
+
+* Running measured build #6
+Running command bazel build --nogenerate_json_trace_profile --spawn_strategy=standalone //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 15] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.458s, Critical Path: 0.66s
+INFO: 3 processes: 1 internal, 2 local.
+INFO: Build completed successfully, 3 total actions
+Execution time 1824 ms
+
+* Running measured build #7
+Running command bazel build --nogenerate_json_trace_profile --spawn_strategy=standalone //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 10] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.544s, Critical Path: 0.67s
+INFO: 3 processes: 1 internal, 2 local.
+INFO: Build completed successfully, 3 total actions
+Execution time 1925 ms
+
+* Running measured build #8
+Running command bazel build --nogenerate_json_trace_profile --spawn_strategy=standalone //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.474s, Critical Path: 0.68s
+INFO: 3 processes: 1 internal, 2 local.
+INFO: Build completed successfully, 3 total actions
+Execution time 1884 ms
+
+* Running measured build #9
+Running command bazel build --nogenerate_json_trace_profile --spawn_strategy=standalone //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 17] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.423s, Critical Path: 0.67s
+INFO: 3 processes: 1 internal, 2 local.
+INFO: Build completed successfully, 3 total actions
+Execution time 1807 ms
+
+* Running measured build #10
+Running command bazel build --nogenerate_json_trace_profile --spawn_strategy=standalone //...
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: 3003 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3003 targets (0 packages loaded, 0 targets configured).
+INFO: Found 3003 targets...
+[0 / 8] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.405s, Critical Path: 0.67s
+INFO: 3 processes: 1 internal, 2 local.
+INFO: Build completed successfully, 3 total actions
+Execution time 1773 ms
+
+* Results written to /Users/ttresansky/Projects/compilation-avoidance-experiment/results/nonAbiChange/bazel
+  /Users/ttresansky/Projects/compilation-avoidance-experiment/results/nonAbiChange/bazel/benchmark.csv
+  /Users/ttresansky/Projects/compilation-avoidance-experiment/results/nonAbiChange/bazel/benchmark.html
+

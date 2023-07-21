@@ -1,0 +1,19 @@
+scenario,abiChange with CC
+version,Gradle 8.3-rc-1
+tasks,assemble
+value,total execution time
+warm-up build #1,15368.67
+warm-up build #2,4333.63
+warm-up build #3,4343.24
+warm-up build #4,4260.34
+warm-up build #5,4222.19
+measured build #1,4305.54
+measured build #2,4244.98
+measured build #3,4250.72
+measured build #4,4292.29
+measured build #5,4240.47
+measured build #6,4320.15
+measured build #7,4272.66
+measured build #8,4249.93
+measured build #9,4250.84
+measured build #10,4229.37

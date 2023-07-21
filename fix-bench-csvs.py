@@ -4,7 +4,7 @@ from collections import defaultdict
 import csv
 import argparse
 from typing import DefaultDict, Dict, List
-
+import os
 
 def get_kv(row: List[str], expected_key: str) -> str:
     if row[0] != expected_key:
@@ -14,7 +14,8 @@ def get_kv(row: List[str], expected_key: str) -> str:
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("csvs", metavar="CSV", type=argparse.FileType("r"), nargs="+")
+    parser.add_argument("output", type=argparse.FileType("w"), nargs=1, help="The output file")
+    parser.add_argument("csvs", metavar="CSV", type=argparse.FileType("r"), nargs="+", help="The CSV files containing data to process")
 
     args = parser.parse_args()
 
@@ -49,8 +50,14 @@ def main():
                 time = float(row[1])
                 times[index].append(time)
 
+    # Ensure the output directory exists
+    output_file = args.output[0].name
+    dir_name = os.path.dirname(output_file)
+    if dir_name and not os.path.exists(dir_name):
+        os.makedirs(dir_name)
+
     # Write the output
-    with open("data.csv", "w") as out:
+    with open(output_file, "w") as out:
         writer = csv.writer(out, dialect="unix", quoting=csv.QUOTE_MINIMAL)
         writer.writerow(["Iteration"] + tool_and_scenario)
         for index, times in times.items():
