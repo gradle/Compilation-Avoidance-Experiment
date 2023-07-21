@@ -1,0 +1,44 @@
+load("@rules_java//java:defs.bzl", "java_library")
+load("//:junit.bzl", "junit_tests")
+
+java_library(
+    name = "project347",
+    srcs = glob(["src/main/java/**/*.java"]),
+    javacopts = ["-XepDisableAllChecks"],
+    visibility = ["//visibility:public"],
+    deps = [
+      "//subprojects/project338:project338",
+      "//subprojects/project343:project343",
+      "//subprojects/project337:project337",
+      "//subprojects/project342:project342",
+      "//subprojects/project336:project336",
+      "//subprojects/project341:project341",
+      "//subprojects/project346:project346",
+      "//subprojects/project335:project335",
+      "//subprojects/project340:project340",
+      "//subprojects/project345:project345",
+      "//subprojects/project339:project339",
+      "//subprojects/project344:project344"
+    ]
+)
+
+junit_tests(
+    name = "tests_for_project347",
+    size = "small",
+    srcs = glob(["src/test/java/**/*.java"]),
+    deps = [
+        "project347",
+              "//subprojects/project338:project338",
+      "//subprojects/project343:project343",
+      "//subprojects/project337:project337",
+      "//subprojects/project342:project342",
+      "//subprojects/project336:project336",
+      "//subprojects/project341:project341",
+      "//subprojects/project346:project346",
+      "//subprojects/project335:project335",
+      "//subprojects/project340:project340",
+      "//subprojects/project345:project345",
+      "//subprojects/project339:project339",
+      "//subprojects/project344:project344"
+    ],
+)

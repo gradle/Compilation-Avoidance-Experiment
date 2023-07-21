@@ -1,0 +1,44 @@
+load("@rules_java//java:defs.bzl", "java_library")
+load("//:junit.bzl", "junit_tests")
+
+java_library(
+    name = "project133",
+    srcs = glob(["src/main/java/**/*.java"]),
+    javacopts = ["-XepDisableAllChecks"],
+    visibility = ["//visibility:public"],
+    deps = [
+      "//subprojects/project130:project130",
+      "//subprojects/project124:project124",
+      "//subprojects/project129:project129",
+      "//subprojects/project123:project123",
+      "//subprojects/project128:project128",
+      "//subprojects/project122:project122",
+      "//subprojects/project127:project127",
+      "//subprojects/project132:project132",
+      "//subprojects/project121:project121",
+      "//subprojects/project126:project126",
+      "//subprojects/project131:project131",
+      "//subprojects/project125:project125"
+    ]
+)
+
+junit_tests(
+    name = "tests_for_project133",
+    size = "small",
+    srcs = glob(["src/test/java/**/*.java"]),
+    deps = [
+        "project133",
+              "//subprojects/project130:project130",
+      "//subprojects/project124:project124",
+      "//subprojects/project129:project129",
+      "//subprojects/project123:project123",
+      "//subprojects/project128:project128",
+      "//subprojects/project122:project122",
+      "//subprojects/project127:project127",
+      "//subprojects/project132:project132",
+      "//subprojects/project121:project121",
+      "//subprojects/project126:project126",
+      "//subprojects/project131:project131",
+      "//subprojects/project125:project125"
+    ],
+)

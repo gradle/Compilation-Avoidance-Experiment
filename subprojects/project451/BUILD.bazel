@@ -1,0 +1,26 @@
+load("@rules_java//java:defs.bzl", "java_library")
+load("//:junit.bzl", "junit_tests")
+
+java_library(
+    name = "project451",
+    srcs = glob(["src/main/java/**/*.java"]),
+    javacopts = ["-XepDisableAllChecks"],
+    visibility = ["//visibility:public"],
+    deps = [
+      "//subprojects/project450:project450",
+      "//subprojects/project449:project449",
+      "//subprojects/project448:project448"
+    ]
+)
+
+junit_tests(
+    name = "tests_for_project451",
+    size = "small",
+    srcs = glob(["src/test/java/**/*.java"]),
+    deps = [
+        "project451",
+              "//subprojects/project450:project450",
+      "//subprojects/project449:project449",
+      "//subprojects/project448:project448"
+    ],
+)

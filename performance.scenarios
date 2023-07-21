@@ -1,6 +1,6 @@
 nonAbiChange {
   tasks = ["assemble"]
-  apply-non-abi-change-to = "project0/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project0/p0/Production0.java"
+  apply-non-abi-change-to = "subprojects/project0/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project0/p0/Production0.java"
   bazel {
     targets = ["build", "--nogenerate_json_trace_profile", "--spawn_strategy=standalone", "//..."]
   }
@@ -8,7 +8,7 @@ nonAbiChange {
 
 abiChange {
   tasks = ["assemble"]
-  apply-abi-change-to = "project0/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project0/p0/Production0.java"
+  apply-abi-change-to = "subprojects/project0/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project0/p0/Production0.java"
   bazel {
     targets = ["build", "--nogenerate_json_trace_profile", "--spawn_strategy=standalone", "//..."]
   }

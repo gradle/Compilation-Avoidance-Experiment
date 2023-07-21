@@ -1,0 +1,46 @@
+load("@rules_java//java:defs.bzl", "java_library")
+load("//:junit.bzl", "junit_tests")
+
+java_library(
+    name = "project52",
+    srcs = glob(["src/main/java/**/*.java"]),
+    javacopts = ["-XepDisableAllChecks"],
+    visibility = ["//visibility:public"],
+    deps = [
+      "//subprojects/project48:project48",
+      "//subprojects/project43:project43",
+      "//subprojects/project50:project50",
+      "//subprojects/project40:project40",
+      "//subprojects/project51:project51",
+      "//subprojects/project42:project42",
+      "//subprojects/project46:project46",
+      "//subprojects/project0:project0",
+      "//subprojects/project44:project44",
+      "//subprojects/project41:project41",
+      "//subprojects/project45:project45",
+      "//subprojects/project47:project47",
+      "//subprojects/project49:project49"
+    ]
+)
+
+junit_tests(
+    name = "tests_for_project52",
+    size = "small",
+    srcs = glob(["src/test/java/**/*.java"]),
+    deps = [
+        "project52",
+              "//subprojects/project48:project48",
+      "//subprojects/project43:project43",
+      "//subprojects/project50:project50",
+      "//subprojects/project40:project40",
+      "//subprojects/project51:project51",
+      "//subprojects/project42:project42",
+      "//subprojects/project46:project46",
+      "//subprojects/project0:project0",
+      "//subprojects/project44:project44",
+      "//subprojects/project41:project41",
+      "//subprojects/project45:project45",
+      "//subprojects/project47:project47",
+      "//subprojects/project49:project49"
+    ],
+)

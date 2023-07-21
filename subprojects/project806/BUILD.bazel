@@ -1,0 +1,44 @@
+load("@rules_java//java:defs.bzl", "java_library")
+load("//:junit.bzl", "junit_tests")
+
+java_library(
+    name = "project806",
+    srcs = glob(["src/main/java/**/*.java"]),
+    javacopts = ["-XepDisableAllChecks"],
+    visibility = ["//visibility:public"],
+    deps = [
+      "//subprojects/project797:project797",
+      "//subprojects/project802:project802",
+      "//subprojects/project801:project801",
+      "//subprojects/project796:project796",
+      "//subprojects/project795:project795",
+      "//subprojects/project800:project800",
+      "//subprojects/project805:project805",
+      "//subprojects/project794:project794",
+      "//subprojects/project799:project799",
+      "//subprojects/project804:project804",
+      "//subprojects/project798:project798",
+      "//subprojects/project803:project803"
+    ]
+)
+
+junit_tests(
+    name = "tests_for_project806",
+    size = "small",
+    srcs = glob(["src/test/java/**/*.java"]),
+    deps = [
+        "project806",
+              "//subprojects/project797:project797",
+      "//subprojects/project802:project802",
+      "//subprojects/project801:project801",
+      "//subprojects/project796:project796",
+      "//subprojects/project795:project795",
+      "//subprojects/project800:project800",
+      "//subprojects/project805:project805",
+      "//subprojects/project794:project794",
+      "//subprojects/project799:project799",
+      "//subprojects/project804:project804",
+      "//subprojects/project798:project798",
+      "//subprojects/project803:project803"
+    ],
+)
