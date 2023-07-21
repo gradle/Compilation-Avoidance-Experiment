@@ -1,9 +1,6 @@
 nonAbiChange {
   tasks = ["assemble"]
   apply-non-abi-change-to = "project0/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project0/p0/Production0.java"
-  maven {
-    targets = ["clean", "package", "-Dmaven.test.skip=true", "-T", "4"]
-  }
   bazel {
     targets = ["build", "--nogenerate_json_trace_profile", "--spawn_strategy=standalone", "//..."]
   }
@@ -12,65 +9,7 @@ nonAbiChange {
 abiChange {
   tasks = ["assemble"]
   apply-abi-change-to = "project0/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project0/p0/Production0.java"
-  maven {
-    targets = ["clean", "package", "-Dmaven.test.skip=true", "-T", "4"]
-  }
   bazel {
     targets = ["build", "--nogenerate_json_trace_profile", "--spawn_strategy=standalone", "//..."]
   }
-}
-
-cleanAssemble {
-  tasks = ["clean", "assemble"]
-   maven {
-    targets = ["clean", "package", "-Dmaven.test.skip=true", "-T", "4"]
-  }
-}
-
-cleanAssembleCached {
-  tasks = ["clean", "assemble"]
-  gradle-args = ["--build-cache"]
-}
-
-cleanBuild {
-  tasks = ["clean", "build"]
-  maven {
-    targets = ["clean", "package", "-T", "4"]
-  }
-}
-
-cleanBuildCached {
-  tasks = ["clean", "build"]
-  maven {
-    targets = ["clean", "package", "-T", "4"]
-  }
-  gradle-args = ["--build-cache"]
-}
-
-incrementalCompile {
-  tasks = ["compileJava"]
-   maven {
-    targets = ["compile", "-T", "4"]
-  }
-  apply-non-abi-change-to = "project0/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project0/p0/Production0.java"
-}
-
-incrementalTest {
-  tasks = ["build"]
-  apply-non-abi-change-to = "project0/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project0/p0/Production0.java"
-   maven {
-    targets = ["test", "-T", "4"]
-  }
-}
-
-cleanTest {
-  tasks = ["clean", "test"]
-  maven {
-    targets = ["clean", "test", "-T", "4"]
-  }
-}
-
-cleanTestCached {
-  tasks = ["clean", "test"]
-  gradle-args = ["--build-cache"]
 }
