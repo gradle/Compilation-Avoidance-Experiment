@@ -3,6 +3,7 @@
 # Clear all results
 rm -rf results
 rm -rf comparisons
+mkdir comparisons
 
 # Run performance experiments with profiles
 gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios nonAbiChange --bazel --output-dir results/nonAbiChange/bazel
