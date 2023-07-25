@@ -1,0 +1,3 @@
+# Use local JDK for compilation https://bazel.build/docs/bazel-and-java
+build --extra_toolchains=@local_jdk//:all
+test --extra_toolchains=@local_jdk//:all
