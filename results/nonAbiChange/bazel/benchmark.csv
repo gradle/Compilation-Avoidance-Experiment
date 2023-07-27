@@ -1,19 +1,19 @@
 scenario,nonAbiChange
 version,bazel
-tasks,build --nogenerate_json_trace_profile --spawn_strategy=standalone //...
+tasks,build --nogenerate_json_trace_profile //...
 value,total execution time
-warm-up build #1,16541.48
-warm-up build #2,2068.22
-warm-up build #3,1992.05
-warm-up build #4,1914.43
-warm-up build #5,1906.30
-measured build #1,1856.74
-measured build #2,1871.67
-measured build #3,1907.53
-measured build #4,1877.34
-measured build #5,1818.54
-measured build #6,1824.69
-measured build #7,1926.00
-measured build #8,1884.35
-measured build #9,1807.88
-measured build #10,1773.22
+warm-up build #1,157561.55
+warm-up build #2,2790.04
+warm-up build #3,1729.34
+warm-up build #4,1743.85
+warm-up build #5,1903.89
+measured build #1,1792.58
+measured build #2,1643.30
+measured build #3,1898.06
+measured build #4,1678.53
+measured build #5,1642.89
+measured build #6,1631.32
+measured build #7,1530.80
+measured build #8,1512.17
+measured build #9,1644.47
+measured build #10,1683.55
