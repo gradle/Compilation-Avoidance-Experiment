@@ -9,3 +9,6 @@ bazel-profile/bazel.profile.gz
 
 # This directory must exist
 !/bazel-profile
+
+# For debugging groovy scripts
+/lib
