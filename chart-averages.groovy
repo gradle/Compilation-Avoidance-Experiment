@@ -5,48 +5,86 @@
 import com.opencsv.CSVReader
 
 if (args.length < 1) {
-    println "Usage: script <path_to_comparison_csv>"
+    println "Usage: script <path_to_comparison_csv> <path_to_output_file>"
     System.exit(1)
 }
 
-String transformCSVFile(File input) {
+class Scenario {
+    String name
+    boolean isAbiChange
+    boolean isConfigurationCache
+    List<Double> times = []
+
+    Scenario(String name) {
+        this.name = name.capitalize()
+        isAbiChange = !name.contains("nonAbiChange")
+        isConfigurationCache = name.contains("with CC")
+    }
+
+    void addTime(double time) {
+        times.add(time)
+    }
+
+    int avgTime() {
+        return (times.sum() / times.size()) as int
+    }
+
+    String getToolName() {
+        return name - " nonAbiChange" - " abiChange" - " with CC"
+    }
+}
+
+private List<Scenario> loadScenarios(File input) {
     CSVReader reader = new CSVReader(new FileReader(input))
     List<String[]> lines = reader.readAll().findAll { it.size() > 0 }
 
     int numScenarios = lines[0].size() - 1
     int numIterations = lines.size() - 1
 
-    String[] scenarioNames = lines[0][1..numScenarios]
-    double[] avgTimes =  calcAvgScenarioTimes(numScenarios, numIterations, lines)
+    List<Scenario> results = []
+    for (int scenarioNum = 0; scenarioNum < numScenarios; scenarioNum++) {
+        Scenario scenario = new Scenario(lines[0][scenarioNum + 1])
+        for (int iteration = 0; iteration < numIterations; iteration++) {
+            scenario.addTime(Double.parseDouble(lines[iteration + 1][scenarioNum + 1]))
+        }
+        results.add(scenario)
+    }
+    return results
+}
 
-    def titleRow = "['Scenario', ${scenarioNames.collect { "'" + it + "'"} .join(', ')}]"
-    def resultsRows = (0..<numScenarios).collect { scenario ->
-        def scenarioName = scenarioNames[scenario]
-        def avgTime = avgTimes[scenario]
-        def row = "['$scenarioName', ${avgTime}]"
-        return row
-    }.join(',\n    ')
+private String buildHeaderRow(List<Scenario> scenarios) {
+    List<String> toolNames = scenarios.collect { it.toolName }.unique().sort()
+    return "['Scenario', ${toolNames.collect { "'" + it + "'"}.join(', ')}]"
+}
+
+private List<String> buildResultsRows(List<Scenario> scenarios) {
+    String abiChanges = scenarios.findAll { it.isAbiChange }.collect { it.avgTime() }.join(', ')
+    String nonAbiChanges = scenarios.findAll { !it.isAbiChange }.collect { it.avgTime() }.join(', ')
+    return ["['ABI Change', $abiChanges]", "['Non-ABI Change', $nonAbiChanges]"]
+}
+
+String processData(File inputFile) {
+    List<Scenario> scenarios = loadScenarios(inputFile)
 
     return """
 var data = [
-    $titleRow,
-    $resultsRows
+    ${buildHeaderRow(scenarios)},
+    ${buildResultsRows(scenarios).join(",\n    ")}
 ];
 """
 }
 
-private int[] calcAvgScenarioTimes(int numScenarios, int numIterations, List<String[]> lines) {
-    int[] avgTimes = new int[numScenarios]
-    for (int scenario = 0; scenario < numScenarios; scenario++) {
-        double total = 0.0
-        for (int iteration = 0; iteration < numIterations; iteration++) {
-            total += Double.parseDouble(lines[iteration + 1][scenario + 1])
-        }
-        avgTimes[scenario] = (total / (numIterations)) as int
+private void writeOutputFile(String result, File outputFile) {
+    outputFile.parentFile.mkdirs()
+    if (outputFile.exists()) {
+        outputFile.delete()
     }
-    return avgTimes
+    outputFile.createNewFile()
+    outputFile << "// Comparison data from ${args[0]}\n"
+    outputFile << result
 }
 
-def comparisonCsvFile = new File(args[0])
-var result = transformCSVFile(comparisonCsvFile)
+def result = processData(new File(args[0]))
+writeOutputFile(result, new File(args[1]))
+
 println result
