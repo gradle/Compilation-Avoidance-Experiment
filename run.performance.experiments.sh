@@ -8,35 +8,21 @@ mkdir comparisons
 # Run performance experiments with profiles
 gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios nonAbiChange --bazel --output-dir results/nonAbiChange/bazel
 gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios abiChange --bazel --output-dir results/abiChange/bazel
-gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios nonAbiChange --gradle-version 8.2.1 --output-dir results/nonAbiChange/gradle-8.2.1
-gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios abiChange --gradle-version 8.2.1 --output-dir results/abiChange/gradle-8.2.1
-gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios nonAbiChange --gradle-version 8.3-rc-2 --output-dir results/nonAbiChange/gradle-8.3-RC-1
-gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios abiChange --gradle-version 8.3-rc-2 --output-dir results/abiChange/gradle-8.3-RC-1
+gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios nonAbiChange --gradle-version 8.0 --output-dir results/nonAbiChange/gradle-8.0
+gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios abiChange --gradle-version 8.0 --output-dir results/abiChange/gradle-8.0
 
-# Enable configuration cache
+# Enable configuration cache (stable as of Gradle 8.1)
 sed -i '' 's/#org.gradle.configuration-cache=true/org.gradle.configuration-cache=true/' gradle.properties
 
-# Run experiments with configuration cache
-gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios nonAbiChange --gradle-version 8.2.1 --output-dir results/nonAbiChange/gradle-8.2.1-with-cc
-gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios abiChange --gradle-version 8.2.1 --output-dir results/abiChange/gradle-8.2.1-with-cc
-gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios nonAbiChange --gradle-version 8.3-rc-1 --output-dir results/nonAbiChange/gradle-8.3-RC-1-with-cc
-gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios abiChange --gradle-version 8.3-rc-1 --output-dir results/abiChange/gradle-8.3-RC-1-with-cc
+gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios nonAbiChange --gradle-version 8.2.1 --output-dir results/nonAbiChange/gradle-8.2.1
+gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios abiChange --gradle-version 8.2.1 --output-dir results/abiChange/gradle-8.2.1
+gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios nonAbiChange --gradle-version 8.3-rc-3 --output-dir results/nonAbiChange/gradle-8.3-rc-3
+gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios abiChange --gradle-version 8.3-rc-3 --output-dir results/abiChange/gradle-8.3-rc-3
 
-# Disable configuration cache
+# Reset configuration cache
 sed -i '' 's/org.gradle.configuration-cache=true/#org.gradle.configuration-cache=true/' gradle.properties
 
-# Label scenario name in CC results to mark CC usage
-sed -i '' 's/nonAbiChange/nonAbiChange with CC/' results/nonAbiChange/gradle-8.2.1-with-cc/benchmark.csv
-sed -i '' 's/abiChange/abiChange with CC/' results/abiChange/gradle-8.2.1-with-cc/benchmark.csv
-sed -i '' 's/nonAbiChange/nonAbiChange with CC/' results/nonAbiChange/gradle-8.3-RC-1-with-cc/benchmark.csv
-sed -i '' 's/abiChange/abiChange with CC/' results/abiChange/gradle-8.3-RC-1-with-cc/benchmark.csv
-
 # Process results into comparisons
-python3 fix-bench-csvs.py comparisons/bazel-and-gradle-8.2.1.csv results/abiChange/bazel/benchmark.csv results/abiChange/gradle-8.2.1/benchmark.csv results/nonAbiChange/bazel/benchmark.csv results/nonAbiChange/gradle-8.2.1/benchmark.csv
-python3 fix-bench-csvs.py comparisons/bazel-and-gradle-8.2.1-with-cc.csv results/abiChange/bazel/benchmark.csv results/abiChange/gradle-8.2.1-with-cc/benchmark.csv results/nonAbiChange/bazel/benchmark.csv results/nonAbiChange/gradle-8.2.1-with-cc/benchmark.csv
-python3 fix-bench-csvs.py comparisons/bazel-and-gradle-8.3-RC-1.csv results/abiChange/bazel/benchmark.csv results/abiChange/gradle-8.3-RC-1/benchmark.csv results/nonAbiChange/bazel/benchmark.csv results/nonAbiChange/gradle-8.3-RC-1/benchmark.csv
-python3 fix-bench-csvs.py comparisons/bazel-and-gradle-8.3-RC-1-with-cc.csv results/abiChange/bazel/benchmark.csv results/abiChange/gradle-8.3-RC-1-with-cc/benchmark.csv results/nonAbiChange/bazel/benchmark.csv results/nonAbiChange/gradle-8.3-RC-1-with-cc/benchmark.csv
-python3 fix-bench-csvs.py comparisons/gradle-8.2.1-with-and-without-cc.csv results/abiChange/gradle-8.2.1/benchmark.csv results/abiChange/gradle-8.2.1-with-cc/benchmark.csv results/nonAbiChange/gradle-8.2.1/benchmark.csv results/nonAbiChange/gradle-8.2.1-with-cc/benchmark.csv
-python3 fix-bench-csvs.py comparisons/gradle-8.3-RC-1-with-and-without-cc.csv results/abiChange/gradle-8.3-RC-1/benchmark.csv results/abiChange/gradle-8.3-RC-1-with-cc/benchmark.csv results/nonAbiChange/gradle-8.3-RC-1/benchmark.csv results/nonAbiChange/gradle-8.3-RC-1-with-cc/benchmark.csv
-python3 fix-bench-csvs.py comparisons/gradle-8.2.1-and-8.3-RC-1-with-cc.csv results/abiChange/gradle-8.2.1-with-cc/benchmark.csv results/nonAbiChange/gradle-8.2.1-with-cc/benchmark.csv results/abiChange/gradle-8.3-RC-1-with-cc/benchmark.csv results/nonAbiChange/gradle-8.3-RC-1-with-cc/benchmark.csv
-python3 fix-bench-csvs.py comparisons/bazel-and-gradle-8.2.1-and-8.3-RC-1-with-cc.csv results/abiChange/bazel/benchmark.csv results/nonAbiChange/bazel/benchmark.csv results/abiChange/gradle-8.2.1-with-cc/benchmark.csv results/nonAbiChange/gradle-8.2.1-with-cc/benchmark.csv results/abiChange/gradle-8.3-RC-1-with-cc/benchmark.csv results/nonAbiChange/gradle-8.3-RC-1-with-cc/benchmark.csv
+python3 fix-bench-csvs.py comparisons/bazel-and-all-gradle.csv results/abiChange/bazel/benchmark.csv results/nonAbiChange/bazel/benchmark.csv results/abiChange/gradle-8.0/benchmark.csv results/nonAbiChange/gradle-8.0/benchmark.csv results/abiChange/gradle-8.2.1/benchmark.csv results/nonAbiChange/gradle-8.2.1/benchmark.csv results/abiChange/gradle-8.3-rc-3/benchmark.csv results/nonAbiChange/gradle-8.3-RC-3/benchmark.csv
+
+./chart-averages.groovy comparisons/bazel-and-all-gradle.csv comparisons/bazel-and-all-gradle.js
