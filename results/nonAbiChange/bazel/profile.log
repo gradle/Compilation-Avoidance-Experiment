@@ -1,5 +1,5 @@
 
-* Started at 2023-08-02T21:10:37.355901Z
+* Started at 2023-08-11T16:21:23.749331Z
 
 * Settings
 Project dir: /Users/ttresansky/Projects/compilation-avoidance-experiment
@@ -23,71 +23,55 @@ Scenario: nonAbiChange using bazel
 
 * Running warm-up build #1
 Running command bazel build --nogenerate_json_trace_profile //...
-Starting local Bazel server and connecting to it...
 Loading: 
 Loading: 
 Loading: 0 packages loaded
-Loading: 66 packages loaded
-    currently loading: subprojects/project974
-Loading: 717 packages loaded
-    currently loading: subprojects/project666 ... (2 packages)
-Analyzing: 3000 targets (1001 packages loaded, 0 targets configured)
-Analyzing: 3000 targets (1045 packages loaded, 21871 targets configured)
-Analyzing: 3000 targets (1045 packages loaded, 21871 targets configured)
-Analyzing: 3000 targets (1045 packages loaded, 21871 targets configured)
-Analyzing: 3000 targets (1045 packages loaded, 21871 targets configured)
-Analyzing: 3000 targets (1045 packages loaded, 21871 targets configured)
-INFO: Analyzed 3000 targets (1046 packages loaded, 23959 targets configured).
+Analyzing: 3000 targets (0 packages loaded, 0 targets configured)
+INFO: Analyzed 3000 targets (0 packages loaded, 0 targets configured).
 INFO: Found 3000 targets...
-[7 / 30] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[4,003 / 7,004] checking cached actions
-[5,505 / 7,004] Building subprojects/project0/libproject0.jar (10 source files); 0s multiplex-worker ... (12 actions running)
-[5,521 / 7,004] Compiling Java headers subprojects/project100/libproject100-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
-[5,537 / 7,004] Compiling Java headers subprojects/project100/libproject100-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
-[5,577 / 7,004] Compiling Java headers subprojects/project136/libproject136-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
-[5,603 / 7,004] Compiling Java headers subprojects/project144/libproject144-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
-[5,626 / 7,004] Compiling Java headers subprojects/project152/libproject152-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
-[5,664 / 7,004] Compiling Java headers subprojects/project176/libproject176-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
-[5,697 / 7,004] Compiling Java headers subprojects/project984/libproject984-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
-[5,731 / 7,004] Compiling Java headers subprojects/project72/libproject72-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
-[5,767 / 7,004] Compiling Java headers subprojects/project44/libproject44-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
-[5,805 / 7,004] Compiling Java headers subprojects/project236/libproject236-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
-[5,846 / 7,004] Compiling Java headers subprojects/project240/libproject240-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
-[5,879 / 7,004] Compiling Java headers subprojects/project256/libproject256-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
-[5,923 / 7,004] Compiling Java headers subprojects/project120/libproject120-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions running)
-[5,960 / 7,004] Compiling Java headers subprojects/project296/libproject296-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions running)
-[6,001 / 7,004] Compiling Java headers subprojects/project312/libproject312-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
-[6,041 / 7,004] Compiling Java headers subprojects/project336/libproject336-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
-[6,085 / 7,004] Compiling Java headers subprojects/project368/libproject368-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
-[6,118 / 7,004] Compiling Java headers subprojects/project384/libproject384-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
-[6,155 / 7,004] Compiling Java headers subprojects/project363/libproject363-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions running)
-[6,189 / 7,004] Compiling Java headers subprojects/project363/libproject363-hjar.jar (10 source files); 2s darwin-sandbox ... (12 actions, 11 running)
-[6,224 / 7,004] Compiling Java headers subprojects/project460/libproject460-hjar.jar (10 source files); 0s darwin-sandbox ... (9 actions, 8 running)
-[6,252 / 7,004] Building subprojects/project363/tests_for_project363.jar (11 source files); 1s multiplex-worker ... (12 actions running)
-[6,283 / 7,004] Building subprojects/project363/libproject363.jar (10 source files); 0s multiplex-worker ... (12 actions, 11 running)
-[6,316 / 7,004] Compiling Java headers subprojects/project484/libproject484-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions running)
-[6,345 / 7,004] Building subprojects/project484/tests_for_project484.jar (11 source files); 0s multiplex-worker ... (12 actions, 11 running)
-[6,375 / 7,004] Compiling Java headers subprojects/project552/libproject552-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions running)
-[6,423 / 7,004] Compiling Java headers subprojects/project564/libproject564-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
-[6,461 / 7,004] Compiling Java headers subprojects/project600/libproject600-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
-[6,504 / 7,004] Compiling Java headers subprojects/project604/libproject604-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
-[6,542 / 7,004] Compiling Java headers subprojects/project652/libproject652-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
-[6,587 / 7,004] Compiling Java headers subprojects/project932/libproject932-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 9 running)
-[6,625 / 7,004] Compiling Java headers subprojects/project968/libproject968-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
-[6,666 / 7,004] Compiling Java headers subprojects/project712/libproject712-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
-[6,708 / 7,004] Compiling Java headers subprojects/project736/libproject736-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
-[6,739 / 7,004] Compiling Java headers subprojects/project760/libproject760-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
-[6,775 / 7,004] Building subprojects/project727/tests_for_project727.jar (11 source files); 1s multiplex-worker ... (12 actions, 11 running)
-[6,808 / 7,004] Building subprojects/project727/libproject727.jar (10 source files); 0s multiplex-worker ... (12 actions running)
-[6,847 / 7,004] Compiling Java headers subprojects/project832/libproject832-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions running)
-[6,883 / 7,004] Compiling Java headers subprojects/project860/libproject860-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
-[6,921 / 7,004] Compiling Java headers subprojects/project848/libproject848-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 10 running)
-[6,956 / 7,004] Compiling Java headers subprojects/project904/libproject904-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
-[7,001 / 7,004] [Prepa] Building subprojects/project928/tests_for_project928.jar (11 source files)
-INFO: Elapsed time: 67.878s, Critical Path: 9.97s
+[0 / 161] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[13 / 2,000] Compiling Java headers subprojects/project96/libproject96-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[51 / 1,992] Compiling Java headers subprojects/project92/libproject92-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[91 / 1,978] Compiling Java headers subprojects/project64/libproject64-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[128 / 1,970] Compiling Java headers subprojects/project192/libproject192-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions running)
+[156 / 1,955] Compiling Java headers subprojects/project40/libproject40-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions running)
+[207 / 1,938] Compiling Java headers subprojects/project184/libproject184-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[246 / 1,925] Compiling Java headers subprojects/project148/libproject148-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[295 / 1,906] Compiling Java headers subprojects/project168/libproject168-hjar.jar (10 source files); 0s darwin-sandbox ... (10 actions running)
+[319 / 1,902] Compiling Java headers subprojects/project980/libproject980-hjar.jar (10 source files); 1s darwin-sandbox ... (11 actions, 9 running)
+[365 / 1,885] Compiling Java headers subprojects/project200/libproject200-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[404 / 1,875] Compiling Java headers subprojects/project368/libproject368-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[443 / 1,861] Compiling Java headers subprojects/project360/libproject360-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[487 / 1,851] Building subprojects/project252/tests_for_project252.jar (11 source files); 0s multiplex-worker ... (12 actions, 11 running)
+[512 / 1,841] Compiling Java headers subprojects/project316/libproject316-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[561 / 1,823] Compiling Java headers subprojects/project276/libproject276-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[595 / 1,813] Compiling Java headers subprojects/project520/libproject520-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[642 / 1,805] Building subprojects/project321/libproject321.jar (10 source files); 0s multiplex-worker ... (12 actions, 8 running)
+[678 / 1,781] Compiling Java headers subprojects/project432/libproject432-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[715 / 1,773] Compiling Java headers subprojects/project504/libproject504-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[758 / 1,758] Compiling Java headers subprojects/project363/libproject363-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[795 / 1,744] Compiling Java headers subprojects/project363/libproject363-hjar.jar (10 source files); 1s darwin-sandbox ... (12 actions, 11 running)
+[833 / 1,732] Compiling Java headers subprojects/project532/libproject532-hjar.jar (10 source files); 0s darwin-sandbox ... (11 actions, 10 running)
+[871 / 1,722] Compiling Java headers subprojects/project672/libproject672-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[919 / 1,704] Building subprojects/project363/libproject363.jar (10 source files); 0s multiplex-worker ... (12 actions, 11 running)
+[959 / 1,691] Compiling Java headers subprojects/project484/libproject484-hjar.jar (10 source files); 1s darwin-sandbox ... (10 actions, 9 running)
+[998 / 1,678] Compiling Java headers subprojects/project704/libproject704-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,039 / 1,666] Compiling Java headers subprojects/project564/libproject564-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions running)
+[1,068 / 1,651] Compiling Java headers subprojects/project620/libproject620-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,121 / 1,632] Compiling Java headers subprojects/project800/libproject800-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,156 / 1,622] Compiling Java headers subprojects/project732/libproject732-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,197 / 1,609] Compiling Java headers subprojects/project740/libproject740-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 10 running)
+[1,243 / 1,596] Compiling Java headers subprojects/project924/libproject924-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,281 / 1,585] Compiling Java headers subprojects/project816/libproject816-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,335 / 1,561] Compiling Java headers subprojects/project920/libproject920-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,368 / 1,557] Compiling Java headers subprojects/project856/libproject856-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,408 / 1,540] Compiling Java headers subprojects/project872/libproject872-hjar.jar (10 source files); 0s darwin-sandbox ... (12 actions, 11 running)
+[1,447 / 1,530] Building subprojects/project727/tests_for_project727.jar (11 source files); 0s multiplex-worker ... (9 actions, 8 running)
+[1,495 / 1,504] Building subprojects/project727/libproject727.jar (10 source files); 1s multiplex-worker ... (2 actions running)
+INFO: Elapsed time: 41.614s, Critical Path: 8.10s
 INFO: 1254 processes: 1 internal, 253 darwin-sandbox, 1000 worker.
 INFO: Build completed successfully, 1254 total actions
-Execution time 68736 ms
+Execution time 42493 ms
 
 * Running warm-up build #2
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -97,11 +81,11 @@ Loading: 0 packages loaded
 Analyzing: 3000 targets (0 packages loaded, 0 targets configured)
 INFO: Analyzed 3000 targets (0 packages loaded, 0 targets configured).
 INFO: Found 3000 targets...
-[0 / 682] [Prepa] Building subprojects/project0/libproject0.jar (10 source files) ... (2 actions, 0 running)
-INFO: Elapsed time: 1031.250s, Critical Path: 0.40s
+[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.763s, Critical Path: 0.32s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 8618 ms
+Execution time 2153 ms
 
 * Running warm-up build #3
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -111,11 +95,11 @@ Loading: 0 packages loaded
 Analyzing: 3000 targets (0 packages loaded, 0 targets configured)
 INFO: Analyzed 3000 targets (0 packages loaded, 0 targets configured).
 INFO: Found 3000 targets...
-[0 / 150] [Prepa] Building subprojects/project0/libproject0.jar (10 source files) ... (3 actions, 0 running)
-INFO: Elapsed time: 1.455s, Critical Path: 0.30s
+[0 / 104] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.546s, Critical Path: 0.31s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1858 ms
+Execution time 2025 ms
 
 * Running warm-up build #4
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -125,11 +109,11 @@ Loading: 0 packages loaded
 Analyzing: 3000 targets (0 packages loaded, 0 targets configured)
 INFO: Analyzed 3000 targets (0 packages loaded, 0 targets configured).
 INFO: Found 3000 targets...
-[0 / 36] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.402s, Critical Path: 0.30s
+[0 / 23] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.630s, Critical Path: 0.31s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1735 ms
+Execution time 2033 ms
 
 * Running warm-up build #5
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -139,11 +123,11 @@ Loading: 0 packages loaded
 Analyzing: 3000 targets (0 packages loaded, 0 targets configured)
 INFO: Analyzed 3000 targets (0 packages loaded, 0 targets configured).
 INFO: Found 3000 targets...
-[0 / 43] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.252s, Critical Path: 0.28s
+[0 / 45] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.453s, Critical Path: 0.31s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1578 ms
+Execution time 1884 ms
 
 * Running measured build #1
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -153,11 +137,11 @@ Loading: 0 packages loaded
 Analyzing: 3000 targets (0 packages loaded, 0 targets configured)
 INFO: Analyzed 3000 targets (0 packages loaded, 0 targets configured).
 INFO: Found 3000 targets...
-[0 / 8] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.342s, Critical Path: 0.29s
+[0 / 243] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.721s, Critical Path: 0.33s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1688 ms
+Execution time 2109 ms
 
 * Running measured build #2
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -167,11 +151,11 @@ Loading: 0 packages loaded
 Analyzing: 3000 targets (0 packages loaded, 0 targets configured)
 INFO: Analyzed 3000 targets (0 packages loaded, 0 targets configured).
 INFO: Found 3000 targets...
-[0 / 190] [Prepa] BazelWorkspaceStatusAction stable-status.txt ... (3 actions, 0 running)
-INFO: Elapsed time: 1.308s, Critical Path: 0.29s
+[0 / 88] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.403s, Critical Path: 0.32s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1661 ms
+Execution time 1798 ms
 
 * Running measured build #3
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -181,11 +165,11 @@ Loading: 0 packages loaded
 Analyzing: 3000 targets (0 packages loaded, 0 targets configured)
 INFO: Analyzed 3000 targets (0 packages loaded, 0 targets configured).
 INFO: Found 3000 targets...
-[0 / 10] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.217s, Critical Path: 0.28s
+[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.403s, Critical Path: 0.31s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1539 ms
+Execution time 1787 ms
 
 * Running measured build #4
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -195,11 +179,11 @@ Loading: 0 packages loaded
 Analyzing: 3000 targets (0 packages loaded, 0 targets configured)
 INFO: Analyzed 3000 targets (0 packages loaded, 0 targets configured).
 INFO: Found 3000 targets...
-[0 / 7] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.259s, Critical Path: 0.28s
+[0 / 93] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.398s, Critical Path: 0.31s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1659 ms
+Execution time 1786 ms
 
 * Running measured build #5
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -209,11 +193,11 @@ Loading: 0 packages loaded
 Analyzing: 3000 targets (0 packages loaded, 0 targets configured)
 INFO: Analyzed 3000 targets (0 packages loaded, 0 targets configured).
 INFO: Found 3000 targets...
-[0 / 15] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.275s, Critical Path: 0.34s
+[0 / 5] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.526s, Critical Path: 0.33s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1633 ms
+Execution time 1941 ms
 
 * Running measured build #6
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -223,11 +207,11 @@ Loading: 0 packages loaded
 Analyzing: 3000 targets (0 packages loaded, 0 targets configured)
 INFO: Analyzed 3000 targets (0 packages loaded, 0 targets configured).
 INFO: Found 3000 targets...
-[0 / 45] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.275s, Critical Path: 0.28s
+[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.403s, Critical Path: 0.31s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1635 ms
+Execution time 1787 ms
 
 * Running measured build #7
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -237,11 +221,11 @@ Loading: 0 packages loaded
 Analyzing: 3000 targets (0 packages loaded, 0 targets configured)
 INFO: Analyzed 3000 targets (0 packages loaded, 0 targets configured).
 INFO: Found 3000 targets...
-[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.216s, Critical Path: 0.29s
+[0 / 25] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.430s, Critical Path: 0.32s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1558 ms
+Execution time 1820 ms
 
 * Running measured build #8
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -251,11 +235,11 @@ Loading: 0 packages loaded
 Analyzing: 3000 targets (0 packages loaded, 0 targets configured)
 INFO: Analyzed 3000 targets (0 packages loaded, 0 targets configured).
 INFO: Found 3000 targets...
-[0 / 13] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.272s, Critical Path: 0.29s
+[0 / 44] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.392s, Critical Path: 0.31s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1613 ms
+Execution time 1770 ms
 
 * Running measured build #9
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -265,11 +249,11 @@ Loading: 0 packages loaded
 Analyzing: 3000 targets (0 packages loaded, 0 targets configured)
 INFO: Analyzed 3000 targets (0 packages loaded, 0 targets configured).
 INFO: Found 3000 targets...
-[0 / 44] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.244s, Critical Path: 0.29s
+[0 / 82] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.369s, Critical Path: 0.32s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1596 ms
+Execution time 1745 ms
 
 * Running measured build #10
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -279,11 +263,11 @@ Loading: 0 packages loaded
 Analyzing: 3000 targets (0 packages loaded, 0 targets configured)
 INFO: Analyzed 3000 targets (0 packages loaded, 0 targets configured).
 INFO: Found 3000 targets...
-[0 / 47] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.212s, Critical Path: 0.28s
+[0 / 13] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.421s, Critical Path: 0.33s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1814 ms
+Execution time 1811 ms
 
 * Results written to /Users/ttresansky/Projects/compilation-avoidance-experiment/results/nonAbiChange/bazel
   /Users/ttresansky/Projects/compilation-avoidance-experiment/results/nonAbiChange/bazel/benchmark.csv
