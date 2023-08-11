@@ -28,7 +28,7 @@ This structure should require at least some recompilation in a quarter of the pr
 
 ## Viewing the Results
 Results are provided in the `/results` directory.
-These results were obtained using Gradle 8.2.1, Gradle 8.3-rc-1, and Bazel 6.2.1 on an Apple M2 Max MacBook Pro with 64 GB running macOS 13.4.1 and the Temurin 17.0.7 JDK.
+These results were obtained using Gradle 8.0, Gradle 8.1, Gradle 8.3-rc-3, and Bazel 6.3.2. on an Apple M2 Max MacBook Pro with 64 GB running macOS 13.4.1 and the Temurin 17.0.7 JDK.
 
 Comparisons of the results used to build the graphs in the blog posts are provided in the `/comparisons` directory.
 
@@ -46,8 +46,8 @@ These instructions explain how to reproduce the results used in this blog post.
 1. Results will be written to the `/results` directory and comparisons to the `/comparisons` directory (existing data will be deleted).
 The html graphs in can be viewed directly, or the CSV files can be used to generate your own graphs and comparisons.
 1. (Optionally) To assemble a CSV file comparing multiple results in a format suitable for easy creation of charts such as those included in the blog post, provide an output file and a list of result CSV files to the `fix-bench-csvs.py` python script.
-   - For example:`python3 fix-bench-csvs.py comparisons/bazel-and-gradle-8.2.1.csv results/abiChange/bazel/benchmark.csv results/abiChange/gradle-8.2.1/benchmark.csv results/nonAbiChange/bazel/benchmark.csv results/nonAbiChange/gradle-8.2.1/benchmark.csv
-     ` run from the project root directory will create a file named `bazel-and-gradle-8.2.1.csv` in the `comparisons` directory comparing Bazel with Gradle 8.2.1.
+   - For example:`python3 fix-bench-csvs.py comparisons/bazel-and-gradle-8.1.csv results/abiChange/bazel/benchmark.csv results/abiChange/gradle-8.1/benchmark.csv results/nonAbiChange/bazel/benchmark.csv results/nonAbiChange/gradle-8.1/benchmark.csv
+     ` run from the project root directory will create a file named `bazel-and-gradle-8.1.csv` in the `comparisons` directory comparing Bazel with Gradle 8.1.
 
 ## Other Variations
 

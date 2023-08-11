@@ -25,4 +25,5 @@ sed -i '' 's/org.gradle.configuration-cache=true/#org.gradle.configuration-cache
 # Process results into comparisons
 python3 fix-bench-csvs.py comparisons/bazel-and-all-gradle.csv results/abiChange/bazel/benchmark.csv results/nonAbiChange/bazel/benchmark.csv results/abiChange/gradle-8.0/benchmark.csv results/nonAbiChange/gradle-8.0/benchmark.csv results/abiChange/gradle-8.1/benchmark.csv results/nonAbiChange/gradle-8.1/benchmark.csv results/abiChange/gradle-8.3-rc-3/benchmark.csv results/nonAbiChange/gradle-8.3-RC-3/benchmark.csv
 
-./chart-averages.groovy comparisons/bazel-and-all-gradle.csv comparisons/bazel-and-all-gradle.js
+# Requires Groovy - format data for charting
+#./chart-averages.groovy comparisons/bazel-and-all-gradle.csv comparisons/bazel-and-all-gradle.js
