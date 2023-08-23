@@ -330,7 +330,7 @@ div.controls .btn {
 <script>
 const benchmarkResult =
 {
-  "date": "2023-08-11T17:09:43.684078Z",
+  "date": "2023-08-23T11:52:52.160697Z",
   "environment": {
     "profilerVersion": "0.20.0",
     "operatingSystem": "mac os x aarch64 13.5"
@@ -338,20 +338,20 @@ const benchmarkResult =
   "scenarios": [
     {
       "definition": {
-        "name": "nonAbiChange",
-        "title": "nonAbiChange",
-        "displayName": "nonAbiChange using Gradle 8.3-rc-3",
-        "buildTool": "Gradle 8.3-rc-3",
+        "name": "abiChange",
+        "title": "abiChange",
+        "displayName": "abiChange using Gradle 8.3",
+        "buildTool": "Gradle 8.3",
         "tasks": "assemble",
-        "version": "8.3-rc-3",
-        "gradleHome": "/Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home/wrapper/dists/gradle-8.3-rc-3-bin/cba2texaor4qzw864z698y5wm/gradle-8.3-rc-3",
+        "version": "8.3",
+        "gradleHome": "/Users/ttresansky/Projects/compilation-avoidance-experiment/gradle-user-home/wrapper/dists/gradle-8.3-bin/dxjbbhstwasg8cbags9q7cvli/gradle-8.3",
         "javaHome": "/Users/ttresansky/.sdkman/candidates/java/11.0.19-tem",
         "usesScanPlugin": false,
         "action": "run tasks assemble",
         "cleanup": "do nothing",
         "invoker": "Tooling API",
         "mutators": [
-          "ApplyNonAbiChangeToSourceFileMutator(/Users/ttresansky/Projects/compilation-avoidance-experiment/subprojects/project0/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project0/p0/Production0.java)"
+          "ApplyAbiChangeToSourceFileMutator(/Users/ttresansky/Projects/compilation-avoidance-experiment/subprojects/project0/src/main/java/org/gradle/test/performance/compilationavoidanceexperiment/project0/p0/Production0.java)"
         ],
         "args": [],
         "jvmArgs": [
@@ -371,7 +371,7 @@ const benchmarkResult =
           "-Dfile.encoding\u003dUTF-8"
         ],
         "systemProperties": {},
-        "id": "_b059def4_b78b_4d57_a562_7ba27e00e508_nonAbiChange_5cdd92da"
+        "id": "_1a8131db_3869_4809_b097_d07dcc646c73_abiChange_5387774c"
       },
       "samples": [
         {
@@ -381,138 +381,138 @@ const benchmarkResult =
       ],
       "iterations": [
         {
-          "id": "_b059def4_b78b_4d57_a562_7ba27e00e508_nonAbiChange_5cdd92da_WARM_UP_1",
+          "id": "_1a8131db_3869_4809_b097_d07dcc646c73_abiChange_5387774c_WARM_UP_1",
           "phase": "WARM_UP",
           "iteration": 1,
           "title": "warm-up build #1",
           "values": {
-            "total execution time": 58888.631041
+            "total execution time": 16276.424167
           }
         },
         {
-          "id": "_b059def4_b78b_4d57_a562_7ba27e00e508_nonAbiChange_5cdd92da_WARM_UP_2",
+          "id": "_1a8131db_3869_4809_b097_d07dcc646c73_abiChange_5387774c_WARM_UP_2",
           "phase": "WARM_UP",
           "iteration": 2,
           "title": "warm-up build #2",
           "values": {
-            "total execution time": 788.975875
+            "total execution time": 4387.735333
           }
         },
         {
-          "id": "_b059def4_b78b_4d57_a562_7ba27e00e508_nonAbiChange_5cdd92da_WARM_UP_3",
+          "id": "_1a8131db_3869_4809_b097_d07dcc646c73_abiChange_5387774c_WARM_UP_3",
           "phase": "WARM_UP",
           "iteration": 3,
           "title": "warm-up build #3",
           "values": {
-            "total execution time": 744.538208
+            "total execution time": 4265.768875
           }
         },
         {
-          "id": "_b059def4_b78b_4d57_a562_7ba27e00e508_nonAbiChange_5cdd92da_WARM_UP_4",
+          "id": "_1a8131db_3869_4809_b097_d07dcc646c73_abiChange_5387774c_WARM_UP_4",
           "phase": "WARM_UP",
           "iteration": 4,
           "title": "warm-up build #4",
           "values": {
-            "total execution time": 677.488125
+            "total execution time": 4224.239334
           }
         },
         {
-          "id": "_b059def4_b78b_4d57_a562_7ba27e00e508_nonAbiChange_5cdd92da_WARM_UP_5",
+          "id": "_1a8131db_3869_4809_b097_d07dcc646c73_abiChange_5387774c_WARM_UP_5",
           "phase": "WARM_UP",
           "iteration": 5,
           "title": "warm-up build #5",
           "values": {
-            "total execution time": 589.141542
+            "total execution time": 4469.865625
           }
         },
         {
-          "id": "_b059def4_b78b_4d57_a562_7ba27e00e508_nonAbiChange_5cdd92da_MEASURE_1",
+          "id": "_1a8131db_3869_4809_b097_d07dcc646c73_abiChange_5387774c_MEASURE_1",
           "phase": "MEASURE",
           "iteration": 1,
           "title": "measured build #1",
           "values": {
-            "total execution time": 583.083875
+            "total execution time": 4619.650875
           }
         },
         {
-          "id": "_b059def4_b78b_4d57_a562_7ba27e00e508_nonAbiChange_5cdd92da_MEASURE_2",
+          "id": "_1a8131db_3869_4809_b097_d07dcc646c73_abiChange_5387774c_MEASURE_2",
           "phase": "MEASURE",
           "iteration": 2,
           "title": "measured build #2",
           "values": {
-            "total execution time": 618.855459
+            "total execution time": 4687.910875
           }
         },
         {
-          "id": "_b059def4_b78b_4d57_a562_7ba27e00e508_nonAbiChange_5cdd92da_MEASURE_3",
+          "id": "_1a8131db_3869_4809_b097_d07dcc646c73_abiChange_5387774c_MEASURE_3",
           "phase": "MEASURE",
           "iteration": 3,
           "title": "measured build #3",
           "values": {
-            "total execution time": 610.108292
+            "total execution time": 4589.519417
           }
         },
         {
-          "id": "_b059def4_b78b_4d57_a562_7ba27e00e508_nonAbiChange_5cdd92da_MEASURE_4",
+          "id": "_1a8131db_3869_4809_b097_d07dcc646c73_abiChange_5387774c_MEASURE_4",
           "phase": "MEASURE",
           "iteration": 4,
           "title": "measured build #4",
           "values": {
-            "total execution time": 525.388375
+            "total execution time": 4538.987542
           }
         },
         {
-          "id": "_b059def4_b78b_4d57_a562_7ba27e00e508_nonAbiChange_5cdd92da_MEASURE_5",
+          "id": "_1a8131db_3869_4809_b097_d07dcc646c73_abiChange_5387774c_MEASURE_5",
           "phase": "MEASURE",
           "iteration": 5,
           "title": "measured build #5",
           "values": {
-            "total execution time": 525.793709
+            "total execution time": 4546.255
           }
         },
         {
-          "id": "_b059def4_b78b_4d57_a562_7ba27e00e508_nonAbiChange_5cdd92da_MEASURE_6",
+          "id": "_1a8131db_3869_4809_b097_d07dcc646c73_abiChange_5387774c_MEASURE_6",
           "phase": "MEASURE",
           "iteration": 6,
           "title": "measured build #6",
           "values": {
-            "total execution time": 537.467292
+            "total execution time": 4542.644458
           }
         },
         {
-          "id": "_b059def4_b78b_4d57_a562_7ba27e00e508_nonAbiChange_5cdd92da_MEASURE_7",
+          "id": "_1a8131db_3869_4809_b097_d07dcc646c73_abiChange_5387774c_MEASURE_7",
           "phase": "MEASURE",
           "iteration": 7,
           "title": "measured build #7",
           "values": {
-            "total execution time": 526.8605
+            "total execution time": 4492.327833
           }
         },
         {
-          "id": "_b059def4_b78b_4d57_a562_7ba27e00e508_nonAbiChange_5cdd92da_MEASURE_8",
+          "id": "_1a8131db_3869_4809_b097_d07dcc646c73_abiChange_5387774c_MEASURE_8",
           "phase": "MEASURE",
           "iteration": 8,
           "title": "measured build #8",
           "values": {
-            "total execution time": 560.305834
+            "total execution time": 4529.897208
           }
         },
         {
-          "id": "_b059def4_b78b_4d57_a562_7ba27e00e508_nonAbiChange_5cdd92da_MEASURE_9",
+          "id": "_1a8131db_3869_4809_b097_d07dcc646c73_abiChange_5387774c_MEASURE_9",
           "phase": "MEASURE",
           "iteration": 9,
           "title": "measured build #9",
           "values": {
-            "total execution time": 548.546292
+            "total execution time": 4439.334291
           }
         },
         {
-          "id": "_b059def4_b78b_4d57_a562_7ba27e00e508_nonAbiChange_5cdd92da_MEASURE_10",
+          "id": "_1a8131db_3869_4809_b097_d07dcc646c73_abiChange_5387774c_MEASURE_10",
           "phase": "MEASURE",
           "iteration": 10,
           "title": "measured build #10",
           "values": {
-            "total execution time": 598.872042
+            "total execution time": 4587.590291
           }
         }
       ]

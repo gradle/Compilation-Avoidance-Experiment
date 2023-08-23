@@ -16,14 +16,14 @@ sed -i '' 's/#org.gradle.configuration-cache=true/org.gradle.configuration-cache
 
 gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios nonAbiChange --gradle-version 8.1 --output-dir results/nonAbiChange/gradle-8.1
 gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios abiChange --gradle-version 8.1 --output-dir results/abiChange/gradle-8.1
-gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios nonAbiChange --gradle-version 8.3-rc-3 --output-dir results/nonAbiChange/gradle-8.3-rc-3
-gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios abiChange --gradle-version 8.3-rc-3 --output-dir results/abiChange/gradle-8.3-rc-3
+gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios nonAbiChange --gradle-version 8.3 --output-dir results/nonAbiChange/gradle-8.3
+gradle-profiler --benchmark --warmups 5 --iterations 10 --scenario-file performance.scenarios abiChange --gradle-version 8.3 --output-dir results/abiChange/gradle-8.3
 
 # Reset configuration cache
 sed -i '' 's/org.gradle.configuration-cache=true/#org.gradle.configuration-cache=true/' gradle.properties
 
 # Process results into comparisons
-python3 fix-bench-csvs.py comparisons/bazel-and-all-gradle.csv results/abiChange/bazel/benchmark.csv results/nonAbiChange/bazel/benchmark.csv results/abiChange/gradle-8.0/benchmark.csv results/nonAbiChange/gradle-8.0/benchmark.csv results/abiChange/gradle-8.1/benchmark.csv results/nonAbiChange/gradle-8.1/benchmark.csv results/abiChange/gradle-8.3-rc-3/benchmark.csv results/nonAbiChange/gradle-8.3-RC-3/benchmark.csv
+python3 fix-bench-csvs.py comparisons/bazel-and-all-gradle.csv results/abiChange/bazel/benchmark.csv results/nonAbiChange/bazel/benchmark.csv results/abiChange/gradle-8.0/benchmark.csv results/nonAbiChange/gradle-8.0/benchmark.csv results/abiChange/gradle-8.1/benchmark.csv results/nonAbiChange/gradle-8.1/benchmark.csv results/abiChange/gradle-8.3/benchmark.csv results/nonAbiChange/gradle-8.3/benchmark.csv
 
 # Requires Groovy - format data for charting
 #./chart-averages.groovy comparisons/bazel-and-all-gradle.csv comparisons/bazel-and-all-gradle.js
