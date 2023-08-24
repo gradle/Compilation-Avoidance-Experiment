@@ -28,7 +28,7 @@ This structure should require at least some recompilation in a quarter of the pr
 
 ## Viewing the Results
 Results are provided in the `/results` directory.
-These results were obtained using Gradle 8.0, Gradle 8.1, Gradle 8.3-rc-3, and Bazel 6.3.2. on an Apple M2 Max MacBook Pro with 64 GB running macOS 13.4.1 and the Temurin 17.0.7 JDK.
+These results were obtained using Gradle 8.0, Gradle 8.1, Gradle 8.3, and Bazel 6.3.2. on an Apple M2 Max MacBook Pro with 64 GB running macOS 13.4.1 and the Temurin 17.0.7 JDK.
 
 Comparisons of the results used to build the graphs in the blog posts are provided in the `/comparisons` directory.
 
